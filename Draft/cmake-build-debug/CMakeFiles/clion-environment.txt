@@ -1,4 +1,0 @@
-ToolSet: w64 3.4@E:\Dev-C++\Dev-Cpp\MinGW64
-Options: 
-
-Options:

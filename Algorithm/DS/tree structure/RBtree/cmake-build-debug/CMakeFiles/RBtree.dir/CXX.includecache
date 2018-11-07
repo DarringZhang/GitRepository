@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/program/GitRepository/Algorithm/DS/tree structure/RBtree/RB.h
+
+F:/program/GitRepository/Algorithm/DS/tree structure/RBtree/main.cpp
+iostream
+-
+RB.h
+F:/program/GitRepository/Algorithm/DS/tree structure/RBtree/RB.h
+

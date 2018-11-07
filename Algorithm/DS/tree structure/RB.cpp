@@ -29,7 +29,7 @@ RB-Tree在需要大量插入和删除node的场景下，效率更高。自然，由于AVL高度平衡，因此AV
 
 
 struct RBNode {
-     int color;
+     int color;//red is 0,black is 1
      void *key;
      void *value;
      struct RBNode *left;
@@ -37,31 +37,88 @@ struct RBNode {
      struct RBNode *parent;
 };
 
+
+//**************************************RB树的插入*******************************************************//
 //红黑树的插入:先找到要新节点插入的位置，将节点赋予红色，然后插入新节点。最后做红黑树性质的修复。
 /* 为什么新结点赋红 
  可能违反2，直接将根节点变黑即可 。若插入黑，影响黑高，反5，若插红，只需要处理2 4，即根红 或连续两个红结点 
  */ 
  
- RB_INSERT(RBNode* T, node){
+ void RB_INSERT(RBNode* T, RBNode *node){//复杂度：1找到新结点插入logn,2插入修复 （包括旋转O(1)和使结点上升O(logn)）,so:O(logn) 
  	RBNode *walk = T;
-    RBNode *prev = NULL;
-    while (walk != NULL)
-        prev = walk;
-        if (node.key < walk.key)
-            walk = walk.left
-        else walk = walk.right
-    node.parent = walk
-    if (walk == NULL)
-        T.root = node
-    else if (node.key < walk.key)
-        walk.left = node
-    else walk.right = node
-    RB-INSERT-FIXUP(T, node)
+    RBNode *pre = NULL;
+    while (walk != NULL){//确定插入的位置 
+    	pre = walk;
+        if (node->key < walk->key){
+        	 walk = walk->left;
+		}
+           
+        else walk = walk->right;// 这里默认插入的不会重复 
+	} 
+        
+    node->parent = pre;
+    if (pre == NULL)
+        root = node;
+    else if (node->key <pre->key)
+        pre->left = node;
+    else pre->right = node;
+    RB_INSERT_FIXUP(T, node);
  } 
-    
-    
  
+ //插入的修复   
+ void RB_INSERT_FIXUP(RBNode *T, RBNode *node){
+ 	while(node->color==0){//插入的结点是 红色才合法 
+    	RBNode *parent = node->parent; 
+        if (parent->color!=0)! {
+        	break;      //红结点不相邻，无冲突 
+		}
+		//出现相邻的红结点 ，即红结点的儿子不全为黑色 
+        RBNode *grandparent = parent->parent;//修复的变化还要看父结点是祖父结点的左孩子还是右孩子 
+        if (parent == grandparent->left){       //左右两种情况是对称的，此处看父结点是祖父结点的左孩子的情况
+            BRNode *uncle = grandparent->right;
+            if (uncle->color==0){//uncle的颜色             也是红的 
+                parent->color = 1;//要恢复红黑树的性质 ,就要将parent 变黑，黑高++，但是grandparent 破坏了性质5  
+                uncle->color = 1;//所以对应 uncle 也要黑高++ 
+                grandparent->color = 0;//此种情况插入之前，parent 和 uncle 一定是红的，这对兄弟的父亲即grandparent 黑 
+                node = grandparent; //node 指向 grandparent，让修复结点上升两个 level，直到遇到根结点为止。从底部慢慢向上调整 
+            } 
+			else if (node == parent->right){ //右儿子，左旋，交换，转换成上述情况                                    
+                LEFT_ROTATE(T, parent);
+                swap(node, parent);
+            } 
+            else{ //uncle 黑 ，不能将 uncle 变黑了，只能将红结点上升给祖父节点 ，即将祖父结点变红，然后将父结点变黑，父结点为根的子树的左右子树就不平衡了 
+                parent->color = 1;//左比右黑高多一 
+                grandparent->color = 0;
+                RIGHT_ROTATE(T, grandparent);//；祖父结点右旋以调整左右平衡 
+            } 
+        } 
+        // same as then clause with "right" and "left" exchanged
+		else if(parent == grandparent->right){
+			BRNode *uncle = grandparent->left;
+            if (uncle->color==0){
+                parent->color = 1;
+                uncle->color = 1;
+                grandparent->color = 0; 
+                node = grandparent; 
+            } 
+			else if (node == parent->left){                                   
+                RIGHT_ROTATE(T, parent);
+                swap(node, parent);
+            } 
+            else{                 
+				parent->color = 1;
+                grandparent->color = 0;
+                LEFT_ROTATE(T, grandparent);
+            } 
+		}
+    
+	}
+        
+    T-> color = 1; //根节点一定是黑色 
  
+ }
+    
+ //**************************************RB树的插入*******************************************************//
  
  
  

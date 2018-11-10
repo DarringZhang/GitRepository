@@ -1,5 +1,5 @@
 //
-// Created by Darring Zhang on 2018/11/7.
+// Created by Darring on 2018/11/7.
 //
 
 #ifndef BINARY_HEAP_BINARYHEAP_H

@@ -97,9 +97,11 @@ public:
             cout<<"树空！"<<endl;
             return;
         }
-        //遍历一遍哈夫曼树，将哈夫曼编码 按从短到长，打印出来
+        //遍历一遍哈夫曼树，将哈夫曼编码
         order_for_coding(root);
 
+
+        //利用一个队列，按编码从短到长，打印出来
         huffman_node* p;
         queue<huffman_node*> q;
         q.push(root);

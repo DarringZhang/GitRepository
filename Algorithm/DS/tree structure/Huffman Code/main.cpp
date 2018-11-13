@@ -18,7 +18,7 @@ int main() {
     cout<<"ºóĞò´òÓ¡¹ş·òÂüÊ÷:";
     huff.postOrder(huff.GetRoot());
     cout<<endl;
-    cout<<"Ç°Ğò´òÓ¡¹ş·òÂü±àÂë:"<<endl;
+    cout<<"²ãĞò´òÓ¡¹ş·òÂü±àÂë:"<<endl;
     huff.Huffman_code();
     cout<<endl;
     return 0;

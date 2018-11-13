@@ -63,7 +63,7 @@ public:
     }
 
     //建堆，自底向上将数组调整为一个最大堆,从第一个非叶子结点开始查它和它儿子的关系
-    //复杂度O（nh）
+    //复杂度O（h）
     void Build_Max_Heap(){
         int length = effective/2;
         for(int i = length;i >= 1;i--){//1-based

@@ -31,10 +31,10 @@ public:
 
     void create_huffman_tree(){//构建哈夫曼树
         Heap.create_huffman_node();//构建哈夫曼结点
-        Heap.Build_Min_Heap();
-        cout<<"建堆完成";
+        Heap.Build_Min_Heap();     //构建最小堆
+        cout<<"建堆完成：";
         Heap.print();
-        while(Heap.effective>0){
+        while(Heap.effective>1){
             huffman_node *node1 = Heap.Heap_Extract_Min();//连续拿出堆中最小两个元素
             huffman_node *node2 = Heap.Heap_Extract_Min();
             huffman_node * newNode = new huffman_node;
@@ -42,7 +42,7 @@ public:
             newNode->c = '*';
             newNode->left = node1;
             newNode->right = node2;
-            Heap.Min_Heap_Insert(newNode->c,newNode->weight);
+            Heap.Min_Heap_Insert(newNode);
             root = newNode;
         }
     }
@@ -63,9 +63,9 @@ public:
             return;
         }
 
-        preOrder(t->left);
+        inOrder(t->left);
         print(t);
-        preOrder(t->right);
+        inOrder(t->right);
     }
 
     void postOrder(huffman_node *t){
@@ -73,8 +73,8 @@ public:
             return;
         }
 
-        preOrder(t->left);
-        preOrder(t->right);
+        postOrder(t->left);
+        postOrder(t->right);
         print(t);
     }
 
@@ -85,8 +85,8 @@ public:
         }
 
         coding(t);
-        preOrder(t->left);
-        preOrder(t->right);
+        order_for_coding(t->left);
+        order_for_coding(t->right);
     }
 
 
@@ -97,7 +97,7 @@ public:
             cout<<"树空！"<<endl;
             return;
         }
-        //遍历一遍哈夫曼树，将哈夫曼编码 编出
+        //遍历一遍哈夫曼树，将哈夫曼编码 按从短到长，打印出来
         order_for_coding(root);
 
         huffman_node* p;
@@ -129,10 +129,10 @@ public:
     void coding(huffman_node *t){
         if(!isLeaf(t)){
             if(t->left!=NULL){
-                t->left->code = t->code+'0';
+                t->left->code = t->code+"0";
             }
             if(t->right!=NULL){
-                t->left->code = t->code +'1';
+                t->right->code = t->code +"1";
             }
         }
 

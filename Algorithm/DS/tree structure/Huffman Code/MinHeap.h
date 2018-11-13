@@ -98,8 +98,6 @@ public:
 
 
 
-
-
     //拿出二叉堆中最小元素O(h)
     huffman_node* Heap_Extract_Min(){
 
@@ -118,11 +116,10 @@ public:
 
 
     //最大堆插入O(h)
-    void Min_Heap_Insert(char ch,int key){
-        effective = effective+1;
+    void Min_Heap_Insert(huffman_node *node ){
+        effective ++;
 
-        A[effective]->c = ch;
-        A[effective]->weight = key;//插到最后，再调整
+        A[effective] = node;
 
         int i = effective;
         while(i>1 && A[PARENT(i)]->weight>A[i]->weight){//新插入的比父权值小

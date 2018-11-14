@@ -439,28 +439,31 @@ public:
 			T->left = AVL_Insert(T->left, v);//为 v的插入位置寻找新结点 
 			T->left->parent = T;
 			if(Tree_Height(T->left) - Tree_Height(T->right) == 2){//左边插入后 重了 
-				if(v < T->left->key){     //插入到左边了，左左式不平衡 
-					T = Left_Left_Rotation(T);
+				if(T->left!=NULL){	
+					if(v < T->left->key){     //插入到左边了，左左式不平衡 
+						T = Left_Left_Rotation(T);
+					}
+				
+					else{    //左右式不平衡 
+						T = Left_Right_Rotation(T);
+					}
 				}
-			
-				else{    //左右式不平衡 
-					T = Left_Right_Rotation(T);
-				}
-			
 		 	}
 		}
 		else if(v > T->key){
 			T->right = AVL_Insert(T->right, v);//为 v的插入位置寻找新结点 
 			T->right->parent = T;
 			if(Tree_Height(T->right) - Tree_Height(T->left) == 2){//右边插入后 重了 
-				if(v < T->left->key){ //右左式不平衡 
+			if(T->right!=NULL){	
+				if(v < T->right->key){ //右左式不平衡 
 					T = Right_Left_Rotation(T);
 				}
-			
 				else{   // 右右式不平衡 
 					T = Right_Right_Rotation(T);
 				}
+			}
 			
+				
 		 	}
 		}	
 		else{

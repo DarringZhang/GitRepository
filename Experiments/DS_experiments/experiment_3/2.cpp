@@ -56,8 +56,8 @@ public:
             A[i] = new huffman_node;
            //cin>>A[i]->c;
          //   cin>>A[i]->weight;
-          // scanf(" %c%c%f", &A[i]->c,&cc, &A[i]->weight);//平台上%c的前面没有空格
-            cin>>A[i]->c>>maohao>>A[i]->weight;
+           scanf(" %c%c%f", &A[i]->c,&cc, &A[i]->weight);
+            //cin>>A[i]->c>>maohao>>A[i]->weight;
            // fflush(stdin);
 
             A[i]->right = NULL;

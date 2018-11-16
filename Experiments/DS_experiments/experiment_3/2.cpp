@@ -13,10 +13,24 @@ struct huffman_node{
     int position ;
 };
 
-huffman_node** Print = new huffman_node*[MAX];
-//huffman_node* A = new huffman_node[MAX];
-huffman_node* A[MAX];
-//huffman_node* Print[MAX];
+
+
+
+//1.声明指针但是没有分配空间 int *p//（即没有指向固定区域）若是int *p = new int;p指向new出来的空间
+
+/*即int *A = new int[Max]//A是一个数组，里面有Max个int 型的数据，要delete[] A
+和 int A[Max]，//数组名A实质为一个指针，自动new,自动delete//不需要显式delete*/
+
+huffman_node **Print = new huffman_node*[MAX];//全局变量，存储结点的信息，main中按输入顺序打印
+//Print是一个数组,里面有Max个huffman_node*类型的数据,已经new 出了Max个空间
+
+//错误：huffman_node* A = new huffman_node[MAX];
+huffman_node* A[MAX];//这是一个叫A的数组，里面存放的类型是huffman_node*，还没有为这些Max个指针new空间
+//错误：huffman_node* Print[MAX];
+
+
+
+
 //广义小顶堆（每个数组里面放哈夫曼的结点，根据结点权值大小排序）    （BinaryHeap 里面是只存数字大顶堆）
 class MinHeap {
 

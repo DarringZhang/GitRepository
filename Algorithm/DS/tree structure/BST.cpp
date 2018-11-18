@@ -51,6 +51,15 @@ int BST_Insert(Node*T, int k, Node* l_parent = NULL){
 		T->left = NULL;
 		T->right = NULL;
 		T->parent = l_parent;
+		
+		if(T->key<l_parent->key){
+                l_parent->left = T;
+        }
+        else if(T->key>l_parent->key){
+            l_parent->right = T;
+        }
+
+		
 		return 1;  // 返回1表示成功
 	}
 	else if(k == T->key)
@@ -372,7 +381,7 @@ int main(void)
 	                printf("input the key you wanna recursive_insert:"); 
 					int k;
 					cin>>k; 
-	                a.BST_Insert_NonRecur(a.GetRoot(),k);
+	                a.BST_Insert(a.GetRoot(),k,NULL);
 	                a.inOrder_No_Stack();
 	            }  
 	            else  

@@ -2,12 +2,32 @@
 // Created by Darring on 2018/11/18.
 //
 
+//AVL在二叉查找树的基础上添加了旋转算法，但是旋转操作仅仅改变少数指针的指向，耗费常数时间，复杂度只与n有关
+//对比BST，时间上稳定了很多,BST 输入点的顺序不同 ，树的结构不同（出现 一边倒的树），复杂度与树高有关
+
+/*AVL树(高度平衡树)：是个BST，且满足，对于任何1个树中的节点x，其左树度和右树度的差不超过1.
+每次插新节点后，递归地通过“旋转rotation”来调整各个节点，使其满足AVL树的基本要求
+
+	违反AVL树的要求有四种情况：
+1) 往某个节点左儿子的左子树中插节点
+2) 往某个节点左儿子的右子树中插节点
+3) 往某个节点右儿子的左子树中插节点
+4) 往某个节点右儿子的右子树中插节点
+     （总结起来也就两种情况，左左 and 左右，其他镜像对称）
+*/
+
+
+
 #ifndef INC_3_AVL_H
 #define INC_3_AVL_H
 #include "BST.h"
+//除了 插入 和 删除，其他继承BST
 class AVL :public BST {
 public:
     AVL(){
+    }
+    ~AVL() {
+        destroy(root);
     }
 
     Node *Create_Node(int v){
@@ -93,7 +113,7 @@ public:
 /********************************************旋转*******************************************/
 
 
-/*************************************************插入******************************************/
+/*************************************************递归插入******************************************/
     Node *AVL_Insert(Node * T,int v){
         if(T==NULL){
             T = Create_Node(v);
@@ -131,7 +151,7 @@ public:
         }
         else{
             //v == Root->key, insert failed->
-            cout<<"insert failed！"<<endl;
+            cout<<"Already have this element!"<<endl;
         }
 
         T->height = MAX(Tree_Height(T->left), Tree_Height(T->right)) + 1;
@@ -139,7 +159,73 @@ public:
         root->parent = NULL;
         return T;
     }
-/*************************************************插入******************************************/
+/*************************************************递归插入******************************************/
+
+
+/*************************************************非递归插入******************************************/
+    void AVL_Insert_Nonrecur(Node * T,int v){
+        Node *NewNode = Create_Node(v);
+        Node *t = NULL;
+        Node *x = T;
+        while(x!=NULL){//为插入结点寻找合适父亲t
+            t = x;
+            if(NewNode->key < x->key){
+                x =  x->left;
+            }
+            else if(NewNode->key > x->key){
+                x = x->right;
+            }
+            else{
+                //v == Root->key, insert failed->
+                cout<<"Already have this element!"<<endl;
+            }
+        }
+
+        NewNode->parent = t;
+        if(t==NULL){
+            root = NewNode;
+            return ;
+        }
+        else if(NewNode->key<t->key){
+            t->left = NewNode;
+        }
+        else{
+            t->right = NewNode;
+        }
+        AVL_Insert_Fixup(NewNode->parent);
+    }
+
+
+    void AVL_Insert_Fixup(Node *T){
+        T->height = MAX(Tree_Height(T->left), Tree_Height(T->right)) + 1;//插入结点，更新树高
+        Node *y = T;
+        while(T->parent!=NULL){
+            y = T->parent;
+            int old_height = MAX(Tree_Height(y->left), Tree_Height(y->right)) + 1;//插入新结点，祖父高度更新
+            Node *t = AVL_Delete_Fixup(y);//修正不平衡的祖父y,修正后新根为t
+            t->height = MAX(Tree_Height(t->left), Tree_Height(t->right)) + 1;
+            if(t!=y){//确实需要修正
+                if(t->parent == NULL){
+                    root = t;
+                }
+                else if(y == t->parent->left){//调整新树根与外界的联系
+                    t->parent->left = t;
+                }
+
+                else if(y == t->parent->right){
+                    t->parent->right = t;
+                }
+
+            }
+            if(t->height < old_height){//新树根高度修正好了，没有出现不平衡
+                break;
+            }
+
+            T = t;//往上遍历
+        }
+
+    }
+/*************************************************非递归插入******************************************/
 
 
 

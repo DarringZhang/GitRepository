@@ -41,6 +41,28 @@ public:
 		root->r_child==NULL;
 	}
 
+	~Threaded_Binary_Tree(){
+        queue<Node*> L;
+        Node * t = root;
+        L.push(t); //L is a queue.
+        while(!L.empty()){
+            t = L.front();  //检查队首元素
+            L.pop();
+            if(t == NULL){
+                continue;
+            }
+            
+            if(t->l_thread == LINK) {         
+            	 L.push(t->l_child);  //将队首元素的两个儿子踢进队列
+			}
+           	if(t->r_thread == LINK) {
+           		L.push(t-> r_child);
+           	}
+            
+            delete t;
+        }
+    }
+
 void CreateTree(string s){
     queue<Node*> L ;
 	int idx = 0;				
@@ -271,7 +293,7 @@ void postOrder_threading() {
 /*********************************************后序线索二叉树的建立******************************************/
 /*********************************************后序线索二叉树的遍历******************************************/	
 //后序遍历要使用带双亲的三叉链表
-
+/*
 
 void postOrder_thread() {
 	 if(root == NULL) {
@@ -299,31 +321,31 @@ void postOrder_thread() {
 	 return p;
  }
  
+ 
  Node * postOrder_successor_thread(Node *p){
- ///////////////
- 	if(p->parent==NULL){
- 		return NULL;
-	 } 
-	 
-	 
-	 if(p->r_thread==THREAD){
-			return p->r_child;
-	}
-	 // p为左儿子， 说明其父亲 和父亲的右儿子都还没访问，先访问父亲的右儿子 
-	 Node *cur = p->parent;       //后序遍历要使用带双亲的三叉链表
-	 //父亲的右儿子为空，接下只能访问父亲 
-	 if(cur->r_child==NULL){
-	 	return cur;
-	 } 
-	 cur = cur->r_child;
-	 return  find_first_node_postOrder(cur);
+
+        ///////////////  线索二叉树的后序遍历待完成！///////////////
+
+        if(p->parent==NULL){
+            return NULL;
+        }
+
+
+        if(p->r_thread==THREAD){
+            return p->r_child;
+        }
+        // p为左儿子， 说明其父亲 和父亲的右儿子都还没访问，先访问父亲的右儿子
+        Node *cur = p->parent;       //后序遍历要使用带双亲的三叉链表
+        //父亲的右儿子为空，接下只能访问父亲
+        if(cur->r_child==NULL){
+            return cur;
+        }
+        cur = cur->r_child;
+        return  find_first_node_postOrder(cur);
  
- 
- 
- 
- 
-	
+ 	
 }
+
 /*********************************************后序线索二叉树的遍历******************************************/
 
 
@@ -341,12 +363,12 @@ int main(void)
     string s;
 	cin>>s; 
     a.CreateTree(s);
-//    cout<<"前序遍历:" ;
-//    a.preOrder_threading();//建立 
-//    a.preOrder_thread();//遍历 
-	cout<<"中序遍历:" ;
-	a.inOrder_threading();
-	a.inOrder_thread() ; 
+    cout<<"前序遍历:" ;
+    a.preOrder_threading();//建立 
+    a.preOrder_thread();//遍历 
+//	cout<<"中序遍历:" ;
+//	a.inOrder_threading();
+//	a.inOrder_thread() ; 
 
     return 0;
 }

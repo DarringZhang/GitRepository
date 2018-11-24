@@ -47,6 +47,7 @@ public:
         for(int i=0; i<n; ++i){
             cin>>value;
             BST_Insert(root,value);
+
         }
     }
 
@@ -100,7 +101,7 @@ public:
     }
 
 //非递归插入（效率高）
-    int BST_Insert_NonRecur(Node* T, int k){
+    int BST_Insert_NonRecur(Node *T,int k){
         Node* pre = NULL;  // 记录上一个结点
         Node* t = T;
         //移动到合适位置
@@ -123,12 +124,9 @@ public:
         node->parent = pre;
         node->height = 1;
 
-
-
-
-
         if(pre == NULL){
             root = node; //即插入的是根节点
+            return 1;
         }
 
         else
@@ -142,18 +140,17 @@ public:
             }
         }
 
-
-        //更新树高
-        t = node;
-        while(t->parent!=NULL){
-            if(t->height+1 == t->parent->height){//不用更新
-                break;
-            }
-            else if(t->height+1 > t->parent->height){ //t之前是叶节点
-                t ->parent->height++;
-                t = t->parent;
-            }
-        }
+//        //更新树高
+//        t = node;
+//        while(t->parent!=NULL){
+//            if(t->height+1 == t->parent->height){//不用更新
+//                break;
+//            }
+//            else if(t->height+1 > t->parent->height){ //t之前是叶节点
+//                t ->parent->height++;
+//                t = t->parent;
+//            }
+//        }
 
 
         return 1;
@@ -226,7 +223,7 @@ public:
     Node* BST_Successor(int k)
     {
         Node *node = BST_Search_NonRecur(root, k);
-        if(node->right != NULL){//x 的右子树不为空，则 x 的后继就是它的右子树中最左下的点（即关键字值最小的结点）；
+        if(node->right != NULL){//node 的右子树不为空，则 node 的后继就是它的右子树中最左下的点（即关键字值最小的结点）；
             return BST_Minimum(node->right);
         }
 
@@ -260,7 +257,7 @@ public:
     }
 
 /*
-二叉查找树的删除操作是相对复杂一点，它要按 3 种情况来处理：删除(Deletion):从T中删除?个节点z,三种情况
+二叉查找树的删除操作是相对复杂一点，它要按 3 种情况来处理：删除(Deletion):从T中删除节点z,三种情况
 1) z没有孩子, 简单将其父节点的指向 z的指针替换为NIL;
 2) z只有1个孩子 将z的这个孩子提升为z的父亲的孩子,取代z的位置;
 3) z有俩孩子 先找z的中序后继y(必然在z的右子树), y取代z的位置, z中右子树剩下的部分成为y的新右子树,z的左
@@ -426,7 +423,7 @@ public:
             delete t;
             t = NULL;
         }
-        cout<<"free node finished!"<<endl;
+        //cout<<"free node finished!"<<endl;
         root = NULL;
     }
 
@@ -444,8 +441,6 @@ public:
     }
 
 };
-
-
 
 
 

@@ -1,3 +1,7 @@
+
+// Created by Darring on 2018/11/18.
+
+
 /*二叉树 
  	第i层最多有 2的i-1个结点
 	 深度为k的结点，最多有2的k次方-1个结点
@@ -43,7 +47,7 @@ public:
  			if(t == NULL){
  				continue;
 			 }  
- 			L.push(t->l_child);  //将队首元素 两个儿子踢进队列 
+ 			L.push(t->l_child);  //将队首元素的两个儿子踢进队列 
  			L.push(t->r_child);
  			delete t;  
 		}
@@ -236,7 +240,7 @@ void  PostOrder_Stack(Node *p){
 	
 	 
 	    
-		//如果当前结点的右孩子为空或者 已经被访问,接下来访问自己 ！！！！！！！！！！重要！！！！ 
+		//如果当前结点的右孩子为空或者 已经被访问,接下来访问自己 ！！！！！重要！！！！ 
 		if(cur->r_child == NULL||cur->r_child==LastVisited){
 			visit(cur);
 			LastVisited = cur;

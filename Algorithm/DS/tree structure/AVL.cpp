@@ -478,6 +478,70 @@ public:
 	}
 /*************************************************插入******************************************/
 
+/*************************************************非递归插入******************************************/
+    void AVL_Insert_Nonrecur(Node * T,int v){
+        Node *NewNode = Create_Node(v);
+        Node *t = NULL;
+        Node *x = T;
+        while(x!=NULL){//为插入结点寻找合适父亲t
+            t = x;
+            if(NewNode->key < x->key){
+                x =  x->left;
+            }
+            else if(NewNode->key > x->key){
+                x = x->right;
+            }
+            else{
+                //v == Root->key, insert failed->
+                cout<<"Already have this element!"<<endl;
+            }
+        }
+
+        NewNode->parent = t;
+        if(t==NULL){
+            root = NewNode;
+            return;
+        }
+        else if(NewNode->key<t->key){
+            t->left = NewNode;
+        }
+        else{
+            t->right = NewNode;
+        }
+        AVL_Insert_Fixup(NewNode->parent);
+    }
+
+
+    void AVL_Insert_Fixup(Node *T){
+        T->height = MAX(Tree_Height(T->left), Tree_Height(T->right)) + 1;//插入结点，更新树高
+        Node *y = T;
+        while(T->parent!=NULL){
+            y = T->parent;
+            int old_height = MAX(Tree_Height(y->left), Tree_Height(y->right)) + 1;//插入新结点，祖父高度更新
+            Node *t = AVL_Delete_Fixup(y);//修正不平衡的祖父y,修正后新根为t
+            t->height = MAX(Tree_Height(t->left), Tree_Height(t->right)) + 1;
+            if(t!=y){//确实需要修正
+                if(t->parent == NULL){
+                    root = t;
+                }
+                else if(y == t->parent->left){//调整新树根与外界的联系
+                    t->parent->left = t;
+                }
+
+                else if(y == t->parent->right){
+                    t->parent->right = t;
+                }
+
+            }
+            if(t->height < old_height){//新树根高度修正好了，没有出现不平衡
+                break;
+            }
+
+            T = t;//往上遍历
+        }
+
+    }
+/*************************************************非递归插入******************************************/
 
 
 			
@@ -587,7 +651,8 @@ int main(void)
         printf("|--------------------------------------------------------------|\n");  
         printf("|                      AVL的基本操作如下:                      |\n");  
         printf("|                        0.创建AVL                             |\n");  
-        printf("|                        1.插入                                |\n");  
+        printf("|                        1.递归插入                            |\n");
+		printf("|                        2.非递归插入                          |\n");    
         printf("|                        3.递归查找                            |\n");  
         printf("|                        4.非递归查找                          |\n");  
         printf("|                        5.最大                                |\n");  
@@ -626,6 +691,19 @@ int main(void)
 			
 			}    
 	            
+	        case 2:{
+	            	if(a.GetRoot())  
+	            {  
+	                printf("input the key you wanna Nonrecursive insert:"); 
+					int k;
+					cin>>k; 
+	                a.AVL_Insert_Nonrecur(a.GetRoot(),k);
+	                a.inOrder_No_Stack();
+	            }  
+	            else  
+	                printf("          BST为空！\n");  
+					break;
+				} 
 	        case 3: {
 	        	if(a.GetRoot())  
 	            {  

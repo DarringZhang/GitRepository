@@ -1,0 +1,160 @@
+% =============================================
+% Part 0.0 编辑个人信息
+% =============================================
+
+\newcommand{\department}{计算机科学与技术}		%在这里修改系别
+\newcommand{\major}{计算机科学与技术}				%在这里修改专业
+\newcommand{\class}{计类1707}					%在这里修改班级
+\newcommand{\name}{	张谦益		}			%在这里修改姓名
+\newcommand{\stuid}{ 			}				%在这里修改学号
+\newcommand{\newdate}{			}				%在这里修改日期 yyyy-mm-dd
+\newcommand{\loc}{			}					%在这里修改地点
+
+% =============================================
+% Part 0.1 编辑课程信息
+% =============================================
+\newcommand{\newcourse} {数据结构\LARGE{(C)}} %在这里修改成课程名称
+\newcommand{\newtitle}{线性表的生成与操作} 				%在这里修改实验项目
+\newcommand{\exptype}{计算机}
+
+\newcommand{\grades}{}
+\newcommand{\group}{无}
+
+\newcommand{\tutor}{丁濛}
+\newcommand{\onespace}{\hspace{1em} }
+\begin{document}
+\begin{titlepage}
+	\centering
+	\vspace*{1cm}
+	{\fontsize{34pt}\baselineskip 实\onespace 验\onespace 报\onespace 告}\\
+	\vspace{2cm}
+	\fontsize{19pt}\baselineskip
+	\makebox[30mm]{课程名称：}
+	\underline{\makebox[75mm][c] {\newcourse} }
+	\vskip 0.3cm
+	\makebox[30mm]{实验项目：}
+	\underline{\makebox[75mm][c] {\newtitle }}\\
+	\vskip 0.3cm
+	\makebox[30mm]{实验仪器：}
+	\underline{\makebox[75mm][c]{ }}\\%在这里修改实验仪器
+	\vskip 1cm
+
+    \begin{table}[!htbp]
+      \centering
+      \sihao
+      \begin{tabular}{| c | c | c | c | c | c |}
+      	\hline
+        项目 & 报告格式 & 写作质量 & 逻辑、注释质量、思想描述 & 复杂度分析 & 合计\\
+        \hline
+        
+        百分比(\%) & 15 & 25 & 40 & 20  & 100 \\
+        \hline
+        得分	& {\gradeFormat } & {\gradeCode } & {\gradeComment}   & {\gradeComplex} & {\gradeTotal} \\
+        \hline
+      \end{tabular}
+    \end{table}
+     \Comments
+    	
+	\vskip 2cm
+
+        \begin{table}[!tbhp]
+            \centering
+            \sanhao
+            \begin{tabular}{ll}
+                系\hspace{2em}别：	&	 \underline {\makebox[60mm][c]	{\department} 	} \\
+                专\hspace{2em}业：	&	 \underline {\makebox[60mm][c] {\major}		} \\
+                班级姓名：		&	\underline {\makebox[60mm][c] {\class\ \name\ }		} \\
+                日\hspace{2em}期：	&	 \underline {\makebox[60mm][c]	{\newdate} 	} \\
+                成\hspace{2em}绩：	&	 \underline {\makebox[60mm][c] {\grades}		} \\
+                同组成员：		&	\underline {\makebox[60mm][c] {\group}		} \\
+                指导教师：		&	\underline {\makebox[60mm][c] {\tutor}		} \\
+            \end{tabular}
+        \end{table}
+
+
+%    
+%    
+
+\end{titlepage}
+
+\newpage
+% =============================================
+% Part 2 Main document
+% =============================================
+\xiaosihao
+\section{实验目的}
+\begin{enumerate}
+\item 掌握线性表的顺序存储和链式存储结构；
+\item 验证顺序表及链表的基本操作的实现；(验证)
+\item 理解算法与程序的关系，能够将算法转换为对应程序；
+\item 体会线性表在实际应用中能够解决的问题。（设计、综合）
+\end{enumerate}
+
+\section{实验内容}
+\subsection{项目一}
+实现顺序存储的线性表并分析每个功能的复杂度。要求具有如下功能：
+\begin{enumerate}
+\item 构造，析构；
+\item 随机访问；
+\item 在表后添加一个新数据；
+\item 向表中特定位置插入一个新数据；
+\item 将另外一张表内的内容添加到一个表的后面；
+\item 查找表中是否含有特定元素；
+\item 删除表中的某个特定元素；
+\item 打印所有元素。
+\end{enumerate}
+
+\subsection{项目二}
+实现链式存储的线性表（单向链表）并分析每个功能的复杂度。要求具有如下功能：
+\begin{enumerate}
+\item 构造，析构；
+\item 在第一个元素之前插入一个新数据；在最后一个元素之后插入一个新数据；
+\item 删除第一个元素；删除最后一个元素；
+\item 查找表中是否含有特定元素； 
+\item 向表中特定元素之前/之后插入一个新数据；
+\item 删除表中的某个特定元素；
+\item 遍历整个链表；
+\item 反转一个链表，即 a->b->c->d, 反转后为 d->c->b->a.
+\end{enumerate}
+
+\subsection{项目三}
+以双向链表的形式重新实现第2题，并分析两种实现中各个功能的复杂度区别。
+
+\subsection{项目四}
+完成上机平台上实验一的题目。
+
+\section{实验过程}
+\subsection{项目1}
+大致思想 blablabla
+\subsubsection{实验步骤}
+\subsubsection{必要代码}
+\lstinputlisting[language=C++]{code/main.cpp}
+\subsubsection{实验结果}
+	\begin{figure}[!bthp]
+	\centering
+        \includegraphics[width=0.6\linewidth]{02-1.jpg}
+        \caption{D大调}
+      \end{figure}
+
+\subsection{项目2}
+大致思想 blablabla sdfhasdfklj asd flas jkfjaksdf asd f
+fasdf aksdjf klasj dfa
+sdf
+asdf
+
+f
+\subsubsection{实验步骤}
+\subsubsection{必要代码}
+\subsubsection{实验结果}
+
+\subsection{项目3}
+大致思想 blablabla
+\subsubsection{实验步骤}
+\subsubsection{必要代码}
+\subsubsection{实验结果}
+
+\subsection{项目4}
+
+\section{实验总结}
+
+\end{document}

@@ -19,6 +19,7 @@ int main() {
         uf.Merge(a,b);//将随机产生的a 和 b 合并
      }
     //检查
+    //第一次查找 O（n）,压缩完路径后 查找都是O(1)
     for (int i = 0; i < N; ++ i){
         a = rand()%N;
         b = rand()%N;

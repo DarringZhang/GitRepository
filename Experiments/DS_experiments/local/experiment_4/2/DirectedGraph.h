@@ -14,8 +14,7 @@ struct Node{
     int InDegree;//入度
     int OutDegree;//出度
     string data;//结点信息
-    struct Node *OutAdjList;//存放邻接点Node *AdjList = new Node [SIZE]也不行
-    //AdjList = new Node[MAX];//为什么不能放这里
+    struct Node *OutAdjList;
     Node(){
         InDegree = 0;
         OutDegree = 0;
@@ -26,7 +25,6 @@ struct Node{
 
 class DirectedGraph{
 private:
-    //vector<Node> NodeList[SIZE];如何用？？
     Node *NodeList;
     int n;//顶点个数
     int e;//边的条数

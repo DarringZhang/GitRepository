@@ -13,8 +13,10 @@ using namespace std;
 struct Node{
     int degree;
     string data;//结点信息
-    struct Node *AdjList;//存放邻接点Node *AdjList = new Node [SIZE]也不行
-    //AdjList = new Node[MAX];//为什么不能放这里
+   // vector<Node> AdjList;
+    struct Node *AdjList;
+
+    //AdjList = new Node[MAX];//为什么在这里new：结构体里面只是一个声明，出了这个结构体，什么也没有了
     Node(){
         degree = 0;
     }
@@ -24,13 +26,13 @@ struct Node{
 
 class UnDirectedGraph{
 private:
-    vector<Node> NodeList;
-//    Node *NodeList;
+//    vector<Node> NodeList;//不用new,封装好了的，可变长的数组
+  Node *NodeList;
     int n;//顶点个数
     int e;//边的条数
 public:
     UnDirectedGraph(){
-     //   NodeList = new Node[SIZE];
+        NodeList = new Node[SIZE];
     }
     ~UnDirectedGraph(){
         delete [] NodeList;
@@ -49,10 +51,11 @@ public:
         string ch;
         for(int i = 1; i <= n; ++i ){
             cin>>ch;
-            Node t;
-            t.data = ch;
-            NodeList.push_back(t);
-        //    NodeList[i].data = ch;
+           // Node t;
+           // t.data = ch;
+           // NodeList.push_back(t);//对于Vector变量，pushback多少，vector的长度就是多少
+           NodeList[i].AdjList = new Node[n+1];
+          NodeList[i].data = ch;
         }
 
         cout<<"输入每条边的信息（对应每条边输入邻接的两个点的下标 1-base，下标输入无序）:";
@@ -66,7 +69,7 @@ public:
             de1 = NodeList[index1].degree;
             NodeList[index1].AdjList[de1] = NodeList[index2];
 
-            NodeList[index2].degree++;
+            NodeList[index2].degree++;//增加度数的时候，邻接点就要挨个增加
             de2 = NodeList[index2].degree;
             NodeList[index2].AdjList[de2] = NodeList[index1];
         }

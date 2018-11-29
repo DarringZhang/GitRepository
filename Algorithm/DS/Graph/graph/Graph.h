@@ -88,16 +88,19 @@ public:
             Adj[i] = 0;
         }
 
-       //why int Adj[N] = [0,]数组名取地址得到的是数组名所指元素的地址。
+       //why int Adj[N] = [0,]//如果没有new,出了这个函数，有关数组Adj的指针就会丢失，而new出来的空间，专门有一块内存存储它，不显示delete,就不会被释放
+       // 数组名取地址得到的是数组名所指元素的地址。
         //对指针取地址得到的是指针变量自身的地址
         for(int i = 0; i < N; ++ i){
-//            if(bfs[u][i] == 1){
-//                Adj[i] = 1;
-//            }
 
-            if(dfs[u][i] == 1){
+            if(bfs[u][i] == 1){
                 Adj[i] = 1;
-           }
+            }
+//
+//            if(dfs[u][i] == 1){
+//                Adj[i] = 1;
+//           }
+
 
         }
         return Adj;
@@ -109,10 +112,11 @@ public:
         NodeList[start].color = GRAY;//start号位置的结点已经被访问
         NodeList[start].find = 0;
 
+        int *Adj;
         while(!Q.empty()){
             int front = Q.front();
             Q.pop();
-            int *Adj = FindAdj(front);
+             Adj = FindAdj(front);
             for(int i = 0; i < N; ++ i){
                 if(Adj[i] == 1){//for each node in Adj[front]
                     if(NodeList[i].color == WHITE){
@@ -125,6 +129,8 @@ public:
             }
             NodeList[front].color = BLACK;
             print_BFS(NodeList[front]);
+            delete [] Adj;
+            Adj = NULL;
         }
 
         Check_Cannot_reach(start);
@@ -171,7 +177,8 @@ public:
         clock++;
         NodeList[start].end_discover = clock;
         print_DFS(NodeList[start]);
-
+        delete [] Adj;
+        Adj = NULL;
     }
 
 

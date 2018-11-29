@@ -1,6 +1,7 @@
-#include <iostream>
-
+#include "Graph.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    VisitedGraph graph;
+    //graph.BFS(0);
+    graph.DFS();
     return 0;
 }

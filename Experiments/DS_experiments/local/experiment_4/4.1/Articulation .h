@@ -5,10 +5,12 @@
 #ifndef INC_4_1_ARTICULATION_H
 #define INC_4_1_ARTICULATION_H
 /*
- * å…³é”®èŠ‚ç‚¹ï¼šæ— å‘è¿é€šå›¾ä¸­ï¼Œå»æ‰é¡¶ç‚¹v åŠå…¶æ‰€è¿æ¥çš„è¾¹åï¼ŒGä¸è¿é€šï¼Œv is articulation points
- * ä¸æ˜¯å…³é”®ç»“ç‚¹ï¼šå½“å‰ç»“ç‚¹ çš„ç›¸é‚»ç™½è‰²èŠ‚ç‚¹ ä¸ å½“å‰ç»“ç‚¹çš„å‰é©±ä¹‹ä¸€ ä¹‹é—´ æœ‰ä¸€æ¡è·¯å¾„ï¼Œ å½“å‰ç»“ç‚¹ä¸æ˜¯key
- * å¯»æ‰¾å…³èŠ‚èŠ‚ç‚¹ï¼šè®¡ç®—ç»“ç‚¹çš„low å€¼
- * lowå€¼ï¼šå…¶ç¥–å…ˆæœ€æ—©èƒ½å‘ç°çš„æ—¶é—´
+ * ¹Ø¼ü½Úµã£ºÎŞÏòÁ¬Í¨Í¼ÖĞ£¬È¥µô¶¥µãv ¼°ÆäËùÁ¬½ÓµÄ±ßºó£¬G²»Á¬Í¨£¬v is articulation points
+ * ²»ÊÇ¹Ø¼ü½áµã£ºµ±Ç°½áµã µÄÏàÁÚ°×É«½Úµã Óë µ±Ç°½áµãµÄÇ°ÇıÖ®Ò» Ö®¼ä ÓĞÒ»ÌõÂ·¾¶£¬ µ±Ç°½áµã²»ÊÇkey
+ * Ñ°ÕÒ¹Ø½Ú½Úµã£º¼ÆËã½áµãµÄlow Öµ
+ * lowÖµ£ºÆä×æÏÈ×îÔçÄÜ·¢ÏÖµÄÊ±¼ä
+ * ±È½ÏÓĞÈı£¬È¡min£º1.¸Ã½áµãvµÄ·ÃÎÊÊ±¼äd;   2.vµÄÓĞ»Ø±ßÏàÁ¬µÄÁÚ½Ó»ÒÉ«½Úµã£¨ÒÑ¾­·ÃÎÊµÄ×æÏÈk£©µÄd   3.vµÄÏÂÒ»¸öÁÚ½Ó°×É«º¢×Ó½áµãµÄwµÄlowÖµ
+ * Èôv´æÔÚº¢×Ó½áµãw,Ê¹ w.low>v.d(¼´wµÄ×îÔç·ÃÎÊÊ±¼äÔÚ·ÃÎÊ¸¸Ç×vÖ®ºó£©£¬v¾ÍÊÇ¹Ø¼ü½Úµã
  * */
 #include <iostream>
 #include <string>
@@ -19,12 +21,12 @@ enum color{WHITE,GRAY,BLACK};
 
 
 struct Node{
+    int idx;
     int degree;
-    int low;//å‘ç°æ—¶é—´æœ€æ—©çš„ç¥–å…ˆç»“ç‚¹
-    int color;//ç»“ç‚¹è¢«æ ‡è®°çš„é¢œè‰²
+    int low;//·¢ÏÖÊ±¼ä×îÔçµÄ×æÏÈ½áµã
+    int color;//½áµã±»±ê¼ÇµÄÑÕÉ«
     int d;
-    bool key;//åˆ¤æ–­æ˜¯å¦ä¸ºå…³é”®èŠ‚ç‚¹
-    struct Node *AdjList;
+    bool key;//ÅĞ¶ÏÊÇ·ñÎª¹Ø¼ü½Úµã
     Node(){
         degree = 0;
         color = WHITE;
@@ -38,89 +40,114 @@ struct Node{
 
 class UnDirectedGraph {
 private:
-    Node *NodeList;
-    int n;//é¡¶ç‚¹ä¸ªæ•°
-    int e;//è¾¹çš„æ¡æ•°
-    int clock;//è®¡æ—¶
-    int count;//è®°å½•å½“å‰å·²ç»è®¿é—®çš„ç»“ç‚¹ä¸ªæ•°
+    Node *NodeList;//¶¥µã¾ØÕó
+    int AdjMatrix[SIZE+1][SIZE+1];//ÁÚ½Ó¾ØÕó
+    int n;//¶¥µã¸öÊı
+    int e;//±ßµÄÌõÊı
+    int clock;//¼ÆÊ±
+    int count;//¼ÇÂ¼µ±Ç°ÒÑ¾­·ÃÎÊµÄ½áµã¸öÊı
 public:
     UnDirectedGraph() {
         NodeList = new Node[SIZE+1];
     }
 
     ~UnDirectedGraph() {
-        delete[] NodeList;
-        for (int i = 1; i <= n; ++i) {
-            delete[] NodeList[i].AdjList;
-        }
-    }
 
+        delete [] NodeList;
+
+    }
+    int GetN(){
+        return n;
+    }
+    Node* GetNodeList(){
+        Node *p ;
+        p = NodeList;
+        return p;
+    }
     void createAdjGraph() {
         int _n, _e;
-        cout << "è¾“å…¥å›¾çš„é¡¶ç‚¹æ•°å’Œè¾¹æ•°:";
+        cout << "ÊäÈëÍ¼µÄ¶¥µãÊıºÍ±ßÊı:";
         cin >> _n >> _e;
         this->e = _e;
         this->n = _n;
+        //³õÊ¼»¯ÁÚ½Ó¾ØÕó
+        for(int i = 1; i <= n; ++i){
+            for(int j = 1; j <=n; ++j ){
+                AdjMatrix[i][j] = 0;
+            }
+        }
 
-        for (int i = 1; i <= n; ++i) {
-            NodeList[i].AdjList = new Node[n+1];
-        }//ä¸ºæ¯ä¸ªèŠ‚ç‚¹çš„é‚»æ¥ç»“ç‚¹æ•°ç»„å¼€è¾Ÿç©ºé—´
+        //³õÊ¼»¯¶¥µã¾ØÕó
+        for(int i = 1; i <=n; ++i ){
+            NodeList[i].idx = i;
+        }
 
-        cout << "è¾“å…¥æ¯æ¡è¾¹çš„ä¿¡æ¯ï¼ˆå¯¹åº”æ¯æ¡è¾¹è¾“å…¥é‚»æ¥çš„ä¸¤ä¸ªç‚¹çš„ä¸‹æ ‡ 1-baseï¼Œä¸‹æ ‡è¾“å…¥æ— åºï¼‰:";
+
+        cout << "ÊäÈëÃ¿Ìõ±ßµÄĞÅÏ¢£¨¶ÔÓ¦Ã¿Ìõ±ßÊäÈëÁÚ½ÓµÄÁ½¸öµãµÄÏÂ±ê 1-base£¬ÏÂ±êÊäÈëÎŞĞò£©:";
         int index1;
         int index2;
-        int de1;//è¯¥ç‚¹çš„åº¦æ•°
-        int de2;
         for (int j = 0; j < e; ++j) {
             cin >> index1 >> index2;
-            NodeList[index1].degree++;//åº¦æ˜¯å‡ ï¼Œå°±æœ‰å‡ ä¸ªé‚»æ¥ç‚¹
-            de1 = NodeList[index1].degree;
-            NodeList[index1].AdjList[de1] = NodeList[index2];
-
-            NodeList[index2].degree++;
-            de2 = NodeList[index2].degree;
-            NodeList[index2].AdjList[de2] = NodeList[index1];
+            AdjMatrix[index1][index2] = 1;
+            AdjMatrix[index2][index1] = 1;
+            NodeList[index1].degree ++;
+            NodeList[index2].degree ++;
         }
     }
 
     void FindArticulation(){
+        int flag;
         clock = 1;
-        NodeList[1].d = 1;
+        NodeList[1].d = clock;//Ñ¡Ôñ1ºÅµã×÷ÎªÆğÊ¼µã
         count = 1;
-        DFSArticul(NodeList[1].AdjList[1]);//ä»1å·ç»“ç‚¹çš„ç¬¬ä¸€ä¸ªé‚»æ¥ç»“ç‚¹å¼€å§‹è®¡ç®—lowå€¼
-        if(count < n){//è®¿é—®å®Œ1å·ç»“ç‚¹çš„ç¬¬ä¸€ä¸ªé‚»æ¥ç»“ç‚¹çš„æ‰€æœ‰é‚»æ¥ç»“ç‚¹åï¼Œå›åˆ°ä¸€å·èŠ‚ç‚¹ï¼Œå‘ç°count < næ€»ï¼Œåˆ™ä¸€å·èŠ‚ç‚¹ä¸€å®šæ˜¯å…³é”®èŠ‚ç‚¹
-            NodeList[1].key = true;
-            for(int i = 1; i <= NodeList[1].degree; ++i){//è®¿é—®ä¸€å·èŠ‚ç‚¹çš„å…¶ä»–é‚»æ¥ç»“ç‚¹
-                if(NodeList[1].AdjList[i].color = WHITE){
-                    DFSArtical(NodeList[1].AdjList[i]);
+
+        for(int i = 1; i <= n; ++i){//Ñ°ÕÒÒ»ºÅ½áµãµÄµÚÒ»¸öÁÚ½Óµã
+            if(AdjMatrix[1][i] ==1){
+                flag = i;
+                break;
+            }
+        }
+        NodeList[1].color = GRAY;
+        DFSArticul(NodeList[flag]);//´Ó1ºÅ½áµã×÷ÎªÉú³ÉÊ÷µÄ¸ù£¬·ÃÎÊËüµÄµÚÒ»¸öÁÚ½Óµã
+        if(count < n){//·ÃÎÊÍê1ºÅ½áµãµÄµÚÒ»¸öÁÚ½Ó½áµãµÄËùÓĞÁÚ½Ó½áµãºó£¬»Øµ½Ò»ºÅ½Úµã£¬·¢ÏÖcount < n×Ü£¬ËµÃ÷·ÃÎÊvµÄÁíÍâÒ»±ßÒ»¶¨Òª¾­¹ıv,ÔòÒ»ºÅ½ÚµãÒ»¶¨ÊÇ¹Ø¼ü½Úµã
+            NodeList[1].key = true;//¸ù½Úµãµ¥¶À´¦Àí
+            for(int i = 1; i <= n; ++i){
+                if(AdjMatrix[1][i] == 1){//·ÃÎÊÒ»ºÅ½ÚµãµÄÆäËûÁÚ½Ó½áµã
+                    if(NodeList[i].color == WHITE){
+                        DFSArticul(NodeList[i]);
+                    }
                 }
             }
         }
 
     }
 
-    DFSArticul(Node u){
-        u.color = GRAY;
+    void DFSArticul(Node u){
+        NodeList[u.idx].color = GRAY;
         clock++;
-        int min = clock;//è®¡ç®—æœ€å°çš„lowå€¼
-        u.d = clock;
-        count++;
-        for(int i = 1; i <= u.degree; ++i){// u çš„æ‰€æœ‰ ué‚»æ¥ç»“ç‚¹
-            if(u.AdjList[i].color = WHITE){
-                DFSArtical(u.AdjList[i]);
-                if(u.AdjList[i].low < min){
-                    min = v.low;
+        int min = clock;
+        NodeList[u.idx].d = clock;//´ËÊ±  min = u.d
+        count++;//ÓÖ·ÃÎÊÁËÒ»¸ö½áµã
+        for(int i = 1; i <= n; ++i){
+            if(AdjMatrix[u.idx][i] == 1) {// u µÄËùÓĞÁÚ½Ó½áµã
+                if (NodeList[i].color == WHITE) {
+                    DFSArticul(NodeList[i]);//µİ¹é¼ÆËãuµÄÁÚ½Óº¢×ÓµÄlow
+                    if (NodeList[i].low < min) {
+                        min = NodeList[i].low;
+                    }
+                    if (NodeList[i].low >= NodeList[u.idx].d) {//uµÄ°×º¢×Ólow > u.d£¬·ûºÏ¹Ø¼ü½ÚµãµÄÌõ¼ş
+                        NodeList[u.idx].key = true;
+                    }
                 }
-                if(u.AdjList[i].low > u.d){
-                    u.key = true;
+                else if(NodeList[i].d < min){//±È½ÏÇ°ÇıµÄdºÍµ±Ç°min£¬¿´ÊÇ·ñ¿ÉÒÔÓĞ½İ¾¶£¬Ö±½Ó¹ıÀ´
+                    min = NodeList[i].d;
                 }
             }
-            else if(u.AdjList[i].d < min){
-                min = u.AdjList[i].d;
-            }
+
         }
 
-        u.low = min;
+        NodeList[u.idx].low = min;
+
     }
 
 

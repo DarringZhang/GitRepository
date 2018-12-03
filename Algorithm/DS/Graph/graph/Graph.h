@@ -96,6 +96,7 @@ public:
             if(bfs[u][i] == 1){
                 Adj[i] = 1;
             }
+
 //
 //            if(dfs[u][i] == 1){
 //                Adj[i] = 1;

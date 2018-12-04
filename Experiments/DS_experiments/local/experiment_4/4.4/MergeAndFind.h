@@ -1,25 +1,18 @@
 //
-// Created by Darring on 2018/12/3.
+// Created by Darringon 2018/12/4.
 //
 
-#ifndef INC_4_3_BUILDPATHTOMERGE_H
-#define INC_4_3_BUILDPATHTOMERGE_H
-/*
- * 把所有的城镇都看作一个点，每一条路都会与两个点相连接，把每个相连通的分量看成一个集合，
- * 然后用树来表示集合。我们只需要求出根结点的个数，就能求出有多少个集合，
- * 进而求出需要多少条路使它们联通，因此就可以用到并查集。
- * 如果是1个连通分支，说明整幅图上的点都连起来了，不用再修路了；如果是2个连通分支，
- * 则只要再修1条路，从两个分支中各选一个点，把它们连起来，那么所有的点都是连起来的了；
- * 如果是3个连通分支，则只要再修两条路……
- * */
-#include <iostream>
-using namespace std;
+#ifndef INC_4_4_MERGEANDUNION_H
+#define INC_4_4_MERGEANDUNION_H
 class UnionFind{
 private:
     int N,M;//N结点，M条路径
     int * parent;//parent[i] 元素 i 父节点的索引
     int * rank;// rank[i] 以i为根 的集合所表示的树的层数
 public:
+    UnionFind(){
+    }
+
     UnionFind(int _N,int _M ){
         this->M = _M;
         this->N = _N;
@@ -40,28 +33,14 @@ public:
         p = parent;
         return p;
     }
+
     void deleteUnionFind(){
         delete[] parent;
         delete [] rank;
     }
 
-    int normal_find(int i){//普通单纯查找根，不压缩路径
-        int j = i;
-        while(parent[j]>0){
-            j = parent[j];//根据索引，向上查找
-        }
-        return j;
-    }
 
 //大名鼎鼎的路径压缩，就是在“查找”的过程中，将树的高度压缩成 2 层
-
-//路径压缩方式查找：递归
-    int fix_find_recursion(int i){
-        if( i != parent[i]){//i 不是 i所在集合的根
-            parent[i] = fix_find_recursion(parent[i]);//往上一级找根；一直向上，直到返回值到根为止
-        }
-        return parent[i];
-    }
 //非递归
     int fix_find_non_recursion(int x){
         int k,j,r;
@@ -104,5 +83,4 @@ public:
 
     }
 };
-
-#endif //INC_4_3_BUILDPATHTOMERGE_H
+#endif //INC_4_4_MERGEANDUNION_H

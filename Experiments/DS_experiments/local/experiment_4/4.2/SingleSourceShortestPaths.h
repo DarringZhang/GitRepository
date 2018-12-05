@@ -58,7 +58,7 @@ public:
         cout<<"finish"<<endl;
     }
 
-    void RELAX(Node u,Node v,int w){
+    void RELAX(Node u,Node v,int w){ //distance里面每个值都是start到v的路径过程中权值的累加
         if(distance[v.idx] > distance[u.idx] + w){//从u过来花费代价小,w = 无穷远，u v不可达，不考虑
             distance[v.idx] = distance[u.idx] + w;//更新u.d
             v.pai = u.idx;
@@ -79,13 +79,13 @@ public:
 
 
         while(count-->0){
-            t = FindMinDistance();//每次取出一个权值最小的未访问的邻接点
+            t = FindMinDistance();//每次取出一个距离start点权值最小的未访问的点
             NodeList[t].visited = true;
 
             //然后松弛start通过t这个点到其它点j的路径
             for(int i = 1; i <= N; ++ i){
-                if(t!=i && AdjMatrix[t][i]!=INT_MAX){//start这个点通过t这个点访问其它结点，看是否可以松弛
-                    RELAX(NodeList[t],NodeList[i],AdjMatrix[t][i]);//distance里面每个值都是1到t的路径过程中权值累加
+                if(t!=i && AdjMatrix[t][i]!=INT_MAX){//t到自己就不用松弛了，且t到i无穷远，花费太大，也不用松弛
+                    RELAX(NodeList[t],NodeList[i],AdjMatrix[t][i]);//start这个点通过t这个点访问其它结点，看是否可以松弛
                 }
 
             }

@@ -8,7 +8,7 @@
  * 关键节点：无向连通图中，去掉顶点v 及其所连接的边后，G不连通，v is articulation points
  * 不是关键结点：当前结点 的相邻白色节点 与 当前结点的前驱之一 之间 有一条路径， 当前结点不是key
  * 寻找关节节点：计算结点的low 值
- * low值：其祖先最早能发现的时间
+ * low值：隐藏最早发现时间
  * 比较有三，取min：1.该结点v的访问时间d;   2.v的有回边相连的邻接灰色节点（已经访问的祖先k）的d   3.v的下一个邻接白色孩子结点的w的low值
  * 若v存在孩子结点w,使 w.low>v.d(即w的最早访问时间在访问父亲v之后），v就是关键节点
  * */
@@ -23,7 +23,7 @@ enum color{WHITE,GRAY,BLACK};
 struct Node{
     int idx;
     int degree;
-    int low;//发现时间最早的祖先结点
+    int low;
     int color;//结点被标记的颜色
     int d;
     bool key;//判断是否为关键节点

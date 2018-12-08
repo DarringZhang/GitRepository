@@ -147,16 +147,16 @@ public:
     * 3.为了方便计算逆拓扑，栈存 拓扑排序各节点
 
      */
-    bool TopoSort(){
+    bool TopoSort(){    //拓扑：复杂度O（v+e），找最早发生时间O(v+e)
         int count = 0;//计数已经输出了多少个
 
-        for (int i= 1; i <= n; ++i){//将所有度为0的顶点打??个辅助栈S中
+        for (int i= 1; i <= n; ++i){//将所有入度为0的顶点打入辅助栈S中
             if (NodeList[i].indegree == 0) {
                 s.push(i);
             }
-        }
+        }  //O(v)
 
-        while (!s.empty()){
+        while (!s.empty()){    // O(e) 最坏，一次只能拿走一条边,  找最早发生时间的第二部分操作：最坏O(e = v^2)
             cout << s.top() << " ";
             Fix_Node_Indegree(s.top());
             count++;
@@ -184,7 +184,7 @@ public:
                 if (NodeList[i].indegree == 0 ) {//如果 入度 由不是 0 减到 0 了
                     s.push(i);
                 }
-                ///更新最早发现该结点的时间，所有前驱的最早发生时间求得之后才能确定
+                ///更新最早发现该结点的时间，所有前驱的最早发生时间求得之后才能确定，最早发生，取大的时间
                 if(NodeList[dele].earliest_happen_v + AdjMatrix[dele][i] > NodeList[i].earliest_happen_v){
                     NodeList[i].earliest_happen_v = NodeList[dele].earliest_happen_v + AdjMatrix[dele][i];
                 }
@@ -194,7 +194,7 @@ public:
 
 
     //求关键路径
-    bool CriticalPath(){
+    bool CriticalPath(){//找最晚 O(v+e)
         if(!TopoSort()){
             cout << "该图有环，不能求关键路径" << endl;
             return false;
@@ -208,7 +208,7 @@ public:
 
         //按 逆拓扑排序求 顶点最晚发生时间
         //先将邻接矩阵变成逆矩阵,从最后一个点（原来拓扑正序的最后一个点）开始求
-        Inverse_Matrix();
+        Inverse_Matrix();//求逆图O(e = v^2)
 
 
         while(!StoreToPo.empty()){

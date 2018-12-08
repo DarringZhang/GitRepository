@@ -1,6 +1,8 @@
-#include <iostream>
+#include "CriticalPath.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    AOE path;
+    path.createGraph();
+    path.CriticalPath();
     return 0;
 }

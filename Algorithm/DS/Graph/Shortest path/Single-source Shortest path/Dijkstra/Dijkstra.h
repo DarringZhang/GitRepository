@@ -20,6 +20,7 @@
 #include <climits>
 using namespace std;
 #define SIZE 100000
+//Floyd算法允许有负权边，不允许有负权环，Dijkstra算法连负权边都不允许
 //从堆中出一个距离源点路径最短的顶点。刚好符合堆的基本操作（删除堆顶元素），这里也体现了Dijkstra是个贪心算法。
 //但是可以证明dijkstra的贪心是正确的：见笔记本
 
@@ -139,7 +140,7 @@ public:
 
     }
 
-    void PrintShortestPath(){//倒序打印到任何两个可达点的最短路径
+    void PrintShortestPath(){//倒序打印从起始点1到任何一个可达点的最短路径
         int sum,j;
         for(int i = 2; i <= N; ++i){
             sum = NodeList[i].d;

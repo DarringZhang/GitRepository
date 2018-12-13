@@ -1,6 +1,8 @@
-#include <iostream>
+#include "Floyd.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Floyd f;
+    f.CreateGraph(6,11);
+    f.Calculate_floyd();
     return 0;
 }

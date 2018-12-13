@@ -1,4 +1,4 @@
-#include "Articulation .h"
+#include "Articulation.h"
 int main() {
     UnDirectedGraph articul;
     int flag = 0;

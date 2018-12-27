@@ -39,6 +39,7 @@ public:
         N = n;//n个顶点
         M = m;//m条路径
 
+        +
         for(int i = 1; i <= n; ++i ){//初始化结点列表
             NodeList[i].idx = i;
         }

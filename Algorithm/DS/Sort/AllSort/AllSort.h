@@ -1,7 +1,7 @@
 //
 // Created by Darring on 2018/12/19.
 //
-
+//Qt
 #ifndef ALLSORT_ALLSORT_H
 #define ALLSORT_ALLSORT_H
 #define LEN 1000000
@@ -21,7 +21,7 @@ void Print(vector<int>& Print){//ÒıÓÃ´«µİ£¬ÄÜ¸Ä±ä±»µ÷ÓÃµÄÊµ²Î
 
 //Time(worst and average):O(n^2)£¬Time(best):O£¨n£©,Space:O(1),  stable
 void Bubble_Sort(vector<int> &A,int begin,int end){//ÒıÓÃ´«µİ£¬ÄÜ¸Ä±ä±»µ÷ÓÃµÄÊµ²Î
-    for(int i = LEN; i > 0; --i){
+    for(int i = LEN; i > 0; --i) {// ¼ÆÊı¶àÉÙÌË£¬Ã¿ÌË½«µ±Ç°·¶Î§£¨0 ~ ÒÑ¾­ÅÅºÃµÄ×î´óÔªËØÇ°ÃæÒ»Î»£©µÄ×î´óÔªËØ¹éÎ»
         for(int j = 0;j < i-1; ++j){
             if(A.at(j) > A.at(j+1)){
                 int temp = A.at(j);
@@ -34,14 +34,14 @@ void Bubble_Sort(vector<int> &A,int begin,int end){//ÒıÓÃ´«µİ£¬ÄÜ¸Ä±ä±»µ÷ÓÃµÄÊµ²
 }
 
 
-//µÚi´ÎÑ­»·, ´ÓA[i, ¡­ , n - 1]ÖĞÕÒ³ö×î?µÄ, ½«ËüºÍA[i]»¥»».i= 0, ¡­, n - 2
+//µÚi´ÎÑ­»·, ´ÓA[i, ¡­ , n - 1]ÖĞÕÒ³ö×îĞ¡µÄ, ½«ËüºÍA[i]»¥»».i= 0, ¡­, n - 2
 // Time(best and worst and average):O(n^2), Space:O(1),  Instable
 void Selection_Sort(vector<int> &A,int begin,int end){
         int min;
         for(int i = 0; i < LEN; ++i){
             min = A[i];
-            for(int j = i+1; j < LEN; ++j){
-                if(min>A[i]){//½«×îĞ¡ÖµÈ¡³öÀ´
+            for(int j = i+1; j < LEN; ++j){//´ËÑ­»·µÄ×÷ÓÃ£º½«µ±Ç°·¶Î§£¨ÒÑ¾­ÅÅºÃµÄ×îĞ¡ÔªËØµÄºóÃæÒ»Î» ~ ¶ÓÎ²£©×î´óÔªËØÌô³ö
+                if(min>A[i]){
                     int t = min;
                     min = A[j];
                     A[j] = t;
@@ -60,8 +60,8 @@ void Insert_Sort(vector<int> &A,int begin,int end){
 
         int i = j-1;//ÕÒµ½ÅÅºÃµÄĞòÁĞÖĞµÄ×îºóÒ»¸öÊı£¨µ±Ç°ÒÑÖª×î´ó£©
 
-        while(i >= 0 && A [i] > key){//key Ì«Ğ¡ÁË£¬keyÒªÍùÇ°ÒÆ¶¯ÁË
-            A[i + 1] = A[i];//key ÒÑ¾­±»¼ÇÂ¼ÏÂÀ´ÁË£¬µÚÒ»´ÎÑ­»·Ç°Ò»¸öÊı¸²¸Çkey ¼´A[i+1]µÄÎ»ÖÃ¡£ÕâÑù¾Í¿Õ³öÒ»¸öÎ»ÖÃ¡£ÔÙ·ûºÏÌõ¼şÒ»²½Ò»²½Íùºó
+        while(i >= 0 && A [i] > key){ //key Ì«Ğ¡ÁË£¬keyÒªÍùÇ°ÒÆ¶¯ÁË£¬´ËÊ± A [i] Îªµ±Ç°ÅÅºÃÔªËØ ĞòÁĞÖĞ×î´óµÄÒ»Î»
+            A[i + 1] = A[i];//key ÒÑ¾­±»¼ÇÂ¼ÏÂÀ´ÁË£¬µÚÒ»´ÎÑ­»·Ç°Ò»¸öÊı A [i] ¸²¸Çkey £¬£¨key µÄÎ»ÖÃ ¼´A[i+1]µÄÎ»ÖÃ£©¡£ÕâÑù¾Í¿Õ³öÒ»¸öÎ»ÖÃ¡£ÔÙ·ûºÏÌõ¼şÒ»²½Ò»²½Íùºó
             i--;
         }
         A[i+1] = key;//ÕÒµ½ºÏÊÊµÄkeyµÄÎ»ÖÃÁË
@@ -82,7 +82,7 @@ void Shell_Sort(vector<int> &A,int begin,int end){
     }
     while(h >= 1){
         for(int i = h; i < LEN; ++i){//i¶¼ÅÜÍêºó£¬´ú±íÃ¿¸öÁĞ±äµÃÓĞĞò
-            for(int j = i; j >= h && A[j] < A[j-h]; j-=h){//Ã¿ÁĞÊı¸÷×Ô¼ä½øĞĞ±È½Ï£¬Ã¿´Îi¶¼½«¶ÓÁĞÖĞµ±Ç°´¥Åöµ½µÄ×îºóÒ»¸öÊıµ÷µ½ºÏÊÊÎ»ÖÃ
+            for(int j = i; j >= h && A[j] < A[j-h]; j-=h){//Ã¿ÁĞÊı¸÷×Ô¼ä½øĞĞ±È½Ï£¬Ã¿´ÎÑ­»·¶¼½«ÁĞÖĞµÄÒ»¸öÊıÍùºÏÊÊÎ»ÖÃÇ°½ø
                 swap(A[j],A[j-h]);
             }
         }
@@ -112,8 +112,8 @@ void Merge_Sort(vector<int> &A,int begin,int end){
 
 //ÓÃ¶îÍâµÄ¿Õ¼ä£¬½«Á½¸öĞ¡Êı×é ÖĞ×îĞ¡µÄÊı ·Åµ½ ´óÊı×éÖĞ£¬¸ÃĞ¡Êı×é¼õÒ»£¬Ö±µ½Ğ¡Êı×éÈ¡ÍêÎªÖ¹
 void Merge(vector<int> &A,int begin,int medium, int end){
-    int n1 = medium - begin +1;//×ó±ßÊı×éµÄ³¤¶È£¬0 ~ medium,ÒªÈ¡µÃµ½medium, Êµ¼Ê³¤¶Èmedium+1
-    int n2 = end - medium; //medium
+    int n1 = medium - begin +1;//×ó±ßÊı×éµÄ³¤¶È£¬0 ~ medium,»¹ÒªÈ¡µÃµ½medium, Êµ¼Ê³¤¶Èmedium+1
+    int n2 = end - medium; //o-base
     vector<int> L(n1+1);
     vector<int> R(n2+1);
     for(int i = 0; i < n1; ++i ){//Ïà¶ÔÎ»ÖÃ²»»á±ä
@@ -138,16 +138,55 @@ void Merge(vector<int> &A,int begin,int medium, int end){
     }
 }
 
-//·ÖÖÎË¼Ïë£º¶ÔÓÚn¸öÔªËØµÄÊı×éA, Ã¿´Î°ÑÊı×é·Ö³ÉÁ½²¿·Ö: ?²¿·Ö?ÓÚµÈÓÚA[n-1], ?²¿·Ö?ÓÚA[n-1], ÄÇÃ´A[n-1]
-//¾Í¿ÉÒÔ·ÅÔÚÕâÁ½¸öÊı×éµÄÖĞ¼ä. È»ºóµİ¹éµØ¿ìËÙÅÅĞòÕâÁ½¸ö?¹æÄ£µÄÊı×é.
+//·ÖÖÎË¼Ïë£º¶ÔÓÚn¸öÔªËØµÄÊı×éA, Ã¿´Î°ÑÊı×é·Ö³ÉÁ½²¿·Ö: ²¿·ÖĞ¡ÓÚµÈÓÚA[n-1], Áí²¿·Ö´óÓÚA[n-1], ÄÇÃ´A[n-1]
+//¾Í¿ÉÒÔ·ÅÔÚÕâÁ½¸öÊı×éµÄÖĞ¼ä. È»ºóµİ¹éµØ¿ìËÙÅÅĞòÕâÁ½¸ö½ÏĞ¡¹æÄ£µÄÊı×é.
 void Quick_Sort(vector<int> &A,int begin,int end){
     if(begin < end){
-        int q = Partition(A,begin,end);
+        int q = Partition_end(A,begin,end);//¹Ø¼üÔÚÓÚÕâ¸ö»®·Ö
         Quick_Sort(A,begin,q-1);
         Quick_Sort(A,q+1,end);
     }
 }
 //Á½ÖÖPartition
+//½Ì²ÄÉÏ£º½«µÚÒ»¸öÊı×÷Îªpivot
+int Partition_begin(vector<int> &A,int begin,int end){//end ¾ÍÊÇÊı×éÏÂ±ê
+    int pivot = A[begin];//ÒÔÊı×éµÄµÚÒ»¸öÔªËØ×öÎª ÊàÅ¦
+    while(begin < end){// µÚÒ»´Î½»»»Ê± µÚÒ»¸öÔªËØÎ»ÖÃ¾Í±»¸²¸Ç£¬´Ó´ËÕû¸öÊı×éÖĞ¿Õ³öÒ»¸öÎ»ÖÃÊÇpivot ¼ÇÂ¼µÄÄÇ¸öÖµµÄÎ»ÖÃ£¨ÊàÅ¦pivotÒ»Ö±ÔÚÓÎµ´£¬²¢Ã»ÓĞ¹Ì¶¨µÄÎ»ÖÃ £©
+        while(begin < end && A[end] >= pivot){//ÊÔÍ¼ÔÚÓÒ°ë±ßÕÒµ½Ò»¸ö±ÈÊàÅ¦Ğ¡µÄÔªËØ£¬Ìø³öÑ­»·
+            -- end;
+        }
+        A[begin] = A[end];//ºÍ¶ÔÃæµÄbegin½»»»Î»ÖÃ,½«Õâ¸ö±ÈÊàÅ¦Ğ¡µÄÔªËØ°²ÖÃµ½×ó±ß
+
+        while(begin < end && A[begin] <= pivot){//ÊÔÍ¼ÔÚ×ó°ë±ßÕÒµ½Ò»¸ö±ÈÊàÅ¦´óµÄÔªËØ£¬Ìø³öÑ­»·
+            ++ begin;
+        }
+        A[end] = A[begin];//ºÍ¶ÔÃæµÄbegin½»»»Î»ÖÃ,½«Õâ¸ö±ÈÊàÅ¦´óµÄÔªËØ°²ÖÃµ½ÓÒ±ß
+
+    }
+    A[end] = pivot;//´ËÊ±end = begin£¬ ½«ÖĞ¼äµÄÎ»ÖÃ ¸ø pivot
+    return end;
+}
+
+//·¨2£º ÒÔi j Îª·Ö½çÏß·Ö¸îÁ½²¿·Ö
+int Partition_end(vector<int> &A,int begin,int end){
+    int pivot = A[end];//ÒÔÊı×éµÄµÚÒ»¸öÔªËØ×öÎª ÊàÅ¦
+    int i = begin-1;//±ÈpivotĞ¡µÄÊı×éÖĞµÄ×îºóÒ»¸öÊı
+    int j = i+1;//±Èpivot´óµÄÊı×éÖĞµÄ×îºóÒ»¸öÊıµÄºóÃæÒ»¸öÊı£º¼´´ıÅÅµÄµÚÒ»¸öÊı
+    //¿ªÊ¼i Ö¸Ïò µÚÒ»¸ö Êı×é ÔªËØµÄÇ°Ò»¸öÎ»ÖÃ£¬ j Ö¸ÏòµÚÒ»¸öÊı×éÔªËØ
+    //i + 1 = ±Èpivot´óµÄÊı×éÖĞµÄ µÚÒ»¸öÊı
+    while(j <= end - 1){//¼´begin <= end ¼´j ÅÜµ½×îºóÈ¥ÁË
+        if(A[j] <= pivot){//j µ±Ç°ÔªËØ±Èpivot Ğ¡£¬Òª½«µ±Ç°ÔªËØj¹éÎª×ó±ß£¬´ËÊ±iÖ¸Ïò±ÈpivotĞ¡µÄÊı×éÖĞµÄ×îºóÒ»¸öÊı
+            i++;//½ô½Ó×Åi µÄºóÃæµÄÒ»¸öÊı ÊÇ ±Èpivot´óµÄÊı×éÖĞµÄµÚÒ»¸öÊı
+            swap(A[i],A[j]);
+        }
+        j++;//ÏÂÒ»¸öÔªËØ
+    }
+
+    //½«pivot·Åµ½ºÏÊÊµÄÎ»ÖÃ
+    A[end] = A[i+1];//±¾À´×îºóÒ»¸öÎ»ÖÃ·ÅµÄÊÇpivot£¬ÏÖÔÚ»»³ÉA[i+1] (±Èpivot´óµÄÊı×éÖĞµÄµÚÒ»¸öÊı)
+    A[i+1] = pivot;
+    return  i+1;//pivotµÄÎ»ÖÃ
+}
 
 
 void Heap_Sort(vector<int> &A,int begin,int end);

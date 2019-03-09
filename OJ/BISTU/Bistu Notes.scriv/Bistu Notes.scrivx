@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrivenerProject Template="No" Version="1.5" Creator="SCRWIN-1.9.7.0" Device="LAPTOP-GM732FPM" Modified="2019-03-09 19:01:23 +0800" ModID="852AAB9D-70AF-47CA-9E75-9081F8E6F235">
+    <Binder>
+        <BinderItem ID="0" UUID="4454E812-63F3-4A0E-A7ED-9DAA1EAED3DD" Created="2019-03-07 08:29:15 +0800" Modified="2019-03-07 08:29:15 +0800" Type="DraftFolder">
+            <Title>草稿</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem ID="3" UUID="F9326B3F-5C38-45D1-B6A0-086E66D79D8B" Created="2019-03-07 08:29:15 +0800" Modified="2019-03-07 08:29:15 +0800" Type="Text">
+                    <Title></Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem ID="1" UUID="0F2E7CB0-459F-46E6-8000-FB2EBDAFF562" Created="2019-03-07 08:29:15 +0800" Modified="2019-03-07 08:29:15 +0800" Type="ResearchFolder">
+            <Title>调查</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+        </BinderItem>
+        <BinderItem ID="2" UUID="00BC2966-494D-4A5A-94BE-E2CFB1BD3D48" Created="2019-03-07 08:29:15 +0800" Modified="2019-03-07 08:29:15 +0800" Type="TrashFolder">
+            <Title>垃圾桶</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem ID="5" UUID="1C8DB707-CC9F-4B22-BEA7-64E55D7A4831" Created="2019-03-07 08:31:22 +0800" Modified="2019-03-07 08:31:22 +0800" Type="Folder">
+                    <Title></Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem ID="6" UUID="4E1D7D16-3718-4B29-9A21-800A2135FBFF" Created="2019-03-07 08:31:44 +0800" Modified="2019-03-07 08:31:44 +0800" Type="Text">
+                    <Title></Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem ID="9" UUID="9BF24D97-8A60-4E12-8632-338E9536BF54" Created="2019-03-07 09:07:19 +0800" Modified="2019-03-07 09:30:19 +0800" Type="Folder">
+                    <Title>A</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>243,0</TextSelection>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem ID="11" UUID="CF616E94-4E41-40FD-8939-6FE30F73FD5A" Created="2019-03-07 09:35:33 +0800" Modified="2019-03-07 09:35:41 +0800" Type="Text">
+                    <Title>B</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>4,0</TextSelection>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem ID="4" UUID="600926BF-228D-4984-AC19-E45C6E55693A" Created="2019-03-07 08:30:00 +0800" Modified="2019-03-07 08:31:01 +0800" Type="Folder">
+            <Title>BistuAcmWeeklyTraining</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <TextSettings>
+                <Target Type="Words">0</Target>
+            </TextSettings>
+            <Children>
+                <BinderItem ID="8" UUID="E586126A-3F26-45D1-90AD-BE7A7589CF4D" Created="2019-03-07 08:32:51 +0800" Modified="2019-03-07 08:33:02 +0800" Type="Folder">
+                    <Title>20190305</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem ID="10" UUID="30D9CEE5-2E47-48BB-B1F2-5FC7D117CA0C" Created="2019-03-07 09:07:47 +0800" Modified="2019-03-07 14:21:37 +0800" Type="Text">
+                            <Title>A</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>478,0</TextSelection>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="12" UUID="B5078649-BD71-452C-98BB-34AD431F4FCD" Created="2019-03-07 13:45:31 +0800" Modified="2019-03-07 22:11:20 +0800" Type="Text">
+                            <Title>E</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>191,0</TextSelection>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="13" UUID="F7BDDAA6-A744-4E08-B3DA-1D5D87178093" Created="2019-03-07 14:17:22 +0800" Modified="2019-03-07 22:25:03 +0800" Type="Text">
+                            <Title>C</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>597,0</TextSelection>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="14" UUID="10789B06-D343-44A0-AA0E-94BCDC3F441D" Created="2019-03-09 19:00:44 +0800" Modified="2019-03-09 19:00:50 +0800" Type="Text">
+                            <Title>D</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem ID="7" UUID="6B1A1173-A534-4066-AE9E-A9E8DB9DC674" Created="2019-03-07 08:32:03 +0800" Modified="2019-03-07 08:32:29 +0800" Type="Folder">
+            <Title>the 11th ICPC</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <TextSettings>
+                <Target Type="Words">0</Target>
+            </TextSettings>
+        </BinderItem>
+    </Binder>
+    <LabelSettings>
+        <Title>标签</Title>
+        <DefaultLabelID>-1</DefaultLabelID>
+        <Labels>
+            <Label ID="-1">无标题</Label>
+            <Label ID="0" Color="0.752941 0.752941 1.000000">概念</Label>
+            <Label ID="1" Color="1.000000 0.752941 0.752941">章节</Label>
+        </Labels>
+    </LabelSettings>
+    <StatusSettings>
+        <Title>状态</Title>
+        <DefaultStatusID>-1</DefaultStatusID>
+        <StatusItems>
+            <Status ID="-1">无状态</Status>
+            <Status ID="0">N/A</Status>
+            <Status ID="1">待办事项</Status>
+            <Status ID="2">初稿</Status>
+            <Status ID="3">修订稿</Status>
+            <Status ID="4">最终稿</Status>
+            <Status ID="5">完成</Status>
+        </StatusItems>
+    </StatusSettings>
+    <ProjectTargets>
+        <DraftTarget Type="Words" CountIncludedOnly="No" CurrentCompileGroupOnly="No">0</DraftTarget>
+        <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Midnight" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="No" WritingDays="">0</SessionTarget>
+        <PreviousSession Words="0" Characters="0" Date="2019-03-09 18:59:53 +0800"/>
+    </ProjectTargets>
+    <Collections>
+        <Collection Type="Binder" ID="83F36323-7B1E-4AD0-AF59-1F22B7FA330F" Color="0.901961 0.917647 0.933333">
+            <Title>活页夹</Title>
+        </Collection>
+        <Collection Type="RecentSearch" ID="956BF641-D679-42CA-8252-FA29B25CAE6E" Color="0.901961 0.901961 0.980392">
+            <Title>搜索结果</Title>
+            <SearchSettings Operator="Exact" Type="All" Scope="All" CompileSetting="All" CaseSensitive="No"></SearchSettings>
+        </Collection>
+    </Collections>
+    <PrintSettings PaperType="A4" LeftMargin="11.2819" RightMargin="15.7323" TopMargin="11.2819" BottomMargin="11.7638" Orientation="Portrait" Collates="No" ReverseOrder="No"/>
+</ScrivenerProject>

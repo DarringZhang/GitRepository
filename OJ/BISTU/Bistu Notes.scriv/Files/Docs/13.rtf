@@ -1,0 +1,46 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0
+{\fonttbl{\f0\fmodern\fcharset0\fprq2 CourierNewPSMT;}}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;\red254\green204\blue102;\red127\green255\blue105;}
+\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\fet2\ftnbj\aenddoc
+\pgnrestart\pgnstarts0
+\pard\plain \fi720\ltrch\loch {\f0\fs24\b0\i0 #include <iostream>}
+\par\plain {\f0\fs24\b0\i0 using namespace std;}
+\par\plain \f0\fs24\b0\i0
+\par\plain {\f0\fs24\b0\i0\cb3\highlight3 /*\loch\af0\hich\af0\dbch\af0\uc1\u29992\'3F\u20010\'3F\u32467\'3F\u26500\'3F\u20307\'3F\u25968\'3F\u32452\'3F\u65292\'2C\u32467\'3F\u26500\'3F\u20307\'3F\u37324\'3F\u38754\'3F\u25918\'3F\u20986\'3F\u29616\'3F\u30340\'3Fgram\u23383\'3F\u31526\'3F\u23545\'3F\u21644\'3F\u23427\'3F\u20986\'3F\u29616\'3F\u30340\'3F\u20010\'3F\u25968\'3F}
+\par\plain {\f0\fs24\b0\i0\cb3\highlight3 \loch\af0\hich\af0\dbch\af0\uc1\u38590\'3F\u24230\'3F\u22312\'3F\u20110\'3F \u27599\'3F\u27425\'3F\u37117\'3F\u35201\'3F\u22312\'3F\u32467\'3F\u26500\'3F\u20307\'3F\u25968\'3F\u32452\'3F\u25195\'3F\u19968\'3F\u36941\'3F\u65292\'2C\u27809\'3F\u26377\'3F\u23601\'3F\u28155\'3F\u21152\'3F}
+\par\plain {\f0\fs24\b0\i0\cb3\highlight3  \loch\af0\hich\af0\dbch\af0\uc1\u36824\'3F\u19981\'3F\u22914\'3F\u19968\'3F\u24320\'3F\u22987\'3F\u23601\'3F\u24320\'3F26*26\u25968\'3F\u32452\'3F  \u34920\'3F\u31034\'3FA~Z \u20998\'3F\u21035\'3F\u32452\'3F\u21512\'3F}
+\par\plain {\f0\fs24\b0\i0\cb3\highlight3  \loch\af0\hich\af0\dbch\af0\uc1\u26292\'3F\u21147\'3F\u25195\'3F\u25551\'3F\u24182\'3F\u25214\'3F\u26368\'3F\u22823\'3F                                    \hich\f0 \emdash \loch\f0 \hich\f0 \emdash \loch\f0 \hich\f0 \emdash \loch\f0 \hich\f0 \emdash \loch\f0 \hich\f0 \emdash \loch\f0 \hich\f0 \emdash \loch\f0 \hich\f0 \emdash \loch\f0  \u35299\'3F\u39064\'3F\u24605\'3F\u36335\'3F\u26368\'3F\u37325\'3F\u35201\'3F}
+\par\plain {\f0\fs24\b0\i0\cb3\highlight3  */}
+\par\plain {\f0\fs24\b0\i0  int main() \{}
+\par\plain {\f0\fs24\b0\i0      long long n;}
+\par\plain {\f0\fs24\b0\i0      char a[110];}
+\par\plain {\f0\fs24\b0\i0      cin >> n >> a;}
+\par\plain {\f0\fs24\b0\i0      int gram[27][27] = \{0\};//\loch\af0\hich\af0\dbch\af0\uc1\u21021\'3F\u22987\'3F\u21270\'3F\u27599\'3F\u23545\'3F\u21487\'3F\u33021\'3F\u30340\'3Fgram\u25968\'3F = 0}
+\par\plain \f0\fs24\b0\i0
+\par\plain {\f0\fs24\b0\i0      for(int i = 0; i < 26 ; ++i)\{}
+\par\plain {\f0\fs24\b0\i0          for(int j = 0 ; j < 26 ; ++j)\{}
+\par\plain {\f0\fs24\b0\i0              for(int k = 1; a[k] != '\\0'; k++)\{ }{\f0\fs24\b0\i0\cb4\highlight4 //\loch\af0\hich\af0\dbch\af0\uc1\u19968\'3F\u30452\'3F\u35835\'3F\u21040\'3F\u23383\'3F\u31526\'3F\u20018\'3F\u26411\'3F\u23614\'3F}
+\par\plain {\f0\fs24\b0\i0                 if(a[k-1] -'A' == i && a[k] - 'A' == j)\{ //}{\f0\fs24\b0\i0\cb4\highlight4 \loch\af0\hich\af0\dbch\af0\uc1\u23558\'3F\u23383\'3F\u31526\'3F\u36716\'3F\u25442\'3F\u25104\'3F\u25968\'3F\u23383\'3F}{\f0\fs24\b0\i0 \loch\af0\hich\af0\dbch\af0\uc1\u21644\'3Fij\u23545\'3F\u24212\'3F\u30340\'3FA~Z\u23383\'3F\u27597\'3F\u27604\'3F\u36739\'3F}
+\par\plain {\f0\fs24\b0\i0                     gram[i][j] ++;}
+\par\plain {\f0\fs24\b0\i0                 \}}
+\par\plain {\f0\fs24\b0\i0              \}}
+\par\plain {\f0\fs24\b0\i0          \}}
+\par\plain {\f0\fs24\b0\i0      \}}
+\par\plain \f0\fs24\b0\i0
+\par\plain {\f0\fs24\b0\i0      int big_count = 0;}
+\par\plain {\f0\fs24\b0\i0      int i_index = 0;}
+\par\plain {\f0\fs24\b0\i0      int j_index = 0;}
+\par\plain {\f0\fs24\b0\i0      //\loch\af0\hich\af0\dbch\af0\uc1\u26292\'3F\u21147\'3F\u25214\'3F\u20986\'3F\u20986\'3F\u29616\'3F\u27425\'3F\u25968\'3F\u26368\'3F\u22810\'3F\u30340\'3Fgram}
+\par\plain {\f0\fs24\b0\i0      for(int i = 0; i < 26; ++i)\{}
+\par\plain {\f0\fs24\b0\i0          for(int j = 0; j < 26; j++)\{}
+\par\plain {\f0\fs24\b0\i0              if(gram[i][j] > big_count)\{}
+\par\plain {\f0\fs24\b0\i0                  big_count  =  gram[i][j];}
+\par\plain {\f0\fs24\b0\i0                  //\loch\af0\hich\af0\dbch\af0\uc1\u35760\'3F\u36733\'3F\u20986\'3F\u29616\'3F\u27425\'3F\u25968\'3F\u26368\'3F\u22810\'3F\u30340\'3F gram \u23383\'3F\u27597\'3F\u19979\'3F\u26631\'3F}
+\par\plain {\f0\fs24\b0\i0                  i_index = i;}
+\par\plain {\f0\fs24\b0\i0                  j_index = j;}
+\par\plain {\f0\fs24\b0\i0              \}}
+\par\plain {\f0\fs24\b0\i0          \}}
+\par\plain {\f0\fs24\b0\i0      \}}
+\par\plain {\f0\fs24\b0\i0      cout << (char) (i_index + 'A') << (char) (j_index + 'A');//}{\f0\fs24\b0\i0\cb4\highlight4 \loch\af0\hich\af0\dbch\af0\uc1\u23558\'3F\u25968\'3F\u23383\'3F\u36716\'3F\u25442\'3F\u25104\'3F\u23383\'3F\u31526\'3F}
+\par\plain {\f0\fs24\b0\i0     return 0;}
+\par\plain {\f0\fs24\b0\i0 \}}}

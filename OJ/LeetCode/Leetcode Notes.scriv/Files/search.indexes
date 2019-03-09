@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchIndexes Version="1.0">
+    <Documents>
+        <Document ID="132">
+            <Title>Part 5: Customising Projects</Title>
+            <Synopsis>Part 5 shows you how to create customised projects.</Synopsis>
+        </Document>
+        <Document ID="133">
+            <Title>Part 4: Text Tools</Title>
+            <Synopsis>Part 4... Well, Part 4 covers the other stuff.</Synopsis>
+        </Document>
+        <Document ID="134">
+            <Title>Part 3: Import, Export and Printing</Title>
+            <Synopsis>In Part 3, we cover how to import and export documents in Scrivener.</Synopsis>
+        </Document>
+        <Document ID="135">
+            <Title>Part 2: Organisation</Title>
+            <Synopsis>In the second part, we look at the different tools available for organising your work in Scrivener.</Synopsis>
+            <Text>Welcome to Part 2 of the tutorial—you can close “Part 1” by clicking on the triangle next to where it says “Part 1” in the binder on the left. You can also hide the Inspector by clicking on the blue disk icon in the toolbar again. By now you have learned some of the fundamental features of Scrivener. Now it’s time to move on to some of the organisational features.
+
+
+Quick Start Note: If you are viewing the “Quick Start” collection in the binder, for this part of the tutorial, please return to viewing the full binder. (If you do not, this part of the tutorial will not make as much sense, because folders act differently when viewed from a collection.) Do so by clicking on the “X” in the bottom-right of the binder area. (Ignore this if you did not choose only to view the “Quick Start” collection when you started this tutorial.)
+
+
+Firstly, notice that this document is actually a folder in the binder, which is why you initially saw a corkboard when you clicked on it. There is no real difference between text and folder documents aside from their icons and what happens when you click on them in the Binder. Note that the folder icon for this document (“Part 2: Organisation”) has a little page icon in its corner. This means that this folder contains text—the text you are reading now. It does not have anything to do with the fact that it also has text documents inside it (such as “Step 7” and so on). The other major difference between folders and text documents is the default way they get viewed when you click on them. You’ve already seen a small demonstration of that, but we’ll explore that in greater detail in the next step.
+In fact, you can convert a folder document into a text document and vice versa very easily. Click on “Part 2: Organisation” in the binder to make sure it is selected, and then go to Documents &gt; Convert &gt; Convert To File in the main menu. The folder icon changes into a text stack (the stack indicates that the text document has subdocuments). If you go back to the Documents &gt; Convert menu, you will see that now you have the option of converting it back to a folder—do that now. The idea behind this flexibility is that you can choose to have different visual indicators for different levels of organisation, and also you don’t have to plan in advance how you structure your project, because if you end up using a text document as a container for other files, you can always convert it to a folder later, and vice versa.
+To create new documents, click “Add” in the toolbar.
+￼
+If you click on the downward arrow next to the “Add”  button, a menu appears that lets you choose which kind of document you would like to add. You can also add documents via the Project menu, binder sidebar footer and contextual menus. Hitting enter in the binder, outliner or corkboard will also create a new file.
+A Brief Word on Terminology:
+You’ve seen a few terms thrown around at this point. The documentation, application and this tutorial refer to the items in your binder depending upon their type if necessary. In fact there was one right there. We use the term document or item when the specific type is not important. A document can be a folder, a text item, or even a PDF; hence the Document menu. Text items can be referred to as text or files interchangeably. When files have other files within them, we call that a file stack or a file group. 
+
+Okay, move on to Step 7 when you’re ready (you will need to expand “Part 2” by clicking on the disclosure arrow next to it). Or go get a cup of tea and a biscuit.</Text>
+        </Document>
+        <Document ID="136">
+            <Title>Part 1: Basics</Title>
+            <Synopsis>In the first part, we look at the basic features of Scrivener that you will be using most of the time.</Synopsis>
+        </Document>
+        <Document ID="137">
+            <Title>Step 6: End of Part One</Title>
+            <Text>This brings us to the end of Part 1 of the tutorial. In the next section you will learn about different ways of viewing and organising the documents in your Scrivener project. 
+Folders (not just folders, but we’ll come to that shortly) can be viewed in several ways, what we call “view modes”, but for now all you need to know is that when you click on “Part 2”, you will initially see a corkboard, but in fact what you want to see is the text of the folder document. This will make more sense in a minute!
+So after you click on “Part 2: Organisation”, take a look at the “Group Mode” segmented control in the toolbar and ensure that all view modes are turned off. The control should look like this (note how nothing is selected):
+￼
+If one of the segments is yellow, just click on the selected segment to turn it off. This will leave you with just the text of “Part 2” in the editor, ready to read.
+
+Go ahead and try that now.</Text>
+        </Document>
+        <Document ID="138">
+            <Title>Step 5: The Inspector</Title>
+            <Synopsis>This is the index card where you write your synopsis...</Synopsis>
+            <Text>Now it’s time to meet the Inspector.
+
+￼
+Click on “Inspector” in the toolbar (the blue disk on the right, with the “i” inside it; or press Ctrl+Shift+I). A third pane will appear on the right of this view.
+You may find this text a little scrunched up now. If so, click on the “Maximize” button at the very top-right of the window (the middle icon that appears in most windows on your computer).
+Right, let’s look at the inspector. At the top of the inspector, in the header bar, you will see these buttons:
+￼
+The “References” button, second from the left, has an asterisk indicating content.
+The padlock button on the far right allows you to “lock” the inspector to a particular editor when the editor is split—we won’t worry about that for now, though, as we haven’t looked at splitting the editor yet. The other buttons allow you to choose what to view in the inspector. The number of buttons that appear will depend on what you are viewing in the current editor (the last two buttons, “Snapshots” and “Comments &amp; Footnotes” are only available for text documents, for instance). An asterisk next to one of the icons tells you that there is content in that part of the inspector.
+
+To begin with, make sure the leftmost inspector button, “Notes”, is selected, and then click on the next document in the binder, “5a: The Synopsis Index Card”.</Text>
+        </Document>
+        <Document ID="139">
+            <Title>Step 4: Full Screen</Title>
+            <Synopsis>- No synopsis -</Synopsis>
+            <Text>Full screen is a very nice feature for blocking everything else out while you write. I’m not going to pretend it’s innovative or anything—I think Blue-Tec (now called The Soulmen), the creators of Ulysses for Mac, were the first to implement something like this for a text editor—but it is very handy. Either hit F11 or click on “Full Screen” in the toolbar above—do it now!
+￼
+You should now be in full screen mode—it’s just you and your text. Some things you need to know about full screen mode:
+Move your mouse to the bottom of the screen. You will see that a control panel appears. From here you can change the text scale, set the position and width of the “paper” (the text column), or its height by holding down the Alt key and using the alternate slider, and view the word and character counts of the document. There are also buttons for displaying the Keywords and Inspector (we won’t go into that right now, though, as we have yet to talk about keywords and notes—come back and try them out once you’ve gone through the rest of the tutorial) and a Go To menu so you can switch documents without leaving full screen. On the far right, you’ll find a slider for setting how transparent the background is on either side of the paper as well as a button for exiting full screen. You can also hit F11 or the Escape key to exit full screen mode.
+You can only enter full screen mode for text documents.
+By default, full screen uses “typewriter” scrolling (another Ulysses first, I believe). This simply means that as you type, the text will remain in the centre of the screen vertically so that you don’t have to stare at the bottom of the screen all the time. You can toggle this on and off via the keyboard shortcut, Ctrl+G,Ctrl+T (which means you would press Ctrl+G and then quickly follow with the T key). If you’d rather never use it, you can set its default state to off in Tools &gt; Options…, under the Editor tab. This will only impact projects you create in the future, it will need to be switched off in existing projects, as each can have their own setting.
+You can customise the look of full screen mode. You can use the Appearance pane of the Options to change the background colours and you can change the colour of the text in full screen mode (so you could set it up to have a retro green-text-on-black-background look, for instance).
+Okay, let’s move on to “Step 5: The Inspector” while still in full screen mode. Once there, hit the Escape key on your keyboard to return to the regular editor.
+To switch documents in full screen mode, move the mouse pointer to the bottom of the screen and click and hold the “Go To” icon so that the menu appears. Then, choose Draft &gt; Part 1: Basics &gt; Step 5: The Inspector.</Text>
+        </Document>
+        <Document ID="140">
+            <Title>Step 3: Footer View</Title>
+            <Synopsis>You made it to step 3!</Synopsis>
+            <Text>If you ever find that after navigating through multiple documents you are not sure where the current document is located in the binder, you can simply use View &gt; Reveal in Binder (Ctrl+Shift+8) to force the binder to show you where you are. Right now, since you used a menu to get here, the Binder isn’t highlighting what you are looking at. Try using the shortcut or menu command to focus the binder selection on Step 3. This is especially useful if the item you are looking to locate is buried beneath many sub-folders and not even visible.
+
+Okay, so let’s get familiar with the editor. At the bottom of the window, you can see a grey bar containing a pop-up button with a percentage in it (135% by default) and a live word and character count. This is the “footer view”. Try typing something in the yellow area below:
+
+	
+
+Done that? You will see that the word and character count in the footer view changes as you type. Now try changing the percentage in the drop-down menu at the bottom, too (click on it and select a new percentage)—you will see that you can make the text bigger or smaller (useful for tired eyes). Feel free to set that to a comfortable level for the remainder of this tutorial.
+Scriptwriting Mode
+The footer view will change depending on what you are viewing inside the document. For instance, if you are typing a script (such as a movie screenplay), the footer view will give you information on the various script elements. Try selecting Format &gt; Scriptwriting &gt; Script Mode - Screenplay from the main menu now. You will see another pop-up menu appear on the right saying “General Text” (this just means that the currently selected text isn’t recognised as a part of a screenplay). Click into the text on the line below:
+
+CLICK INTO THIS TEXT.
+
+Now try selecting different elements from the pop-up menu on the right of the footer view. You will see that the above text automatically gets reformatted to the script element you selected, and the footer view will show what will happen if you press the tab or enter keys (which will move you to the next script element). Note that you can hit Ctrl+\ to bring up that menu automatically and then hit one of the keys specified in the menu to select an element without taking your hands off the keyboard.
+Scriptwriting mode is saved on a document-by-document basis, so you can switch between documents that use script formatting and regular text documents. The icons of documents in the binder that use scriptwriting mode are yellow and have a 3-hole punch along the left side, so that you can easily tell them apart from other text documents.
+Right, let’s return to normal prose mode now. Select Format &gt; Scriptwriting &gt; Script Mode - Screenplay (Ctrl+4) again to de-select screenplay mode.
+Other Files
+For PDF files, the footer view allows you to navigate between the pages. Click on “spacewalk_info” in the Research folder to test this out, and then come back here by clicking on the “back” arrow in the header view.
+
+All good so far, I hope. Now let’s familiarise ourselves with some other basic features. Click on “Step 4: Full Screen” in the binder.</Text>
+        </Document>
+        <Document ID="141">
+            <Title>Step 2: Header View</Title>
+            <Text>You have just switched between documents. You might use different documents for different chapters, different scenes, different ideas, articles, characters, whatever you want. There are other ways of switching between documents, too. Another one you will use frequently is the header view. See that bar at the top of the text, the one that has the arrows on the left of it and says “Step 2: Header View” in it? Well, that is the header view (which is sometimes also referred to as the “header bar”). You can rename the document by clicking into the title of the header view, and there are several options available in a menu if you click on the icon next to the title.
+￼
+History Buttons	Sidebar Navigation
+The arrows on the left of the header view that point left and right are the history navigation buttons and work much like web browser navigation arrows—they allow you step back and forth through the documents you have had open in the editor. The white up and down arrows on the right of the header bar step through the contents of the binder sidebar sequentially. To see the difference, try the following:
+Click on the “Alhambra” image document in the Research folder again and then click on the left arrow in the header view. You will be returned to this document, because this was the one you had open last.
+Click on the right arrow and you will be returned to the “Alhambra” image document again. (Make sure you come back here afterwards though!) You can use Ctrl+[ and Ctrl+] to navigate within history, too.
+Now, with this document open, click on the down arrow on the right and then click on the up arrow again to return here. Note how the down arrow takes you to the next document in the binder, whereas the right arrow takes you to the next document in the navigation history. If you prefer the keyboard, you can use Alt+Shift+DownArrow and UpArrow to do the same.
+If you click on the little icon next to the title of this document in the header bar, you’ll find some handy commands you can use. One of these is a “Go To” menu. This presents the contents of your binder in a hierarchal menu arrangement. You can thus easily jump anywhere in the Binder, even if it is hidden.
+While we’re here, note that the selection highlight in the binder does not necessarily follow what is being displayed in the main editor—if you change the contents of the editor using the history buttons, for instance, the selection in the binder will not change. You can thus navigate around using the header view without losing track of the original document on which you were working in the binder.
+
+ Try using the “Go To” menu in the header bar icon menu to find and navigate to “Step 3: Footer View”. You’ll need to first select the Draft sub-menu, and then “Part 1: Basics”…</Text>
+        </Document>
+        <Document ID="142">
+            <Title>Step 1: Beginnings</Title>
+            <Synopsis>This is where you would type a synopsis of the document.</Synopsis>
+            <Text>
+Quick Start Note: If you’re viewing the “Quick Start” collection in the binder, please dismiss it for now and return to the full binder by clicking on the “X” in the bottom-right of the binder area.  (Otherwise, this step of the tutorial describing the binder will not make much sense!) To return to the “Quick Start” collection when you’ve finished this step, simply click on the “Quick Start” tab above the binder. (Ignore this if you did not choose only to view the “Quick Start” collection when you started this tutorial.)
+
+
+When you first open a Scrivener project, by default you are presented with two panes:
+
+1. THE BINDER
+On the left, you can see a list of files: the “binder”. This is an outline view that contains three default folders: “Draft”, “Research”, and “Trash”. You can rename these folders to whatever you like by double-clicking on them (in some of the templates, for instance, the Draft folder has been renamed to “Manuscript”). The binder is where you organise your project by creating a structure and dragging and dropping your documents wherever you want.
+The contents of the Draft folder represent the text fragments that will be compiled into one long document when you export or print using File &gt; Compile…, which is the standard way of preparing your finished project for printing or final formatting in a dedicated word processor. This is very much the raison d’être of Scrivener—to assemble the text of your manuscript in the Draft folder for printing or export. (As such, the Draft folder is unique in that it can only hold text files and folders.)
+The Research folder can hold text or media files (images, PDF files, video files and so on). You don’t have to put all research files into the Research folder, though—you can create other folders for your support materials anywhere you want.
+The Trash folder speaks for itself; whenever you “delete” a document it ends up here. Documents aren’t deleted completely until you select “Empty Trash…” from the Project menu—so there’s no way you can accidentally delete a file in Scrivener.
+
+2. THE EDITOR
+Next to the binder you have the main editor, which displays the current document. The main editor is what you are looking at right now as you read this text document. There are several ways to load a document in the editor, but the one you will use most often is simply selecting a file in the binder, as you did to load this one. Scrivener allows you to create or import any number of text documents. You can also import image, web, movie and PDF documents. To import documents, use File &gt; Import &gt; Files… or simply drag the files you wish to import from File Explorer into the binder of your Scrivener project.
+You can change the current document by clicking on another item in the binder. Try that now—double-click a word in this sentence to select it (you’ll see why in a moment), then click on “Alhambra” inside the “Research” folder (you may need to expand the Research folder first by clicking on the triangle—or [+] sign in Windows XP—next to it) and then return here (“Step 1: Beginnings”).
+See how the selection that you created before is saved and scrolled to automatically? Scrivener always remembers your cursor position and selection, even between sessions. Use this way of “bookmarking your spot” to your advantage as you progress through the tutorial.
+So now you know that this area can be used to view different types of documents, not just text.
+
+Let’s try switching between documents again. You see the document on the left beneath this one, the one entitled “Step 2: Header View”? Click on it now. (Or, if you are going through the “Quick Start” collection only, click on “Step 5: The Inspector”.)</Text>
+        </Document>
+        <Document ID="143">
+            <Title>5h: Comments &amp; Footnotes</Title>
+            <Text>Now we’ll look at the “Comments &amp; Footnotes” pane—don’t worry about clicking on the button in the inspector header bar just yet though (for your reference, the “Comments &amp; Footnotes” button is the one with the “n.” inside a square speech bubble).
+Comments and footnotes in Scrivener work a little like comments in Word or OpenOffice, but they’re not exactly the same. Let’s take a look at them.
+For a start, click on the orange highlighted text in the sentence below:
+
+This sentence has a comment attached.
+
+Note how the inspector automatically switches to the Comments &amp; Footnotes pane, and the comment associated with the text gets selected.
+Next, click on the grey footnote in the inspector, directly below the highlighted comment.
+
+This sentence has a footnote attached.
+
+See how clicking on the note in the inspector automatically selects the text associated with it in the main editor?
+If you click on a note in the inspector, the editor will automatically scroll to the position in the text where the note has been placed. This allows you to use the comments and footnotes to navigate the text, which means you can use them for personal placeholders, too. Try scrolling to the bottom of this document, and then clicking the orange comment to return to the spot where it is anchored.
+Adding Comments And Footnotes
+Let’s try adding some comments and footnotes. There are a couple of ways of doing this. First, select some of the text in the following sentence:
+
+Select some of the text in this sentence.
+
+Once you’ve selected a word or two in the above sentence, either click on the “+” button in the top “Comments &amp; Footnotes” bar in the inspector or use the Format &gt; Comment menu command. A new comment will be created in the inspector and it will be selected ready for editing—add some text. Once you’ve finished typing in the comment, tap the Esc key to return to the editor.
+Alternatively, you can just click into or after a word to add a comment or footnote to it. This time, just click into the word “commented” below so that the blinking insertion point (or caret) is somewhere inside it:
+
+This sentence will be commented.
+
+Again, create a comment using your preferred method. Note how the whole word “commented” gets a comment associated with it.
+Let’s try it with a footnote too. Place the cursor anywhere in the last word of the following sentence:
+
+This sentence will have a footnote after it when exported or printed.
+
+This time, click on the “+fn” button in the inspector (note that you can add icons for “Footnote” and “Comment” to the Format Bar by using Tools &gt; Customize Toolbar…).
+Note how the footnote gets attached to the word “printed”, including the full stop. It generally doesn’t matter where you attach comments, because they are usually for your own (or collaborators’) reference only, but with footnotes you should always ensure that the footnote link (the grey highlight) ends at exactly in the place you want the footnote number to appear when printed or exported. Since the footnote highlight ends right after the full stop, that means the footnote number will be inserted there, which is usually what you will want.
+
+
+Excluding Punctuation from Footnotes
+In some languages, footnote markers are placed before the final period of the sentence rather than after it. If you write in such a language, you can turn on “Terminate footnotes and comments before punctuation” in the “Editor” panel of Tools &gt; Options.
+
+
+Changing The Colour Of Comments
+You can change the colour of comments by right-clicking on a comment in the inspector. The contextual menu offers a choice of default colours, or you can open the colour chooser to choose a custom colour with “More…”. You cannot change the colour of footnotes, which use a single colour to differentiate them from comments, although you can choose the background colour for all footnotes in the “Appearance” panel of Options.
+The contextual menu also allows you to convert comments to footnotes and vice versa, and to revert comments or footnotes to their default formatting (you can set the default fonts in the “Appearance” Options panel).
+Comments and footnotes are thus tucked away in the inspector until you need them. When you come to export or print—which we’ll come to later—you have a lot of control over how comments and footnotes get included in the document. For instance, you could have all comments removed but footnotes included as proper footnotes, or you could have comments exported as footnotes and footnotes exported as endnotes. But if that sounds complicated, it’s not something you need to worry about right now—just know that if you want to make notes on your document, or add footnotes, this is one way to do it.
+
+Now let’s move onto “Step 6: End of Part One”!</Text>
+            <Comments>Comments get displayed and selected as soon as they are clicked on in the main editor.
+
+Comments come in a variety of colours, try right-clicking on this comment.
+This is a footnote. In order for footnotes to get exported properly, it’s important to add them in such a way that the link ends exactly as you want the footnote to appear in the exported or printed text.</Comments>
+        </Document>
+        <Document ID="144">
+            <Title>5g: Snapshots</Title>
+            <Text>As a writer, the chances are that you will on occasion be nervous about committing changes to your text. This is what the “Snapshots” feature is for. Before embarking on editing a document, you can click on “Take Snapshot” (Ctrl+5) in the Documents &gt; Snapshots menu. You will hear the sound of a camera shutter which indicates that the snapshot has been taken. Let’s try that now…
+Once you have taken a snapshot, you can edit your document safe in the knowledge that you can return to the old version any time you so wish. Click on the “Snapshots” button (the one with the picture of a camera on it) in the inspector header bar to see what I mean (you can also switch directly to the Snapshots pane and have the inspector open if necessary by going to Documents &gt; Snapshots &gt; Show Snapshots). The inspector now shows a list of snapshots at the top, which should consist of the one you took and one I took while writing the first version of this tutorial back in 2006. Clicking on a snapshot in the list reveals its text in the lower part of the inspector. You can restore an older version of your text by selecting the version you want from the list and then clicking on “Roll Back” at the top (at which point, you will be given the option of taking another snapshot of your current version, just in case you forgot).
+Snapshots are very useful for keeping old versions of your text around and for checking what you have changed.
+
+Now let’s move on to Step 5h for information on the comments and footnotes pane.</Text>
+        </Document>
+        <Document ID="145">
+            <Title>5f: Custom Meta-Data</Title>
+            <Text>If you click on the button at the top of the inspector with the icon of a tag on it, you will by default be presented with a blank grey area with the message “No Meta-Data Fields Defined” and a button with the title “Define Meta-Data Fields…”. This area can be populated with custom meta-data that you create for your project, and the data that can be viewed here can also be viewed as custom columns in the outliner. This provides a way of assigning arbitrary information to your documents. For instance, if writing fiction, you could add a meta-data field for the time at which a scene takes place, or you could add a list of characters that appear.
+We first need to define some custom meta-data fields, though. Let’s do that now:
+Click on the “Define Meta-Data Fields…” button (alternatively, you can choose “Edit Custom Meta-Data Settings…” from the menu that appears when you click on the gear button in the “Custom Meta-Data” bar, or select “Meta-Data Settings…” from the Project menu and then choose the “Custom Meta-Data” tab).
+Click on the “+” button in the bottom-left of the sheet that you’ve opened, and enter “Date” into the row that gets added to the table.
+Click on the “+” button again and this time enter “Characters”. For this one, also click on the “Wrap Text” checkbox.
+Click “OK” to accept the changes and dismiss the sheet.
+The Custom Meta-Data pane in the inspector will now show the two fields you created above. Click into the field under “Date” and type something, then do the same for “Characters”. Note that the “Characters” field will expand to fit the text, because you selected “Wrap Text”.
+You can view all custom meta-data in columns in the outliner view, too (which is covered in Step 10).
+For many projects you may not need to touch custom meta-data at all, but if you ever find yourself wishing for an extra piece of information in the outliner or inspector, then it’s good to know that it’s there.
+
+Next, on to one of Scrivener’s most useful features for editing documents: “Snapshots”.</Text>
+        </Document>
+        <Document ID="146">
+            <Title>5e: Keywords</Title>
+            <Text>As well as Label and Status, you can also assign keywords to your documents. Keywords are useful for adding arbitrary tags to documents that you can use when searching. So, for instance, you could add keywords for characters that appear in a scene, the location a scene takes place, the theme, authors referenced, or anything else (or you can just ignore keywords completely). You can add keywords by clicking on the “+” button. You can also assign keywords via the Project Keywords dialogue. Open that now by clicking on the “Keywords” button in the toolbar (the black box with the key inside it) or Ctrl+Shift+O.
+￼
+A floating window (that means you can keep it open while you work, and it will always “float” on top of the other windows) will appear. This shows all of the keywords that you have created or assigned to documents so far. You can also create or modify keywords inside this window (you can change the colour associated with a keyword by double-clicking on the colour chip in the Project Keywords window) and drag them to the keywords table in the Inspector. Another way of assigning keywords is by dragging them onto documents in the binder or the outliner and corkboard views that we will look at later. You can assign keywords to multiple documents at once by selecting the documents in the binder and then dragging the keywords from the Keywords dialogue onto the selection
+Try dragging the keyword entitled “Assign this one” to the keywords table in the inspector.
+You can assign multiple keywords at once. To see this in action, click on the triangle next to “Characters” in the floating Keywords dialogue to reveal the names of some characters. Hold down the Ctrl key to select multiple keywords, then drag all of the selected keywords into the inspector keyword table. Note how all the selected keywords are added.
+A quick way of searching for documents that have been assigned particular keywords is to select the keywords you want to search for in the Project Keywords dialogue and then click on the “Search” button at the bottom. Try that now, with the “Themes” keyword. The binder list to the left will be replaced by a search result list. Only this one document should be listed. To leave the search result list, click the “X” button in the lower right-hand corner of the binder sidebar. We’ll learn more about searching later.
+￼
+You can close the Project Keywords window now, either toggling it with the toolbar button, Ctrl+Shift+O or clicking the “X” button in the corner of the window.
+
+Now click on “5f: Custom Meta-Data” in the binder.</Text>
+        </Document>
+        <Document ID="147">
+            <Title>5d: References</Title>
+            <Text>Click on the next button in the inspector header bar, the one with the picture of several book spines on it. This switches to the “References” pane (the index card and meta-data area will remain where they are, only the notes will disappear to be replaced by a list of references). The references pane allows you to store references to other documents within the project, your computer or on the Internet.
+￼
+Click where indicated to (1) add a new reference or (2) remove the selected reference.
+By clicking on the “+” button, you can choose to add a reference to a file on disk or you can select a document inside the project. You can also drag documents from within the project you are working in, from File Explorer, or the URL from a browser address field, into the references table.
+Double-clicking on the icon of a reference will open it: external references open in their default application; internal references open inside Scrivener. Double-clicking the reference title will let you edit the title and path. As with notes, you can store references at the document or project level—click on the bar where it says “Document References” to flip between Document References (which are specific to the current document) and Project References (which can be viewed from any document). 
+
+Next click on the key-shaped button at the top of the inspector to view the keywords pane and then move on to “5e: Keywords”.</Text>
+        </Document>
+        <Document ID="148">
+            <Title>5c: Notes</Title>
+            <Text>At the bottom of the inspector is the notes area, where you can jot down anything you want that will help you with your document. If you click in the notes header bar (where it says “Document Notes”), you can flip between Document Notes and Project Notes. As you would imagine, document notes are specific to each document and will change depending on the document you are viewing in the current editor, whereas project notes can be viewed from any document (project notes can also be seen in the inspector when you select one of the special root folders—Draft, Research and Trash—which have no associated meta-data or synopses).
+ You can have multiple project notes associated with your project (new project notes can be added using the Project Notes window, available from the Project menu).
+
+Please click on “5d: References” in the binder.</Text>
+            <Notes>This is the notes area right here... Here you can jot down any thoughts about your current document or drag in images if you so wish...
+
+￼</Notes>
+        </Document>
+        <Document ID="149">
+            <Title>5b: General Meta-Data</Title>
+            <Text>The “General” pane in the middle of the inspector contains several meta-data elements:
+Label and Status
+Label and status are just arbitrary tags you can assign to your document. You can set up the project labels and status list via Project &gt; Meta-Data Settings… You might, for instance, rename “Label” to “POV” (for Point of View) and use it to hold the name of the point-of-view character for each document. This way, you could easily run a search on all scenes that have a particular character as the protagonist by searching on label only (don’t worry, we’ll get into the details of how to do that later). Status works much the same, except that it is set up to keep track of the state of the document by default—for instance, “Finished”, “To do”, “A mess” and so forth—although you can rename it and use it for something completely different, should you so wish. If you change the titles for these meta-data types, the General Meta-Data section will show your custom title instead of the default “Label” and “Status”.
+Created/Modified Date
+Switch between the created and modified date by clicking on the arrows next to where it says “Created:” or “Modified:”. No surprises here—as you would expect, the created date holds the date and time the document was first created and the modified date holds the date and time the document was last modified and saved.
+Include in Compile, Page Break Before and Compile As-Is
+These options affect how the document is compiled when you come to export or print the draft (which we will come to later). They only have any meaning if the document is contained inside the Draft folder. They are mostly self-explanatory:
+Include in Compile specifies whether the document should be included in or omitted from the draft when exported or printed.
+Page Break Before specifies whether the document should have a page break before it (useful if it marks the beginning of a chapter, for instance).
+Compile As-Is tells the compilation process not to change the formatting or insert a title for this particular document, no matter what the Compile settings are.
+You can view all meta-data in columns in the outliner view, too (which is covered in Part 10).
+
+Next, let’s look at the “Notes” pane—click on “5c: Notes” in the binder.</Text>
+        </Document>
+        <Document ID="150">
+            <Title>5a: The Synopsis Index Card</Title>
+            <Synopsis>This is what will represent this document throughout the project.</Synopsis>
+            <Text>The first thing to notice in the inspector is the index card at the top. This appears in the Notes, References and Keywords panes of the inspector (but not in the Snapshots or Comments panes, which require more space). The index card is an important concept in Scrivener. You can type a synopsis of your document into the body of the index card (note the header of the index card can be used to rename the document, too). One of the core ideas behind Scrivener is that every document (or chunk of text, or image, or whatever) is associated with a synopsis, which is represented in the inspector by the index card. You can then view these synopses in different ways (which we will come to later) which will make outlining and organising your work easier. The best way to understand this is to imagine that each document in Scrivener is a sheet of paper that has an index card clipped to it containing a summary of the document’s contents, which can then be viewed alongside other index cards to get an overview of the whole.
+You can auto-generate a synopsis by clicking on the ￼ button in the top-right of the inspector: if any text is selected in the editor, it will be copied into the synopsis; if no text is selected, the first few lines of text will be used.
+You can also display an image in this area if you want. To do so, just click on the icon of the index card with two arrows next to it in the header at the top of the inspector and choose the image icon. The synopsis will be replaced by a blank area containing the text, “Drag in an image.” You can then drag image files from the binder or from File Explorer into this area. (If an image is selected for a document in the synopsis area of the inspector, it will also be used to represent the document on the corkboard instead of the synopsis text—we will come to the corkboard a little later.)
+So that’s the index card. Below the index card are other tools to help you organise your work, starting with the General pane. Note that the Synopsis and General panes can be collapsed by clicking on the disclosure triangle in their respective header bars.
+
+Please click on “5b: General Meta-Data”. (Or, if you’re going only through the “Quick Start” documents, click on “Step 6: End of Part One”.)</Text>
+        </Document>
+        <Document ID="151">
+            <Title>Step 13: Collections</Title>
+            <Synopsis>- No sleep till Brooklyn -</Synopsis>
+            <Text>Are you still with us? We’re most of the way there, I promise.
+We’re going to look at a feature called “Collections” next. Collections provide a way of keeping lists of documents that have nothing to do with their binder order. The easiest way to understand what I mean is to create a collection, so let’s do that now.
+First, we’re going to be doing a lot of clicking around in the sidebar, but we don’t want to keep losing our spot, so let’s lock the editor in place. Click on the icon in the editor’s header view to bring up the header bar menu, and click on “Lock in Place”:
+
+￼
+
+The header bar will turn dark pink. This indicates that the editor is now “locked”, which means that clicks in the binder will have no effect. Try clicking on different documents in the binder to see what I mean—they will no longer get loaded into the editor when selected as they normally do. This useful ability can be toggled with Ctrl+Shift+L, too.
+Creating an Arbitrary Collection
+Click on the “Collections” button on the left-hand side of the toolbar. 
+￼
+You will see an extra area appear at the top of the binder with a blue and purple tab in it, entitled “Binder” and “Search Results”. Try clicking on the “Search Results” tab.
+See what happened? The last search you ran gets run again, and its results appear where the binder was; this will even be saved between sessions. We’ll soon learn how you can save more than one search, permanently, as tabs.
+Click on the “Binder” tab to return to the binder.
+Now hold down the Ctrl key and click on several documents in the binder to select them. Once you have selected five or six—it doesn’t matter which ones; they can even be from the Research folder or elsewhere—click on the “+” button in “Collections” bar at the very top of the binder:
+￼
+The binder will temporarily disappear, to be replaced by a flat list showing only the documents you selected. You haven’t moved those documents, though—they are all still in their rightful places in the binder.  You’ve just created a collection (more specifically, an arbitrary collection) and when you created it, the selected documents were automatically added to it. To see what I mean right-click on one of the documents in the collection list and select “Reveal in Binder” from the View menu. This will show you where the document is located in the binder. Click back on the collection tab once you’ve tried this, to return to the collection.
+You can rename the collection to anything you want, and you can change its colour by double-clicking on its colour chip:
+￼
+Double-click where indicated to (1) rename or (2) change the colour of the collection.
+Go ahead and try changing the title and colour. You can also drag and drop tabs amongst one another to change their order.
+Let’s add some more documents to the collection. Click back on the Binder tab and select some different documents. Once you’ve selected some, drag and drop them onto your collection tab. You will see that the documents you dragged onto the tab are now in the collection too. (No duplicates will be added, each item can only appear once in the list.)
+You can drag and drop the documents in the collection list to arrange them into any order you want. If we unlocked this editor, clicking on documents in the collection would open them in the editor, just as happens when selecting documents in the binder. To remove items from the list, simply select them and click the “-” button in the divider bar above the item list (you can also just press the Del key on your keyboard). Note that this will not delete the original item, it will merely remove it from this list.
+Collections can be used for whatever you like. You might, for instance, use them to gather together documents you need to do more work on, removing them as you are satisfied with them. You might use a collection to experiment with the order of documents before committing to the arrangement. Once you were happy with the arrangement, you could select all the documents, right-click on them, and use Move To from the contextual menu to move them all to the location in the binder you want them.
+Search Collections
+There’s another way of creating collections, too—you can save your search results as collections. Let’s create a collection of all documents with their status marked “To Do”:
+Click on the magnifying glass in the search field in the toolbar, and select “Status”.
+Click in the search field and type “To Do”. The binder will be replaced by the regular purple search results list (with its associated “Search Results” tab selected in the Collections pane above). You could check with the Inspector and see that the status for each is marked “To Do”, as you would expect, were the editor not locked.
+Click on the magnifying glass in the search field again, and this time select “Save Search as Collection…” from the bottom of the menu.
+Enter a name for the search, e.g. “To Do” (it will use the search phrase by default) and hit “OK”.
+The search results will now change colour and you will see that a new tab has appeared in the list of collections named “To Do”. Again, you can rename this or change the colour to one of your choosing. The magnifying glass icon on the left of the tab indicates that this is a search collection. These are different to regular, “arbitrary” collections in that you can’t arbitrarily add documents to them or move them around within the list of other search results. Instead, every time you click on a search collection, the search gets run again. 
+Search collections can be used in various ways. You could use one to keep track of the storyline of a character in a novel, to highlight documents that contain a word you know you overuse, and so on. The “Search Results” tab is itself really just a special type of search collection—it will always show the results of the most recent search, even after you close and reopen the project.
+
+
+Modifying the Contents of a Search Collection
+Since search collections are dynamically generated each time you load the tab, the contents cannot be shuffled around or removed from the list. If you wish to have more control over the list, you can either convert the search collection to an arbitrary collection, with View &gt; Collections &gt; Convert to Standard Collection, or you can select all of the contents of the search collection, and click the “+” button to create a new arbitrary collection off of your selection.
+
+
+To delete a collection of any kind, just select its tab and then click on the “-” button in the “Collections” bar. Deleting a collection has no effect on its constituent documents—they are not deleted and remain in their place in the binder.
+There’s lots you can do with collections—or you don’t have to use them at all. Like most things in Scrivener, they are available if you need them but can be ignored if you don’t.
+Click on the “Binder” tab to return to the standard project Binder view if necessary. Let’s unlock the editor now. Click on the icon in the header view again and this time de-select “Lock in Place”. At this point you can also click on the “Collections” icon in the toolbar to hide the collections pane if you want.
+
+Now it’s on to Part 3. Expand the Part 3 folder if it is collapsed, and then click straight on “Step 14: Importing”.</Text>
+        </Document>
+        <Document ID="152">
+            <Title>Step 12: Project Search</Title>
+            <Text>At the risk of telling you the blindingly obvious, project search allows you to search for documents inside your project that contain a particular word, phrase, label, keyword and suchlike. Just click in the search field on the right-hand side of the toolbar and type the phrase you want to search for. 
+
+
+Project Search Tip
+When clicked on, the magnifying glass icon in the search field brings up a menu that allows you to modify the search options. When the search field is left blank, a summary of the more important options will be provided for your convenience. Notice that right now “Keywords” is chosen. That's because we were testing the search function with project keywords a little earlier.
+
+
+Go ahead and change the “Search In” scope to &quot;All&quot; using the magnifying glass menu.  Now click in the search field and type “collection”.
+Note how the binder is replaced by a darker coloured “Search Results” list. This is a list of documents that contain the word “collection” somewhere within them. Also note that the search term—in this case “collection”—is now highlighted in yellow in the current document wherever it appears. You can click on the documents in the search results list too, and easily see at a glance where the term you searched for is in the document. For longer documents, just click into them in the editor and go to Edit &gt; Find &gt; Find… (or hit Ctrl+F) to bring up the Find panel, which can be used to search within the documents themselves. To get rid of the search results list, you can click on the “close” button on the right of the search field (or just tap the Esc key):
+￼
+Or on the button in the footer bar of the sidebar:
+￼
+Do so now, and then move on to “Step 13: Collections”.</Text>
+        </Document>
+        <Document ID="153">
+            <Title>Step 11: Scrivenings</Title>
+            <Text>Let’s take a closer look at “Scrivenings” mode. The whole point of Scrivener is to make working on a long text easier by allowing you to break it up into smaller pieces, but you will often want to see how those smaller pieces fit into the greater whole. This is what Scrivenings mode lets you do.
+There are two ways of entering Scrivenings mode:
+You can select a folder or container in the binder that contains text subdocuments, and use Scrivenings mode to view all of the documents inside the folder (including the folder itself, if it has text associated with it) as though they were one long document.
+You can select arbitrary documents in the binder and view them as though they were a single document.
+We already did (1) in Step 7, so let’s try viewing arbitrary documents this time. Once you’ve finished reading this paragraph, click on “START HERE” at the top of the binder and then, holding down the Ctrl key, click on “Step 7: Changing Editor Views” and “Step 11: Scrivenings”, so that all three documents get selected. Once that’s done, ensure that the stack of papers is selected in the “Group Mode” control in the toolbar, and then scroll down towards the bottom of the text that gets loaded into this editor and look for the pink highlighting below—do that now.
+￼
+Back here yet?
+
+Do you see what just happened? “Scrivenings” temporarily combines the selected documents into a single text. You can select non-contiguous documents or you can choose to view and edit the contents of a folder or group. If you were writing a novel, you could therefore write each scene of a chapter in isolation and then view and edit the whole chapter as though it were a single document using Scrivenings; or you might run a search on a particular character and view the results as one long text so that you can see how the storyline for that character pans out in isolation.
+So that you can see where one document ends and the next begins, there is a horizontal dashed dividing line between sections.
+The Inspector displays information about the chunk of text you are currently editing, so if you lose your place you can always open that and check the index card to see where you are.
+An important point to note about Scrivenings is that you cannot make textual edits across the individual document boundaries, so if you try to select a range of text that spans more than one document block and try to edit it, you will not be able to. However, within each section, every edit you make will be automatically saved into the original document.
+
+
+Quick Start Note: If you are only going through the “Quick Start” sections, you can now return to the “Quick Start”collection by clicking on the “Quick Start” tab above the binder.
+
+
+Now it’s time to click on Step 12 (or Step 16 if you are only going through the “Quick Start” sections).</Text>
+        </Document>
+        <Document ID="154">
+            <Title>Step 10: Outliner</Title>
+            <Text>The binder is a very useful organisational tool, but one of the key concepts behind Scrivener is the linking of synopses to documents—and the binder does not show synopses (well, actually, it does show them in tool tips if you hover the mouse over items there, but the binder is more intended as a table of contents). The corkboard, as we have seen, is a good way of viewing and editing the synopses of multiple documents, but not everyone likes corkboards and besides, the corkboard only shows one level of a group’s subdocuments at a time. This is where the outliner comes in: it provides a way of structuring multiple levels of your project at the same time as seeing much of the data associated with your documents.
+Click into the upper pane (which should still show the corkboard) so that it receives the focus (its header bar will turn blue), and then click on the “Draft” folder in the binder.  Next, select the “Outliner” segment of the “Group Mode” capsule in the toolbar:
+￼
+ The upper view will now have turned into an outliner, showing all of the items contained inside the Draft (because that is what we selected in the binder). Click on a disclosure triangle next to one of the folders to reveal the next level of  subdocuments (or Alt-click on a disclosure triangle to open all subfolders inside the folder too, all the way down to the bottom of the hierarchy).
+Next, with the outliner still focused, click on “Part 2: Organisation” in the binder. The outliner will now show only the subdocuments of the “Part 2” folder.
+Choose which columns appear by clicking on the button in the top-right of the outliner title bar, or via the View &gt; Outliner Columns menu. 
+￼
+The outliner allows you to edit the titles and synopses of various documents, assign the label or status, set the “Include in Compile”, “Page Break Before” and “Compile As-Is” flags and reorganise documents by dragging them around. You can also view various other meta-data, such as the word and character counts of documents. The “Characters” and “Date” custom meta-data you created in Step 5f are also available in the list of columns, so you can add those for viewing and editing in the outliner if you wish.
+By default, when you drag items around you can drop them on other items as well as between them (dropping “on” places the dropped document inside the document it was dropped on, below the other subdocuments). You can also use the Ctrl+Arrow keys (up, down, left and right) to move documents around–this can be useful when you want a little more accuracy. You can also use these same shortcut keys in the Binder.
+
+We can get rid of the split now. To do so, click on the button in the right of the header bar for this editor:
+￼
+
+Once you’ve done that, go to Step 11.</Text>
+        </Document>
+        <Document ID="155">
+            <Title>Step 9: Corkboard</Title>
+            <Synopsis>Okay, I admit it: I’m too lazy to think of anything witty to place in the other synopses.</Synopsis>
+            <Text>The corkboard is one of Scrivener’s most distinctive structural tools, so let’s look at that now.
+Basic Usage
+The corkboard shows the immediate subdocuments of the selected document. To see what I mean, click into the top editor to give it the focus (it should still be showing the “ThisIsBuzzAldrin” media file; if so, click somewhere in the grey area so that the header bar of the top editor turns blue). Once the top editor has the focus, click on the “Draft” folder in the binder, and ensure that the “Group Mode” control in the toolbar has the corkboard button selected (or press Ctrl+2).
+Note how the corkboard in the top editor now shows the folders “Part 1” through to “Part 5” and the “Other Stuff You Might Want to Know” document all represented as index cards. If you look in the binder, you will notice that these five folders and the text document are the immediate subdocuments (or “children”) of the Draft folder—that is, they are only indented one level from the Draft folder. The corkboard thus allows you to concentrate on individual levels of your structure.
+Next, in the corkboard itself, double-click on the folder icon in the second card, which is titled “Part 2: Organisation”. This will drill down to show the contents of the “Part 2” folder represented as index cards. Each card shows the title of the document and a synopsis area that can be used to remind you of the content of the document or to note what you intend to write in the document later. You can edit the synopsis or title by double-clicking into a card, and you can drag the cards around (and into the binder) to reorder your documents.
+If the inspector is open while the corkboard (or outliner) is open, it will show information for the currently selected card. (Remember, the buttons at the top of the inspector let you show different meta-data.)
+You can change the corkboard settings—the number of cards that get drawn across, their width and so on—by clicking on the button with the image of four index cards in it in the right of the footer bar beneath the corkboard:
+￼
+(Incidentally, if you don’t like the corkboard background, you can change it to a colour or texture of your choice in the Corkboard tab of the Tools &gt; Options. You can also change the way the cards look, to get rid of the rounded corners to make them look more like real index cards, or switch to virtual pins instead of corner markers for labels, which we will turn on shortly.)
+Controlling The Other Editor From The Corkboard
+Note the button containing the two arrows facing in opposite directions in the corkboard footer bar:
+￼
+This is the “Auto-Load Button”. Click on it now, and note that the button stays depressed, indicating it is active. When this button is on, selecting documents in the corkboard (or outliner) will open them in the other editor if there is a split. Try clicking on the “Step 7” card, then on the “Step 8” card, and then on the “Step 9” card (which should bring you back here).
+See how clicking on the cards opened the documents associated with them in this editor? That’s a useful trick, as it means you can hide the binder and use the corkboard or outliner to navigate if you want to, or just use the corkboard or outliner as secondary navigation tools.
+Click on the Auto-Load button again to toggle the feature off, then try clicking on the cards in the corkboard once more—this time nothing will happen, because the button has been deselected.
+View Options
+Go to View &gt; Corkboard Options &gt; Label Pins. The result will depend on the look you have chosen for the label indicator in the corkboard Options. If you are using the default corner mark look, then each card that has a label associated with it will now have a colour chip in its top-right corner; if you are using the pin look, then each index card will now display a pin holding it in place that is the colour of the label associated with the document. Alternatively, you can select View &gt; Use Label Color In &gt; Index Cards to tint the actual cards with the colour of the label. You can also select Status Stamps via View &gt; Corkboard Options, which places a diagonal stamp on the cards—this stamp shows the status associated with the document represented by the index card.
+Right-clicking on an index card brings up a contextual menu that allows you to change the label (and thus the colour of the pin) and status—you can use the contextual menu to assign a label or status to multiple cards, too, by selecting all the cards you wish to affect before right-clicking on one of them.
+There are other viewing options available in the View &gt; Corkboard Options menu, but we won’t cover them here (though they are all explained in the user manual, available from the Help menu, of course).
+One more thing to note, before we move on, is that graphics files get displayed on the corkboard as pictures. Click in the corkboard above to ensure it has the focus, and then click on the “Research” folder to see what I mean.
+Okay, we covered a lot there! Remember that you don’t have to use the features that don’t appeal to you. Not all writers like corkboards—some Scrivener users never touch the corkboard at all, preferring the outliner, which we’ll come to next.
+
+When you’re ready then—after a stretch of the legs, a glass of wine, a good curse at the prolixity of this tutorial’s author, whichever helps—let’s move on to Step 10 and look at the outliner in more depth. Don’t forget to click into this split before switching documents!</Text>
+        </Document>
+        <Document ID="156">
+            <Title>Step 8: Splits</Title>
+            <Synopsis>Here’s another synopsis.</Synopsis>
+            <Text>I know, I promised, but before delving further into the view modes, let’s pause to check out another important feature of Scrivener that will save us from having to jump around so much between folders and instructions. The chances are that from time to time you are going to want to split the editor so that you can view two parts of the same document, or two entirely different documents, alongside one another. So let’s do that now. Go to View &gt; Layout &gt; Split Horizontally. Alternatively, click on the button in the right of the header view above (the square with the horizontal line through its middle):
+￼
+Vertical and horizontal split buttons.
+Suddenly, this document is displayed in two panes, which is great when you need to refer back to an earlier place in the file, but don’t want to lose the ability to keep typing in the current location. Note that through the Layout menu, you can also switch to Vertical Split, or use No Split to get rid of the split altogether.
+All well and good, but we don’t want to be limited to viewing only one document at a time, do we? We can do that in any word processor worth its salt (whatever that means), after all. And naturally, we’re not. Click on any document in the binder, and it will be shown in the editor that currently has the focus. You can tell which editor currently has the focus because when there is a split, the header bar of the focused editor turns blue.
+In the binder, click “ThisIsBuzzAldrin” from inside the “Research” folder. “ThisIsBuzzAldrin” is an audio file, so you won’t see much other than a media control bar in the lower part of the top pane (actually, that audio file is the beginning of the coolest phone message I ever picked up; sadly, the message was not for me).
+Now you can play the audio file in the top pane whilst typing in this bottom pane. You can control the media file using the keyboard shortcuts defined in the View &gt; Media menu. Ctrl+Enter will play or pause the file, for instance—without you having to click outside of this text. These shortcuts are very useful for transcription work, or for referring to a video file while writing. Also note the button in the lower-right of the media control bar:
+￼
+That is the “pause and rewind” button. If you click it, it will turn blue, indicating that it is on. When “pause and rewind” is turned on, whenever you pause the media file it will automatically be rewound a couple of seconds (you can determine exactly how many seconds it gets rewound in the Navigation tab in Tools &gt; Options…). This is another useful feature for transcription work.
+But of course, you can use the split view to view any two documents in Scrivener alongside one another. The snazziness of this feature should immediately be apparent: you can refer to another text, PDF, image or multimedia document in one view while typing in another. You could hide the toolbar, the header and footer views and the binder and just have the two documents side-by-side while you work.
+
+Make sure this bottom pane has the focus (click in it if you are not sure) so that its header view is blue, and click on “Step 9” so that it opens here.</Text>
+            <Comments>No need to write in: it refers to the fact that Roman soldiers used to get paid in salt. (The great thing about these tutorials is that you’re always getting users writing in to point out your mistakes or tell you stuff about Romans. If you spot any mistakes or have any interesting but relevant factoids, please don’t hesitate to write to contact@literatureandlatte.com.)</Comments>
+        </Document>
+        <Document ID="157">
+            <Title>Step 7: Changing Editor Views</Title>
+            <Synopsis>You should now be looking at the subdocuments of the “Part 2: Organisation” folder on the corkboard. (This card is used for the synopsis of Step 7.)</Synopsis>
+            <Text>Scrivener’s editor has four modes—four different ways of viewing your work—and learning how and when to switch between them will make your Scrivener experience much more comfortable. The four modes are as follows:
+
+1. Single Document Mode
+In this mode, the editor shows the contents of a single document, whether it’s a text document, a folder, an image, a PDF file or whatever. The editor is in single document mode right now.
+
+2. Corkboard Mode
+In corkboard mode, the editor shows the subdocuments of the current document as index cards on a corkboard. Let’s take a look at how that works right now:
+
+a) Try clicking on the “Part 2: Organisation” folder in the binder, and then click on the image of the corkboard in the toolbar (the one in the middle of the group of three View Group Mode icons) so that it is selected:
+￼
+Once you’ve taken a look at the corkboard, return here.
+See how the subdocuments of the folder you had selected appeared as index cards? If you open the inspector right now and select the “Notes” pane, you will see the index card associated with this document—which you will have seen on the corkboard, because this document is a subdocument of the “Part 2: Organisation” folder.
+
+b) Now—well, after you’ve read this bit, so you know how to get back—click on the corkboard icon again, while viewing this document. You will see that the corkboard is blank. This is because this document (“Step 7: Changing Editor Views”) doesn’t have any subdocuments—but it could. After you’ve seen the blank corkboard, click on the text icon to the left of the corkboard icon in the toolbar icon to see the text of the document again:
+￼
+
+3. Outliner Mode
+Outliner mode is much like the corkboard mode, allowing you to see the subdocuments of the current document, except that it shows them as rows and allows you to view various columns of information and to view subdocuments of subdocuments to any depth. Try repeating everything you did for the corkboard mode above, but this time instead of choosing the corkboard icon, click the outliner icon on the right (and remember to come back here afterwards):
+￼
+
+4. “Scrivenings” Mode
+“Scrivenings” is the term for Scrivener’s combined text mode, and it is one of Scrivener’s coolest features. It allows you to view or edit multiple text documents as a composite—as though they were one long document. Scrivenings mode is available when there are multiple documents available to view as one. If you look at the “View Mode” control in the toolbar at the moment, you will see that the left-most icon shows a single sheet of paper. This indicates that the composite text mode is not available here, because you are viewing a single document that has no subdocuments. So, let’s look at one that does.
+After reading this part, once more click on “Part 2: Organisation” in the binder. When you do so, you will notice that the “View Mode” icon in the toolbar changes:
+￼
+View Mode icon (1) changes when Scrivenings mode is available for the selection (2).
+(You will notice that when you select the “Part 2” folder again, it returns to outliner mode—this is because Scrivener remembers which mode you last used to view a group, and will automatically use it for viewing groups until you change it again.)
+The single text icon on the left has now changed into a stack of paper. This means that it is possible to enter Scrivenings mode. To do so, you simply click on the button with the icon of the stack of papers. Try that with the “Part 2” folder now, and after selecting the stack of papers icon scroll all the way down to the bottom of the editor, then return here by clicking back on “Step 7” in the binder.
+Done that? You should have seen that the text from all the various subdocuments of the “Part 2” folder—including this one—were combined into one long document, with dividers between them. You could have edited the text, and your changes would have automatically been applied to all of the individual files you altered.
+What To Remember When Switching Views
+You’ve now switched between all the main views. The main thing to remember is that when you are viewing a single document that has no subdocuments, there are only three view modes available—because you can’t enter Scrivenings (composite text) mode when viewing only a single document. In this case, the left-most icon is a single sheet of text. You click on the mode you want to view—single document mode, corkboard mode, or outliner mode.
+When you are viewing a folder or a document that has subdocuments, though, there are four ways of viewing the editor available—the single document (disregarding the content of any children items), corkboard and outliner mode, and also Scrivenings mode. You can return to single document mode by de-selecting all of the segments of the Group Mode control—that is, click on the one that is selected to de-select it—just as you did at the end of Step 6 to view the text of the “Part 2” folder.
+You can also switch between view modes using the top three items in the View menu, or using the Ctrl+1, Ctrl+2 and Ctrl+3 keyboard shortcuts.
+
+I know, I know—now you really do need that cup of tea, and probably another biscuit too. Once you’re done, we’ll take a look at each of these view modes in more detail. Click on “Step 8: Splits” to continue.</Text>
+        </Document>
+        <Document ID="158">
+            <Title>Step 16: Compiling the Draft</Title>
+            <Text>
+Quick Start Note: If you are only going through the “Quick Start” notes and are eager to get up and running, you might want to skip this section and come back to it later, as this is quite a long section. It is a very important section, though, as it covers how to compile the contents of your Draft folder into a single text for exporting and printing. So if you don’t want to read this now, be sure to come back and read it before you need to export or print your work.
+
+
+Scrivener’s purpose is to provide a sort of writer’s studio; a place where you throw everything, all of your research, ideas and scribblings, with the aim of mashing it together into a draft which you can then either print for posting off to a publisher, or export, whether to another program for tweaking or to an e-book format for self-publishing. This is where Scrivener’s Compile feature comes in.
+The Compile feature takes everything that is in the Draft folder and generates a single, formatted document from it. You have complete control over the output—you can choose from various file formats (or print directly from Scrivener), you can choose whether to include document titles (or synopses and notes for that matter), set up a header and footer, and even completely change the font and paragraph formatting if you so desire—so there’s no need to write in the same font you use for printing and exporting unless you want to.
+“Compile…” can be found at the bottom of the File menu. Try selecting it now, but then click “Cancel” and come back here.
+At first glance, it probably doesn’t look like much. This is because it is set up by default to show only the most basic options—you can choose a preset from the “Format As” pop-up button and a file format from the “Compile For” button, then click on “Compile” to create a basic document containing the merged contents of your Draft folder.
+Let’s try that now—we’ll generate a PDF preview of the draft of this tutorial project:
+Go to File &gt; Compile…
+Ensure that “Original” is chosen for the “Format As” setting.
+Ensure “PDF (.pdf)” is selected next to “Compile For”.
+Click on “Compile”.
+Enter a destination and file name for the PDF and click Save.
+Open the PDF produced by Scrivener.
+You can choose from one of the other “Format As” presets to format your draft differently. For instance, try compiling again, just as you did above, but this time choose “Standard Manuscript Format” (be sure you choose “PDF (.pdf)” from the “Compile For” list again, as changing the “Format As” option can affect the selected file format). This time, you will find that the draft has been compiled using a Courier 12-point font with double line-spacing.
+
+
+Tip on Formatting
+Most of the presets in the “Format As” menu will apply different formatting to your manuscript—different fonts, different page settings, titles, separators and so on. If you find yourself getting frustrated when trying to tweak the Compile settings, or if you want to start from scratch, it is often a good idea to select “Original” and start from there. “Original” is set up so as not to override any of the formatting—the exported or printed manuscript will look just like the text in the main editor. You can then work through the Compile options, setting them up as required.
+
+
+That’s all you need to know for creating basic print-outs and exported files from your draft. At some point, though, you may find that you want more control over the document that gets produced. Try going back to the Compile dialog and clicking on the expansion arrow:
+￼
+The Compile dialog will expand to show a whole raft of options. You don’t really need to worry too much about all of these settings at the moment—the main thing to know is just that this is where you come to export or print your entire manuscript, and that the Compile settings provide complete control over how your manuscript will be formatted should you need it.
+Let’s try a quick custom compile though (you may want to open up one of the PDFs you compiled and jump to this section so you can follow along without switching in and out of the compile window). This time, with the compile dialog expanded to show all of the advanced options, try the following:
+Choose “Original” from the “Format As” list again.
+Take a look at the “Contents” pane. This allows you to choose which documents get compiled. The drop-down menu at the top, which currently says “Draft”, can be used to choose only a subfolder of the Draft (so that you could compile and print only a single chapter, for instance) or to choose the Quick Start collection or one of the collections we created in Part 13 (so you can compile only the documents that appear in a particular collection or search results). You can uncheck the “Include” button for any document you don’t want included in your compiled document. You can thus fine-tune which documents go into your final manuscript.
+
+All we’re going to do is click on the pop-up button at the top that currently says “Draft”, and choose “Part 1: Basics”—that is, we are only going to compile the “Part 1” folder.
+￼
+
+Now, from the list of settings on the left, choose “Separators”. This section allows us to choose how our documents should get stitched together—whether we should put page breaks between the different components or just line breaks and so forth. (Note: you can also insert page breaks between documents by selecting “Page break before” for individual documents in the “Contents” pane or the main editor inspector. That is usually best used as a last resort, however—it’s generally better to set up page breaks in “Separators” if possible.)
+For the “Text separator”, choose “Page break”.
+For the “Folder and text separator”, choose “Single return”. This will ensure that the text of any documents following a folder will be added straight after the folder title—which we will now set up in our formatting options.
+Click on “Formatting”. This is the part of the Compile sheet that allows you to choose how your text looks—what font it uses and suchlike. At the top is a list with a folder, text group and text document in it, each saying “Level 1+” next to them (text groups are just text documents that have other text documents grouped inside them—have a look at “Step 5: The Inspector” to see an example of one). Each document type can be formatted separately.
+At the top of this pane you will see a checkbox labelled “Override text and notes formatting”. It is unchecked at the moment, which means that the text (and notes should you choose to include them) of each document will appear in your compiled manuscript exactly as they do in the editor, just as they did the first time you compiled. We’re going to override the formatting, though, so click on this button to tick it.
+
+￼
+
+Click on the top item in the “Type” list, the “Level+” row with the folder icon in it. Note that each row has tick boxes for “Title”, “Meta-Data”, “Synopsis”, “Notes” and “Text”. These tick boxes determine which parts of the document will get included in your text. So at the moment, only the text of folder documents, text groups and text documents will be included, because only the “Text” button is ticked for each. Let’s change this. Click on the “Text” button in the folder row to remove “Text” and then tick the “Title” button instead. Note how the text in the bottom pane has changed to show the word “Title” in bold. This bottom text area gives you a preview of what the document will look like, so in this case it shows us what folder documents will look like when exported or printed—they will show only their titles, in bold text.
+Click into the bold “Title” text. Note how the ruler and formatting bar become active when you do so. Click on the centred text button, and click on the “A” button to choose a different font. Make the font big.
+Above the formatting bar, click on the “Page padding” stepper control to change the page padding to “8 lines”. This will add eight lines of blank space before the documents of the folder type whenever they start on a new page. (You’ll see what I mean in a minute, they won’t show up in the preview area.)
+Now, click on the next row, the one with a text group icon (the middle choice), and tick the “Title” checkbox. Leave the “Text” checkbox ticked for this one, though. The text area at the bottom will be updated to reflect your changes.
+Click in the bold title in the preview area. Get rid of the bold and change it to underlined and italicised instead using the format bar, and change its colour to blue using the colour control (right-click on the ‘A’ button on the right side of the format bar, next to the highlighter pen to see a palette with colour choices in it).
+Click into the main text area and change the formatting to whatever you want—use the “A” button to change the font, the ruler to change the paragraph indenting, and the line spacing control in the format bar to change (who’d have thought it) the line spacing.
+Click on the last row, the text icon with “Level 1+” next to it, and do the same again, but this time choose a different format for the title and text.
+Right, at last, click on the “Compile For” drop down and select “Preview”. Then click “Compile” to open a preview.
+Take a look through the preview document to see what you’ve done—you’ve added titles and completely changed the way the text looks. Once you’re happy with that, click the “Close” button to return to the Compile dialogue. We’re just going to make one tweak, as follows:
+Choose the “Formatting” pane again.
+Select the third row, the “Level 1+” with the single text icon next to it.
+Click on the “Add formatting level” button:
+￼
+A “Level 2+” row will appear, slightly indented below the “Level 1” text row. The “Level 1” row will no longer have the plus sign after it, either. I’ll explain what this means in a moment. If you click between the “Level 1” and “Level 2+” rows, you will see that the formatting in the text area at the bottom is the same for each—that’s because the new formatting level is created using the same formatting as the selected row by default.
+Click on the “Add formatting level” button again so that a “Level 3+” row is created.
+With the “Level 3+” row is selected, click into the text area and change formatting to something glaring. Change the text colour to bright green or suchlike.
+Click on the “Compile” button again and once more view the results in Preview mode, this time looking out for the green or lurid text formatting you added.
+What just happened?
+What you should have seen is that all documents contained inside the “Step 5: The Inspector” group came out using your lurid formatting, but everything else stayed the same as the previous compile. Why? Because you can set up the formatting on a per-document-level basis if you like, and that’s what we just did. If you look at the binder, the folders “Part 1: Basics” and so on are all contained in the Draft folder at the first level—that is, they are one level deep in the Draft folder. If you then look at “Step 1”, “Step 2” and so on, these are two levels deep in the Draft folder, because they are contained inside the “Part 1” folder which itself is contained in the Draft folder. “5a: The Synopsis Index Card” and the other documents grouped inside the “Step 5: The Inspector” document are on the third level. And so it was only these documents that were affected by our “Level 3+” formatting settings. Incidentally, the “+” indicates that this is the last level we have set up formatting options for, and so it will be applied to any levels of document in the Draft that go deeper (so if we’ve only set up two formatting levels, documents three or four deep in the binder will receive the same formatting as those at two levels deep).
+
+
+Quick Start Note: If you’re viewing the “Quick Start” collection in the binder, you’ll need to switch to the full binder to see the documents at their different levels inside the Draft folder. Click the “Binder” tab to see this, then click back on the “Quick Start” tab to return to viewing the collection.
+
+
+Okay, onto the next section. Expand the “Part 4” folder and click on “Step 17: Split and Merge” (or go straight to Step 23 if you are only going through the “Quick Start” sections).</Text>
+        </Document>
+        <Document ID="159">
+            <Title>Step 15: Exporting Files</Title>
+            <Text>What if you want to use Scrivener but are worried about being locked in? The Scrivener project folder format (the project is the entire contents of the folder ending in “.scriv”) is unique, so what happens if you want to move your work elsewhere? Fear not: you are not locked in at all. Simply select all of the files you want to export in the binder (everything if you so wish) and then go to File &gt; Export &gt; Files… Enter the name of the directory that will be created to hold all of the files, choose your preferred text file format and whether you want to include notes and meta-data in the export (which will include the synopses), then hit “Export”. All the selected files will be exported with the binder structure intact; that is, the virtual folders in the binder will become actual folders in File Explorer. You can even drag the selected documents from the binder onto your desktop or File Explorer. All files in the Draft folder will be exported as RTF and all the other files will simply be copied in their native format.
+That’s how you can get anything out of Scrivener. Generally, however, the files you have inside a Scrivener project are there to support your writing—the text you have been slaving over—writing, editing, cutting up, rearranging—in the Draft folder. The whole point of Scrivener is to produce that text, so at some point you are going to want to export or print it as a single document or manuscript.
+
+To find out how, go to Step 16.</Text>
+        </Document>
+        <Document ID="160">
+            <Title>Step 14: Importing</Title>
+            <Text>If you decide Scrivener is the program for you, the first thing you are going to want to do is import your existing work. This is simple. Just select the folder you wish to import the files into, then go to File &gt; Import &gt; Files…, select the files you wish to import, and click the “Import” button. If you wish to import including subdirectories, maintaining the filing structure from File Explorer in the binder, then drag &amp; drop the folder into the Binder, instead. You can also drag files from Scrivener’s binder out again to export.
+
+
+Files Won’t Import?
+Note that if you have selected a document that is contained inside the “Draft” folder in the binder, when you go to File &gt; Import &gt; Files… you will only have the option of importing text file types; this is because files are imported at the location of the selection in the binder and the “Draft” folder only supports text files. Thus, if you wish to import media files, make sure that the selection is not in the “Draft” folder.
+
+
+The following file types are supported by Scrivener’s import feature:
+RTF
+DOC
+DOCX
+ODT
+TXT
+PDF
+Final Draft FDX
+HTML
+HTM
+OPML
+Most image files
+Windows media files (.wmv, .wav, .mp3 and .wma)
+Note that you can also copy and paste content into Scrivener from any source. If rich text formatting is not critical it is recommended that you copy and paste using Edit &gt; Paste and Match Style (or Ctrl+Shift+V). This method will ensure that text pasted from other applications is cleaned and usable within Scrivener, in much the same way that pasting text into Notepad and then back out again would “clean” it of all formatting.
+It is important to note that some attributes may be lost for certain document types upon import.
+It is also possible to import web archives (in PDF, MHT or plain-text conversion) directly from the Internet by selecting Import &gt; Web Page….
+You can actually import any file at all—it doesn’t have to be one of the supported formats listed above. If you import an unsupported file type, it will appear in the editor as a link. Clicking on the link will open the file in the program associated with it on your machine.
+
+On to Step 15...</Text>
+        </Document>
+        <Document ID="161">
+            <Title>Step 18: Text Editing</Title>
+            <Text>The Format Bar
+The format bar runs horizontally just below the toolbar and allows you to access common formatting commands easily. From the format bar you can change the font, text alignment, line spacing, text and highlight colour, and create lists. You can turn the format bar on or off by choosing the Format &gt; Format Bar menu command. Note that if you right-click (or click and hold) the text colour or highlight buttons in the format bar, a menu will appear that allows you to choose from a selection of colours (clicking on the buttons directly applies the currently-selected colour). You can customise what appears in the format bar with the Tools &gt; Customize Toolbars… menu command.
+The Format Menu
+The Format menu provides various ways of formatting your text which are standard in many applications along with some that are unique to Scrivener, the latter of which are listed below.
+Highlight
+Pretty straightforward, this one. Choose from several standard highlighter pen colours to highlight your text. 
+Inline Annotation And Footnotes
+ Inline annotations and footnotes allow you to make notes right inside your text.They look like this:
+
+This text has a footnote after it. This is a footnote. When the text is compiled, exported or printed, this footnote will be turned into a “real” footnote (or endnote).
+
+And this is an annotation. Annotations can be completely removed from the text when you compile, print or export.
+
+Each was created by selecting the text and choosing either “Inline Annotation” or “Inline Footnote” from the Format menu. Alternatively, you can also just choose “Inline Annotation” or “Inline Footnote” with no selection and start typing (note that you can change the colour of an annotation in the Appearance tab of Tools &gt; Options...). When you export your work, ranges of text defined as footnotes can be turned into real RTF footnotes that can be read by Word, OpenOffice.org, WordPerfect and other major word processors. Ranges of text defined as annotations can be turned into RTF comments (which Word can read) or omitted altogether. One thing to note is that when you create inline footnotes, the grey bubble should start exactly where you want the footnote marker to appear in the printed or exported text. Just think of the whole bubble as being the number in the final text.
+Scrivener Links
+Scrivener links are much like web hyperlinks, except that they link to other documents within the current Scrivener project. To create a Scrivener link, select the name of the document to which you wish to make a link from the Scrivener Links menu in the Edit menu. This will create a hyperlink in your text document. Alternatively, choose “New Link…” to bring up a dialogue box that allows you to create a new document to which to link, or to choose from existing documents in the project. Clicking on a Scrivener link will open the linked document in a split pane. Scrivener links can be useful for creating tables of contents or references within your research.
+Try clicking on the Scrivener link below:
+
+Spacewalk Info
+
+A PDF document will be opened in a new pane. Close the split pane and then move on to “Step 19” in the binder.</Text>
+        </Document>
+        <Document ID="162">
+            <Title>Step 17: Split and Merge</Title>
+            <Text>Okay, so you imported all your work into Scrivener. But you had a lot of long documents and now you want to chop them up so that you can experiment with moving the various parts around. No problem. The Documents menu features Split &gt; At Selection and Split &gt; with Selection as Title. These features allow you to chop up existing documents very easily and quickly. With “Split at Selection”, you simply click inside a text document so that the cursor is at the point where you want to split the document. Selecting this menu option will split the document into two at the cursor point. Try putting the cursor at the beginning of the next paragraph and doing that now.
+You should see that your input focus has been moved to the Binder so you can name this new chunk of text, and everything prior to the point above has been removed from this document. Click on the prior document in the Binder, and you’ll see the previous bit of text from before the split. Use the back button to return here when you are done.
+Sample Title
+“Split with Selection as Title” works in much the same way, except you select a range of text before clicking on it. The selected text will become the title of the newly-created document. This is useful, for instance, if you have a long document containing several chapters each with a title you want to use as the document title. Try triple-clicking the “Sample Title” line above, and using the Split &gt; with Selection as Title menu command.
+You can also merge documents. Selecting several documents in the binder and then choosing Documents &gt; Merge will merge the selected documents into one. Select the top “Step 17…” item in the Binder, and then Shift-click on the “Sample Title” document. Use Documents &gt; Merge to join them back together. A single empty line will be inserted in between each of the merged documents to make it easier to see where the joins were.
+
+Next we’ll look at some of the text options available in Scrivener. Click on “Step 18” in the binder.</Text>
+        </Document>
+        <Document ID="163">
+            <Title>Step 23: And Finally...</Title>
+            <Text>This has been a fairly thorough tour of all of the main features of Scrivener (or not so thorough if you only went through the “Quick Start” documents, but enough to get you up and running, I hope). You probably won’t use half of the features you’ve just learned for some time—in fact, on a daily basis, you will probably only use the most basic features of writing in the editor, creating new documents, and moving documents around in the binder. Everything in Scrivener gets out of your way until you need it—but at least you know what’s available and have a good idea of what you can do.
+There’s plenty of other stuff in there, too. For instance, I neglected to mention the project targets and statistics features in the Project menu, which you may well use frequently if you need to write to a particular length. They are fairly self-explanatory, though, so just try them out.
+What else? Well, once again, remember that Scrivener expects you to put everything that you want to export as part of your manuscript (okay, typescript for the pedants) inside the Draft folder. And remember that Scrivener is really about “hammering out” that draft; it is not a word processor or full page layout program, so at some point—unless you just want a very basic manuscript—you may well want to move your work into a word processor or dedicated scriptwriting program for final formatting.
+Experiment! You should be able to work out the rest by playing with the program. If you get stuck, be sure to check out the comprehensive Scrivener Manual from the Help menu. Note that it is a PDF, so while you are learning the program you might consider importing it into your working project binder’s research section for easy access. If you still have a problem, check out the knowledge base, or take a look at some of our tutorial videos on the web page:
+
+http://scrivener.tenderapp.com/help/kb
+http://www.literatureandlatte.com/videos.php
+
+And of course, if you are still baffled, post a question on the user forums!
+
+http://www.literatureandlatte.com/forum
+
+Likewise, if you encounter any bugs or glitches, no matter how small—and especially if you experience a crash—please post to the forums or e-mail us at windows.support@literatureandlatte.com.
+We hope you enjoy using Scrivener and find it a useful tool, and offer our heartfelt thanks to you for choosing Scrivener (or considering it) as the tool for your own writing.
+Next Steps
+You are now ready to begin your own project—go to File &gt; New Project to get going. Happy writing!</Text>
+        </Document>
+        <Document ID="164">
+            <Title>Step 21: Creating a New Project</Title>
+            <Text>At this point, we’ve covered all of the major features of Scrivener. If you haven’t done so already, then soon you are going to want to create your own project so that you can start work. Generally you will want a separate Scrivener project for each writing project you are working on. To create a new project, select “New Project…” from the File menu, which will open the project template chooser panel. From there, you can choose a project type from one of the categories (novel, screenplay, essay and so on). Once you’ve done so, give the new project a name in the “Save As” field, below the thumbnail browser. You may also want to change where the project will be saved by clicking the Browse button, or selecting a common location from the “Where” drop-down menu. Click the Create button to create and open the project (you can have more than one project open at once, so you can leave this tutorial project open in the background).
+Scrivener project folders end in “.scriv” which might seem a little strange. This is to maximise the cross-platform compatibility of the project (when viewed on a Mac, the folder will look and act like a single file). You will need to open Scrivener projects by double-clicking on the main project folder and then double-clicking the project document in that folder (if you have File Explorer set up to show extensions, it is the one with the “.scrivx” extension). That file is not your entire project; it is the master control file that keeps track of all the pieces. If you wish to copy your project to another computer or back it up, make sure to send the whole folder ending in .scriv. You can also open projects using the File &gt; Open… command, or if you’ve worked on the project recently, it might be listed in the File &gt; Recent Projects sub-menu.
+Note that the “Blank” project type is the basis for all other project types. That is, all the other project templates were created by starting from a blank project, adding some documents and changing the settings relevant for the project type, and then saving the resulting project as a template. If you find that none of the existing templates is quite right for the sort of writing you do, you can create your own project templates in the same way, like this:
+Create a new project—either from the Blank template or from any other template—and edit it so that it contains all the elements and settings you will want in a new project whenever it is created from your template. This can be as simple as you like, maybe just a few tweaks to Blank.
+Select “Save As Template…” from the File menu.
+From the “Save As Template” dialog that appears, enter a title and description for the new template, and choose a category and icon, then click on “OK”.
+Go to File &gt; New Project… You will find the template you just created available as the basis for new projects. At this point you can delete the project from which you created the template, if you wish. Since projects are just folders of files, close the project in Scrivener and then use File Explorer to delete the project’s folder (”[ProjectName].scriv”).
+
+Next on to “Step 22: Syncing with iOS” - you’ll find that in the “Part 6” folder.</Text>
+        </Document>
+        <Document ID="165">
+            <Title>Step 20: Document Templates</Title>
+            <Text>One of the key philosophies behind Scrivener is that it shouldn’t try to force you into a particular workflow. You should be able to write any sort of long-form text in Scrivener and set up your project to fit the task at hand. Likewise, if you’re using Scrivener to write a novel, Scrivener doesn’t automatically assume that you must therefore want character sheets to fill in for each character, or prompt sheets for information about locations and so on (I apologise for the fiction-biased examples). Every writer is different—some novelists find filling in character sheets an essential part of their process, others dislike such things. So, just as Scrivener allows you to create top-level folders and customise their icons, it also gives you the means to set up document templates for generating things such as character sheets. Document templates allow you to set up a document in the project and use it as the basis for creating new documents.
+(Note: Document templates should not be confused with project templates. A project template is something you pick from the New Project panel, which is used as the basis for creating an entire project—see Step 21—whereas a document template is a file inside a project.)
+This probably sounds more complicated than it is in practice, so let’s take a look at how document templates appear and work in a project.
+
+Go to the Project menu and hover over “New From Template”. When a project has document templates, they’re listed here so you can quickly create a new document using the template. All we see now is the placeholder menu item saying “No Templates Folder set”—this project doesn’t yet have any document templates or a folder assigned to hold them. You’ll see the same sub-menu if you click the down-arrow beside the green “Add” button in the toolbar and check the “New From Template” menu there.
+ Let’s create a couple of document templates to populate these menus. For this step, you may want to split the editor so you can follow along while keeping this reference up to the side. (Remember, selecting a document in the binder will load it in the editor with the blue header. You may need to click into the editor you want to change before following steps to click in the binder. To avoid accidentally replacing this document, choose “Lock In Place” from the icon menu in this split’s header.)
+Setting Up Document Templates
+Take a look inside the Research folder in the binder (expand it if necessary by clicking on the disclosure triangle next to it). Inside it you will find a “Sheets” folder, which contains two documents—“Character Sheet” and “Location Sheet”. Take a look at these documents. They contain text that could be used for very basic character or location sheets, which you might fill in for each character or location you are going to write about in a novel. They are just regular text documents, though—you can have whatever you want in there. To see what I mean, select the “Location” document and then click on “Add” in the toolbar so that a new blank document gets created. Name it to anything you want, and then type something inside the document.
+Now we’re going to tell Scrivener that the documents inside the “Sheets” folder should be treated as document templates—that is, that we want to be able to create new documents based on them:
+Click on the “Sheets” folder to select it.
+Go to the Project menu and choose “Set Selection as Templates Folder”.
+￼
+After turning the “Sheets” folder into a Document Template folder.
+The icon of the “Sheets” folder will change to be a white “T” against a blueprint, and the “T” will appear in the corner of each document inside the folder. This indicates that the folder is now acting as the templates folder and that anything inside it can be used as the basis for a new document. (Note that once you have set a templates folder, the “Set Selection as Templates Folder” item in the Project menu will change to “Clear Templates Folder”. Since each project can only have one templates folder, if you want to change the templates folder in the future, you will need to use this to reset things before “Set Selection as Templates Folder” becomes available again.)
+Using Document Templates
+What does this mean? Let’s try returning to the menus we looked at a little earlier:
+Click on the “Characters” folder with the custom icon that you created in step 19. It should currently be empty.
+Go to the Project menu and select “New From Template” again. You’ll notice that it’s no longer empty—it shows the contents of the “Sheets” templates folder.
+From the menu, select “Character Sheet”. A new document will be created inside the “Characters” folder—a document that is identical to the “Character Sheet” document in the templates folder. Change the title and edit the text in the document itself.
+Now click on the down-arrow beside the green “Add” button again. This time there will be more items in the sub-menu—the contents of our templates folder is there, too. Select the item you created previously. You should see the text you typed in appear in the editor. Anything you had done to this item beforehand would have been copied over (excluding snapshots, so you can store copies of older versions of your templates without them getting in the way).
+The two new documents you just created are copies of the documents in the templates folder. And that’s really all the templates folder is—somewhere for you to put documents that you want to use as the basis for other documents, and which, in combination with the New From Template menu, makes it very easy to create copies of those documents anywhere you want in the project.
+
+We’re nearly there. If you split the editor, go ahead and close it now, and unlock this editor if needed. Then on to Step 21…</Text>
+        </Document>
+        <Document ID="166">
+            <Title>Step 19: Custom Icons</Title>
+            <Text>As you have learned, by default any new Scrivener project will have three root folders—the Draft, Research and Trash folders. These folders cannot be deleted or moved into other folders (although they can be moved into a different order). You’re not limited to having only these three main folders, though—you can create as many as you need. Let’s try that now:
+Lock the editor again so that this document stays on screen (by clicking on the icon in the header view and selecting “Lock in Place” from the menu that appears).
+Click on the Research folder.
+Click on the “Add folder” button in the footer bar right at the bottom of the binder (or hit Ctrl+Shift+N).
+Note that a new folder is created inside the “Research” folder. Rename the new folder “Characters”.
+From the Documents menu, choose Move &gt; Left. Your new folder is now a root folder—that is, it is now as far left as it can go, on the same level as the Draft, Research and Trash folders
+So, we’ve created a new root-level folder, but at the moment it looks fairly generic. This is where Scrivener’s custom icons feature comes in—you can assign a custom icon to any file or folder in the binder so that its purpose is more immediately recognisable. In our example, we are going to use our new folder to store notes about different characters in a novel, so we want to assign an icon to it that will allow us to find it easily and quickly. Here’s how:
+Right-click on the “Characters” folder.
+Select “Change Icon” from the contextual menu that appears. Choose the “Character Sheet” icon from from the “Characters” group (although you could just as easily choose any icon).
+Or, hold down the Alt key while right-clicking to directly access the custom icon menu.
+A number of icons are provided with Scrivener for use in your projects, but you can also create your own (or download some) and import them by choosing “Manage Icons…” from the Documents &gt; Change Icon menu.
+In this way you can customise your projects to contain whatever main folders you need (note that you can assign custom icons to individual documents, too, but the feature is more likely to be useful for customising folder icons). If you create a Scrivener project from one of the templates that are provided (such as the novel template), you will find folders in the binder that have been created and customised in just this way.
+
+Unlock the editor and move on to Step 20.</Text>
+        </Document>
+        <Document ID="167">
+            <Title>ThisIsBuzzAldrin</Title>
+        </Document>
+        <Document ID="168">
+            <Title>spacewalk_info</Title>
+            <Synopsis>A PDF document from NASA about space walking.</Synopsis>
+        </Document>
+        <Document ID="169">
+            <Title>Alhambra</Title>
+        </Document>
+        <Document ID="170">
+            <Title>Sheets</Title>
+        </Document>
+        <Document ID="171">
+            <Title>Location Sheet</Title>
+            <Text>Place Name	Location
+Role in story
+
+Description:
+
+
+Plots involved in:
+
+
+Thematic Relevance:
+</Text>
+        </Document>
+        <Document ID="172">
+            <Title>Character Sheet</Title>
+            <Text>Character Name	Age / Gender
+Role in story
+
+Physical description:
+
+Personality:
+
+Plots involved in:
+
+
+Relationship with other characters:
+</Text>
+        </Document>
+        <Document ID="174">
+            <Title>START HERE</Title>
+            <Text>￼
+Scrivener
+Tutorial
+For Microsoft Windows
+
+Important Note Before We Begin
+This tutorial is a live Scrivener project which has been provided to help you get started. Once you’ve finished the tutorial, go to File &gt; New Project… to begin your own project.
+Welcome To The Tutorial
+Hello, and welcome to Scrivener. I hope you find Scrivener a useful addition to the tools you use for writing. This tutorial is designed to get you up and running as quickly as possible by introducing you to Scrivener’s main features. For further help and a more comprehensive description of all of Scrivener’s features, please refer to the manual, which is available from the Help menu.
+
+Feel free to ask for further assistance—and to report any bugs or problems you find—on the forums:
+
+http://www.literatureandlatte.com/forum
+What Is Scrivener?
+Scrivener is aimed at writers of all kinds—novelists, journalists, academics, screenwriters, playwrights—who need to structure a long piece of text while referring to research documents. Scrivener is a ring-binder, a scrapbook, a corkboard, an outliner and text editor all rolled into one. It is primarily intended to be a first draft tool—although it is possible to complete a project that requires only basic formatting—such as a novel or short story—in Scrivener, often you will want to take your draft to a dedicated word processor or layout program for final formatting. Scrivener is intended to be a kind of “writer’s shed” for those of us who don’t have a spare shed.
+This tutorial is meant to give you a good idea about the sorts of things Scrivener can do, and whether or not it is the tool for you. It covers a lot of ground so will take a few hours if you go through it thoroughly, but by the time you have completed it, you should know everything you need to know to start using Scrivener for your own projects, and you will be able to learn other features as you need them. Don’t let the length of this tutorial put you off, however—it is meant to be fairly exhaustive, but if you just want to dive in, you can cover the main points for now and worry about the rest later (see “Getting Started Quickly”, below).
+Before You Begin
+This tutorial assumes that you are using the default options. If necessary, you can reset the options to the defaults by clicking on the “Defaults” button in the Options pane, available under Tools &gt; Options…. The tutorial also refers to buttons in the main toolbar, so if you’ve hidden that, toggle it on again for now using View &gt; Toolbar. You can reset the main toolbar and format bar to their default items from Tools &gt; Customize Toolbars…. If you haven’t made any changes to the options or toolbars, you don’t need to worry about this. 
+Getting Started Quickly
+If you don’t have time to go through the whole tutorial yet, you can instead just go through the most important sections and return to the rest whenever you want. The most important sections have been gathered together into a “Quick Start” collection (collections are just arbitrary lists of documents from the project). To view the “Quick Start” collection, click on the “Collections” icon in the toolbar (it’s the icon showing a blue file folder, second from the left) and then choose the “Quick Start” tab in the pane that appears above the list of files on the left (the “binder”). The left-hand binder will be replaced with a list of the documents from the tutorial that cover the main features. Clicking the “Binder” tab will switch back to showing the full binder.
+￼
+The Collections button
+(If you go the “Quick Start” route, it is assumed that you’ll pick up the rest either by poking around in Scrivener and experimenting, or by returning to the other sections of the tutorial as you need them.)
+If you go through the entire tutorial, you can safely ignore any blue boxes marked “Quick Start Note”, as these are intended as instructions for users going only through the “Quick Start” sections.
+
+So, without further ado, click on “Step 1: Beginnings” in the list on the left to begin.</Text>
+        </Document>
+        <Document ID="223">
+            <Title>Other Stuff You Might Want to Know</Title>
+            <Text>Saving
+A very important aspect of a program such as Scrivener is how it saves documents. Scrivener auto-saves so that you don’t have to worry about saving at all if you don’t want to. That said, if you’re anything like me, “not worrying” about saving is an impossibility, so here is how things work: every time you make a change to a document, the name of your project in the Windows title bar will have an asterisk (*) placed after it to indicate that there are unsaved changes. At this point, Scrivener knows that it needs to save as soon as possible. It does so as soon as there is no activity for two seconds or more (although you can change the amount of time it waits in the “General” tab in Options)—that way, saving a large document will not interrupt what you are doing. It also checks whether it needs to save when a project is closed and when you quit the application, and saves if so. Once things are saved, the asterisk is removed from the Windows title bar.
+Although the auto-save feature keeps your work safe 99.99999% of the time, and while I hope you never experience any crashes, every program has the occasional bug lurking around, so for the sake of your—and my—own sanity, there is a “force save” feature. This just works the same way as a normal save in a regular app. Hit Ctrl+S or go to File &gt; Save to force any changes you have made to be saved without having to wait the two seconds for an auto-save. Note that because of the auto-save feature, if you close a project while the asterisk is in the title bar, you will not be asked whether you want to save your changes, as many programs do, because the changes will be saved automatically.
+Writing Multiple Books In The Same Project
+Generally, Scrivener is set up based on the assumption that each Scrivener project will contain a single book (or writing project). When you compile, you compile the entire Draft folder into a single manuscript. In the section on Compile, though, we briefly looked at how you can choose to compile only a subfolder of the Draft. If you really want to write more than one book in the same project - perhaps you have a series of books that rely on the same research, for instance - you can easily do so by taking advantage of this feature. Here’s how:
+Set up a different folder for each book inside the Draft folder.
+Organise each book folder as though it were the Draft folder for that book.
+In the “Contents” pane of Compile, choose the folder containing the book you wish to compile from the pop-up button above the list of documents.
+Layouts
+If you find yourself opening and closing the binder and inspector frequently, or spending a lot of time setting up the corkboard or outliner view to appear in the right place for a particular task, check out the Layouts feature, which can be accessed by selecting “Layout Manager…” from the Window &gt; Layouts menu. This allows you to save the state of the interface and quickly return to it at a later time.
+Scratch Pad
+If you have to gather a lot of research in other applications and find yourself doing a lot of copying and pasting into Scrivener, the Scratch Pad may be useful. The scratch pad is a tool that can be called up with the Tools &gt; Scratch Pad menu command (Ctrl+Shift+0). You can then paste or type any notes into it and send them to one of your open projects straight away or at some point later (Scratch Pad notes are saved in a folder on your hard drive that you can specify in the “General” tab of Options).
+Backing Up Your Work
+Back Up To... (available from the File &gt; Back Up menu) is your friend... Use it frequently to save copies of your project (you can save copies as archived .zip files, too) to ensure that your work is always backed up. You can also set up your projects to be backed up automatically whenever they are opened or closed, using the “Backup” tab of Options.
+File Format
+Just a quick note on the file format, by the way: Scrivener projects are actually folders on your disk with a number of files inside of them. The entire folder with a name ending in “.scriv” (for example, if you saved your tutorial as “Tutorial” there will be a “Tutorial.scriv” folder where you chose to save it). If you drill into one of those folders, you will (reassuringly, I hope) discover that all of your work is actually stored as multiple RTF and XML files inside various subfolders. This means that even in the worst possible crash case, if a .scriv project became hopelessly corrupted (although I hope this will never happen), you would still be able to open and edit all of your work in another program (such as Word). That said, you should not edit the RTF files inside a .scriv package in any other program if you intend to keep using them inside Scrivener, as this may cause problems with Scrivener’s footnotes, comments, links and search features. Use the File &gt; Export &gt; Files… feature if you want to get your files out of Scrivener.
+Working With Cloud Services
+Many users these days work across multiple machines and use a cloud service such as Dropbox to sync their files between computers. This is entirely possible with Scrivener files, but because of Scrivener’s file format structure, there are some gotchas that you need to bear in mind when working with Scrivener projects stored on Dropbox or other cloud services. We have an article in our Knowledge Base containing everything you need to know on this subject here:
+
+http://scrivener.tenderapp.com/help/kb/cloud-syncing/using-scrivener-with-cloud-sync-services</Text>
+        </Document>
+        <Document ID="227">
+            <Title>Step 22 Syncing with iOS</Title>
+            <Text>(You can skip this section if you don’t plan on syncing projects with Scrivener for iOS.)
+Scrivener is also available for the iPad and iPhone (via the iOS App Store), so that you can work on your projects anywhere. Follow the instructions below to sync your projects with our iOS version. Note that you will need a Dropbox account (http://www.getdropbox.com) to sync. If you don’t have or want a Dropbox account, you can copy projects via iTunes or third-party device file managers (see below).
+Syncing With Dropbox
+Any projects you want to share with the iOS version must be placed in your Dropbox folder. When you set up sync in Scrivener for iOS, you are asked to choose a subfolder inside Dropbox, and the iOS version will sync anything inside the folder you choose. The default setting is Dropbox\Apps\Scrivener, so we’ll use that as our example. We’ll assume the folder already exists in Dropbox (it will do if you’ve set up sync in the iOS version—follow the instructions in the iOS tutorial for details on that if necessary).
+To sync an existing project, first make sure it is closed on your PC, then move the entire project folder (ending in “.scriv”) into the Dropbox\Apps\Scrivener folder in File Explorer. You can then open it again on your PC from its new location in Dropbox if you wish.
+To create a new project that you want available on iOS, go to File &gt; New Project, select a project template, and choose to save it inside the Dropbox\Apps\Scrivener folder when prompted for a save location.
+Before opening a project on iOS, ensure that Dropbox on your PC has fully synced (check that there is no activity indicator in the Dropbox icon in the system tray; we  recommend you set the Dropbox tray icon to always show).
+Whenever you have made any changes to projects on your PC, be sure to tap the sync button in Scrivener for iOS so that all changes get downloaded.
+Edit your project on your iPhone or iPad and tap the sync button in the iOS version when you’re done.
+When returning to your PC, once more ensure that Dropbox has finished syncing by checking the icon in the menu bar.
+You can now carry on working on your project. You are free to leave your Scrivener projects open on the computer while editing them on iOS. When Scrivener for Windows detects that changes have been made with the iOS version, it will tell you that it needs to incorporate those changes into the project. It will then do so, closing and reopening the project. (If the project was closed, it will do all of this when you next open the project.)
+Scrivener for Windows detects changes whenever it becomes active. If you know you’ve made changes on iOS and Scrivener on the PC doesn’t tell you about them, simply choose Sync &gt; with Mobile Devices from the File menu. This will force Scrivener to check for any changes.
+Note that “Sync &gt; with Mobile Devices” just looks for changes that have been made to the current project on iOS devices. No changes will be found if the project has not been edited on iOS, or if it is not stored in the Dropbox folder.
+Dealing with Conflicts
+When syncing across devices, it’s important to remember that each device stores its own copy of the project (if it didn’t, you wouldn’t be able to access projects without an Internet connection). When you sync, Scrivener updates the copy on your PC and the copy on your iOS device (when next you sync it) so that they are both the same. If you make edits to the same document on more than one device without syncing, however, conflicts may arise because the two copies will be different.
+For instance, suppose you edit a scene on your iPad, then return to your computer without syncing and start editing the same scene—in this case, there will now be two different versions of it, one on your iPad, and one on your computer. When this occurs, on the next sync, Scrivener will tell you that conflicts have been found. Scrivener will always do its best to resolve all conflicts without requiring you to do anything, but in a case like this, it will create a “Conflicts” folder at the bottom of the binder and place one of the versions of the document inside it as a separate document.
+If this happens, be sure to compare the two versions of the document and decide which one you want to keep. You can open Scrivener’s split screen feature to look at them side-by-side and copy between them, and then delete the one you do not need. This won’t normally be a problem, however—it will only happen if you make changes to the same project on two devices without syncing before moving between devices.
+Copying Between Devices Using iTunes
+If you have the iOS version but don’t want to use Dropbox, you can copy projects to and from your iPhone or iPad using iTunes as follows:
+Open iTunes and connect with your device.
+Select the device you wish to update.
+Select “Apps” in the sidebar.
+Scroll down to “File Sharing”.
+Select Scrivener in the “Apps” list.
+Click the “Add…” button in iTunes and select your Scrivener project folder (ending in “.scriv”) using the file dialog box. This will add the project to the “Documents” list in iTunes (you may also be able to drag and drop projects in and out of the list).
+Select a project in the “Documents” list and click on “Save to…” to copy a project from your device to your PC’s hard drive.
+Any third-party tool capable of managing files on your iOS device can substitute for iTunes. You will need to consult the instructions for your preferred software.
+Important: some file management tools may merge a project folder when copying a project into a location where a project by that same name already exists. Merging should never be done. If necessary, delete or rename the older version of the project first, and then copy the updated version of the project so that it creates the project from scratch.
+
+Okay, on to Step 23, the “And Finally…” bit.</Text>
+        </Document>
+        <Document ID="229">
+            <Title>Part 6: Syncing</Title>
+        </Document>
+        <Document ID="230">
+            <Title>Leetcode</Title>
+        </Document>
+        <Document ID="231">
+            <Title>easy</Title>
+        </Document>
+        <Document ID="232">
+            <Title>Leetcode问题分类</Title>
+        </Document>
+        <Document ID="233">
+            <Title>hard</Title>
+        </Document>
+        <Document ID="234">
+            <Title>medium</Title>
+        </Document>
+        <Document ID="235">
+            <Title>hard</Title>
+        </Document>
+        <Document ID="236">
+            <Title>Locked Questions</Title>
+        </Document>
+        <Document ID="237">
+            <Title>精选Topics</Title>
+        </Document>
+        <Document ID="238">
+            <Title>拓扑排序</Title>
+        </Document>
+        <Document ID="239">
+            <Title>DP背包</Title>
+        </Document>
+        <Document ID="240">
+            <Title>Todo</Title>
+        </Document>
+        <Document ID="241">
+            <Title>TODO</Title>
+        </Document>
+        <Document ID="242">
+            <Title>要诀</Title>
+        </Document>
+    </Documents>
+</SearchIndexes>

@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrivenerProject Template="No" Version="1.5" Creator="SCRWIN-1.9.7.0" Device="LAPTOP-GM732FPM" Modified="2019-03-07 00:05:56 +0800" ModID="07321BD3-BF7C-41B5-8208-9FAD8AB20EAB">
+    <Binder>
+        <BinderItem ID="174" UUID="E1E832A3-3D89-4191-AEBE-2D7E399855DA" Created="2014-05-06 06:47:51 +0800" Modified="2015-10-05 14:35:23 +0800" Type="Text">
+            <Title>START HERE</Title>
+            <MetaData>
+                <LabelID>0</LabelID>
+                <IncludeInCompile>Yes</IncludeInCompile>
+                <FileExtension>rtf</FileExtension>
+                <IconFileName>Information.tiff</IconFileName>
+            </MetaData>
+            <TextSettings>
+                <Target Type="Words">0</Target>
+            </TextSettings>
+            <CorkboardAndOutliner>
+                <CorkboardSettings>
+                    <FreeformMode>Yes</FreeformMode>
+                </CorkboardSettings>
+            </CorkboardAndOutliner>
+        </BinderItem>
+        <BinderItem ID="0" UUID="A5E95ED5-4F99-4ED2-9D8C-2B7BDCAFFD2F" Created="2014-05-06 06:46:24 +0800" Modified="2014-05-06 06:46:24 +0800" Type="DraftFolder">
+            <Title>Draft</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <CorkboardAndOutliner>
+                <CorkboardSettings>
+                    <FreeformMode>Yes</FreeformMode>
+                </CorkboardSettings>
+            </CorkboardAndOutliner>
+            <Children>
+                <BinderItem ID="136" UUID="FCAFFE28-A716-442E-9CE1-B65BD2616535" Created="2014-05-06 06:47:29 +0800" Modified="2016-07-19 07:16:47 +0800" Type="Folder">
+                    <Title>Part 1: Basics</Title>
+                    <MetaData>
+                        <LabelID>0</LabelID>
+                        <StatusID>4</StatusID>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>rtf</FileExtension>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem ID="142" UUID="BAFA0D19-107E-49EC-BAF3-B650DC9E7D90" Created="2014-05-06 06:47:29 +0800" Modified="2015-10-05 08:40:22 +0800" Type="Text">
+                            <Title>Step 1: Beginnings</Title>
+                            <MetaData>
+                                <LabelID>0</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>1,0</TextSelection>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                            <CorkboardAndOutliner>
+                                <CorkboardSettings>
+                                    <FreeformMode>Yes</FreeformMode>
+                                </CorkboardSettings>
+                            </CorkboardAndOutliner>
+                        </BinderItem>
+                        <BinderItem ID="141" UUID="D45A3232-46FE-46B8-A9C1-65417DF0F063" Created="2014-05-06 06:47:29 +0800" Modified="2016-07-19 07:51:02 +0800" Type="Text">
+                            <Title>Step 2: Header View</Title>
+                            <MetaData>
+                                <LabelID>1</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                            <CorkboardAndOutliner>
+                                <CorkboardSettings>
+                                    <FreeformMode>Yes</FreeformMode>
+                                </CorkboardSettings>
+                            </CorkboardAndOutliner>
+                        </BinderItem>
+                        <BinderItem ID="140" UUID="B90B22A4-19C7-46D7-B782-93A61EAD4C90" Created="2014-05-06 06:47:29 +0800" Modified="2016-07-19 07:51:36 +0800" Type="Text">
+                            <Title>Step 3: Footer View</Title>
+                            <MetaData>
+                                <LabelID>0</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="139" UUID="788539E1-8380-4545-9A93-963EC2638F68" Created="2014-05-06 06:47:29 +0800" Modified="2016-07-19 07:51:54 +0800" Type="Text">
+                            <Title>Step 4: Full Screen</Title>
+                            <MetaData>
+                                <LabelID>1</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                            <CorkboardAndOutliner>
+                                <CorkboardSettings>
+                                    <FreeformMode>Yes</FreeformMode>
+                                </CorkboardSettings>
+                            </CorkboardAndOutliner>
+                        </BinderItem>
+                        <BinderItem ID="138" UUID="2468178C-02E4-4E58-A48E-60017C82DD5F" Created="2014-05-06 06:47:29 +0800" Modified="2015-10-05 14:31:35 +0800" Type="Text">
+                            <Title>Step 5: The Inspector</Title>
+                            <MetaData>
+                                <LabelID>0</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem ID="150" UUID="6C2404D9-1CAA-4AA5-9B91-5A7AB4CE0F63" Created="2014-05-06 06:47:30 +0800" Modified="2015-10-04 06:08:33 +0800" Type="Text">
+                                    <Title>5a: The Synopsis Index Card</Title>
+                                    <MetaData>
+                                        <LabelID>0</LabelID>
+                                        <StatusID>4</StatusID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <FileExtension>rtf</FileExtension>
+                                        <IndexCardImageFileExtension>png</IndexCardImageFileExtension>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                    <CorkboardAndOutliner>
+                                        <CorkboardSettings>
+                                            <FreeformMode>Yes</FreeformMode>
+                                        </CorkboardSettings>
+                                    </CorkboardAndOutliner>
+                                </BinderItem>
+                                <BinderItem ID="149" UUID="D433C207-3C1C-4C27-B23E-A2F30F147951" Created="2014-05-06 06:47:30 +0800" Modified="2016-07-19 07:37:51 +0800" Type="Text">
+                                    <Title>5b: General Meta-Data</Title>
+                                    <MetaData>
+                                        <LabelID>0</LabelID>
+                                        <StatusID>4</StatusID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <FileExtension>rtf</FileExtension>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                    <CorkboardAndOutliner>
+                                        <CorkboardSettings>
+                                            <FreeformMode>Yes</FreeformMode>
+                                        </CorkboardSettings>
+                                    </CorkboardAndOutliner>
+                                </BinderItem>
+                                <BinderItem ID="148" UUID="8210A7FD-12BB-45C0-A7D5-005391A23AC6" Created="2014-05-06 06:47:30 +0800" Modified="2015-09-24 08:08:53 +0800" Type="Text">
+                                    <Title>5c: Notes</Title>
+                                    <MetaData>
+                                        <LabelID>0</LabelID>
+                                        <StatusID>4</StatusID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <FileExtension>rtf</FileExtension>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem ID="147" UUID="7AC39C16-C60E-4A43-8AD1-6EA854DF895B" Created="2014-05-06 06:47:30 +0800" Modified="2015-10-05 10:02:42 +0800" Type="Text">
+                                    <Title>5d: References</Title>
+                                    <MetaData>
+                                        <LabelID>0</LabelID>
+                                        <StatusID>4</StatusID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <FileExtension>rtf</FileExtension>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                    <CorkboardAndOutliner>
+                                        <CorkboardSettings>
+                                            <FreeformMode>Yes</FreeformMode>
+                                        </CorkboardSettings>
+                                    </CorkboardAndOutliner>
+                                    <References>
+                                        <Reference Destination="http://www.literatureandlatte.com/scrivener.php">Scrivener Homepage</Reference>
+                                        <Reference BinderID="137">Step 6: End of Part One</Reference>
+                                    </References>
+                                </BinderItem>
+                                <BinderItem ID="146" UUID="3DE69D00-53F8-4223-99D2-B34C37525356" Created="2014-05-06 06:47:30 +0800" Modified="2015-10-05 13:31:20 +0800" Type="Text">
+                                    <Title>5e: Keywords</Title>
+                                    <MetaData>
+                                        <LabelID>0</LabelID>
+                                        <StatusID>4</StatusID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <FileExtension>rtf</FileExtension>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                    <Keywords>
+                                        <KeywordID>1</KeywordID>
+                                    </Keywords>
+                                </BinderItem>
+                                <BinderItem ID="145" UUID="928FC701-3CDF-40A8-BF4F-3804A0DB2DCB" Created="2014-05-06 06:47:30 +0800" Modified="2016-07-19 07:38:14 +0800" Type="Text">
+                                    <Title>5f: Custom Meta-Data</Title>
+                                    <MetaData>
+                                        <LabelID>0</LabelID>
+                                        <StatusID>0</StatusID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <FileExtension>rtf</FileExtension>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                    <CorkboardAndOutliner>
+                                        <CorkboardSettings>
+                                            <FreeformMode>Yes</FreeformMode>
+                                        </CorkboardSettings>
+                                    </CorkboardAndOutliner>
+                                </BinderItem>
+                                <BinderItem ID="144" UUID="78BC9B02-1814-4339-A1DE-702AC58ABF4C" Created="2014-05-06 06:47:30 +0800" Modified="2015-10-05 13:34:40 +0800" Type="Text">
+                                    <Title>5g: Snapshots</Title>
+                                    <MetaData>
+                                        <LabelID>0</LabelID>
+                                        <StatusID>4</StatusID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <FileExtension>rtf</FileExtension>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                    <CorkboardAndOutliner>
+                                        <CorkboardSettings>
+                                            <FreeformMode>Yes</FreeformMode>
+                                        </CorkboardSettings>
+                                    </CorkboardAndOutliner>
+                                </BinderItem>
+                                <BinderItem ID="143" UUID="305017D6-39D7-4612-9342-3415FFEE2F60" Created="2014-05-06 06:47:30 +0800" Modified="2016-10-06 14:54:47 +0800" Type="Text">
+                                    <Title>5h: Comments &amp; Footnotes</Title>
+                                    <MetaData>
+                                        <LabelID>0</LabelID>
+                                        <StatusID>0</StatusID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <FileExtension>rtf</FileExtension>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                    <CorkboardAndOutliner>
+                                        <CorkboardSettings>
+                                            <FreeformMode>Yes</FreeformMode>
+                                        </CorkboardSettings>
+                                    </CorkboardAndOutliner>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem ID="137" UUID="768C7776-7983-4382-8DFE-8BAEB49FB409" Created="2014-05-06 06:47:29 +0800" Modified="2015-09-24 08:10:44 +0800" Type="Text">
+                            <Title>Step 6: End of Part One</Title>
+                            <MetaData>
+                                <LabelID>1</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                            <CorkboardAndOutliner>
+                                <CorkboardSettings>
+                                    <FreeformMode>Yes</FreeformMode>
+                                </CorkboardSettings>
+                            </CorkboardAndOutliner>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem ID="135" UUID="3F79E00C-B7CF-4384-A21E-A6B15866738A" Created="2014-05-06 06:47:29 +0800" Modified="2015-10-05 14:32:45 +0800" Type="Folder">
+                    <Title>Part 2: Organisation</Title>
+                    <MetaData>
+                        <LabelID>1</LabelID>
+                        <StatusID>4</StatusID>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>rtf</FileExtension>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                    <CorkboardAndOutliner>
+                        <CorkboardSettings>
+                            <FreeformMode>Yes</FreeformMode>
+                        </CorkboardSettings>
+                    </CorkboardAndOutliner>
+                    <Children>
+                        <BinderItem ID="157" UUID="6F79F390-838D-4666-A77D-901B1C89FD72" Created="2014-05-06 06:47:30 +0800" Modified="2015-10-04 06:12:00 +0800" Type="Text">
+                            <Title>Step 7: Changing Editor Views</Title>
+                            <MetaData>
+                                <LabelID>1</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                            <CorkboardAndOutliner>
+                                <CorkboardSettings>
+                                    <FreeformMode>Yes</FreeformMode>
+                                </CorkboardSettings>
+                            </CorkboardAndOutliner>
+                        </BinderItem>
+                        <BinderItem ID="156" UUID="BA04956C-2950-4F6C-8F4D-A5933DE96803" Created="2014-05-06 06:47:30 +0800" Modified="2016-07-19 07:06:53 +0800" Type="Text">
+                            <Title>Step 8: Splits</Title>
+                            <MetaData>
+                                <LabelID>0</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                            <CorkboardAndOutliner>
+                                <CorkboardSettings>
+                                    <FreeformMode>Yes</FreeformMode>
+                                </CorkboardSettings>
+                            </CorkboardAndOutliner>
+                        </BinderItem>
+                        <BinderItem ID="155" UUID="A1AB948B-3180-4AC8-BB69-48A68C25EC2A" Created="2014-05-06 06:47:30 +0800" Modified="2015-10-05 13:51:49 +0800" Type="Text">
+                            <Title>Step 9: Corkboard</Title>
+                            <MetaData>
+                                <LabelID>1</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                            <CorkboardAndOutliner>
+                                <CorkboardSettings>
+                                    <FreeformMode>Yes</FreeformMode>
+                                </CorkboardSettings>
+                            </CorkboardAndOutliner>
+                        </BinderItem>
+                        <BinderItem ID="154" UUID="EFBDB322-DB9C-4534-B947-C1E538582861" Created="2014-05-06 06:47:30 +0800" Modified="2016-07-19 07:11:51 +0800" Type="Text">
+                            <Title>Step 10: Outliner</Title>
+                            <MetaData>
+                                <LabelID>0</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                            <CorkboardAndOutliner>
+                                <CorkboardSettings>
+                                    <FreeformMode>Yes</FreeformMode>
+                                </CorkboardSettings>
+                            </CorkboardAndOutliner>
+                        </BinderItem>
+                        <BinderItem ID="153" UUID="FD9778E9-EE05-40D9-911E-4BB070777904" Created="2014-05-06 06:47:30 +0800" Modified="2016-07-19 07:38:57 +0800" Type="Text">
+                            <Title>Step 11: Scrivenings</Title>
+                            <MetaData>
+                                <LabelID>1</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="152" UUID="2FBBDA2D-F5AB-4DFD-A632-17C415A473D0" Created="2014-05-06 06:47:30 +0800" Modified="2016-07-18 13:44:57 +0800" Type="Text">
+                            <Title>Step 12: Project Search</Title>
+                            <MetaData>
+                                <LabelID>0</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                            <CorkboardAndOutliner>
+                                <CorkboardSettings>
+                                    <FreeformMode>Yes</FreeformMode>
+                                </CorkboardSettings>
+                            </CorkboardAndOutliner>
+                            <Keywords>
+                                <KeywordID>10</KeywordID>
+                            </Keywords>
+                        </BinderItem>
+                        <BinderItem ID="151" UUID="DD91446F-8B0C-4A27-870C-87C530292C28" Created="2014-05-06 06:47:30 +0800" Modified="2016-07-19 07:39:16 +0800" Type="Text">
+                            <Title>Step 13: Collections</Title>
+                            <MetaData>
+                                <LabelID>0</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                            <CorkboardAndOutliner>
+                                <CorkboardSettings>
+                                    <FreeformMode>Yes</FreeformMode>
+                                </CorkboardSettings>
+                            </CorkboardAndOutliner>
+                            <Keywords>
+                                <KeywordID>10</KeywordID>
+                            </Keywords>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem ID="134" UUID="0DC74255-30E7-459F-AAB7-281C05D6FF7E" Created="2014-05-06 06:47:29 +0800" Modified="2015-03-10 10:02:22 +0800" Type="Folder">
+                    <Title>Part 3: Import, Export and Printing</Title>
+                    <MetaData>
+                        <LabelID>0</LabelID>
+                        <StatusID>4</StatusID>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>rtf</FileExtension>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                    <CorkboardAndOutliner>
+                        <CorkboardSettings>
+                            <FreeformMode>Yes</FreeformMode>
+                        </CorkboardSettings>
+                    </CorkboardAndOutliner>
+                    <Children>
+                        <BinderItem ID="160" UUID="BFF5FB25-E5B0-4980-AE3D-2AE440615F9A" Created="2014-05-06 06:47:31 +0800" Modified="2016-07-19 07:39:44 +0800" Type="Text">
+                            <Title>Step 14: Importing</Title>
+                            <MetaData>
+                                <LabelID>0</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                            <Keywords>
+                                <KeywordID>10</KeywordID>
+                            </Keywords>
+                        </BinderItem>
+                        <BinderItem ID="159" UUID="C31D9143-9FD8-4373-9646-D153384D9DD1" Created="2014-05-06 06:47:31 +0800" Modified="2015-10-04 16:58:18 +0800" Type="Text">
+                            <Title>Step 15: Exporting Files</Title>
+                            <MetaData>
+                                <LabelID>1</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="158" UUID="B370E4E2-16C2-4F20-89DF-06F4D65EA6A3" Created="2014-05-06 06:47:31 +0800" Modified="2016-10-06 14:50:00 +0800" Type="Text">
+                            <Title>Step 16: Compiling the Draft</Title>
+                            <MetaData>
+                                <LabelID>0</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                            <Keywords>
+                                <KeywordID>10</KeywordID>
+                            </Keywords>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem ID="133" UUID="0D0E7644-CE8F-4B60-821C-747EBE7BC698" Created="2014-05-06 06:47:29 +0800" Modified="2015-09-23 02:57:27 +0800" Type="Folder">
+                    <Title>Part 4: Text Tools</Title>
+                    <MetaData>
+                        <LabelID>0</LabelID>
+                        <StatusID>4</StatusID>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>rtf</FileExtension>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem ID="162" UUID="13F8609D-95CB-49F3-9856-A24528D57087" Created="2014-05-06 06:47:32 +0800" Modified="2015-10-04 06:22:52 +0800" Type="Text">
+                            <Title>Step 17: Split and Merge</Title>
+                            <MetaData>
+                                <LabelID>1</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="161" UUID="25AE2816-48E6-45B6-B655-46F6A3363DCD" Created="2014-05-06 06:47:32 +0800" Modified="2016-07-19 07:12:05 +0800" Type="Text">
+                            <Title>Step 18: Text Editing</Title>
+                            <MetaData>
+                                <LabelID>0</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem ID="132" UUID="EE19017C-7241-4482-B386-E2BF653C157E" Created="2014-05-06 06:47:29 +0800" Modified="2015-09-23 02:57:27 +0800" Type="Folder">
+                    <Title>Part 5: Customising Projects</Title>
+                    <MetaData>
+                        <LabelID>0</LabelID>
+                        <StatusID>4</StatusID>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>rtf</FileExtension>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem ID="166" UUID="F565378F-D27C-42F0-871D-E14B4126C9B3" Created="2014-05-06 06:47:32 +0800" Modified="2016-07-19 07:43:44 +0800" Type="Text">
+                            <Title>Step 19: Custom Icons</Title>
+                            <MetaData>
+                                <LabelID>0</LabelID>
+                                <StatusID>1</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="165" UUID="6EB92C05-F4BA-4141-9947-8D45C7D4BD99" Created="2014-05-06 06:47:32 +0800" Modified="2016-07-19 07:44:10 +0800" Type="Text">
+                            <Title>Step 20: Document Templates</Title>
+                            <MetaData>
+                                <LabelID>0</LabelID>
+                                <StatusID>0</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="164" UUID="0167C3F5-F39F-4CA9-BC3E-B07F5AD11097" Created="2014-05-06 06:47:32 +0800" Modified="2016-07-19 07:44:24 +0800" Type="Text">
+                            <Title>Step 21: Creating a New Project</Title>
+                            <MetaData>
+                                <LabelID>0</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem ID="229" UUID="54BE3C36-C8D9-417E-A3D8-FC506EC88744" Created="2016-07-16 04:26:10 +0800" Modified="2016-07-16 04:26:16 +0800" Type="Folder">
+                    <Title>Part 6: Syncing</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem ID="227" UUID="993C7410-5C87-49E7-9969-4A4FE4700682" Created="2016-07-16 04:12:39 +0800" Modified="2016-07-19 08:53:46 +0800" Type="Text">
+                            <Title>Step 22 Syncing with iOS</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="163" UUID="4EAC2B37-B8B7-41DA-A12A-18639DBE23F7" Created="2014-05-06 06:47:32 +0800" Modified="2016-07-16 04:43:51 +0800" Type="Text">
+                            <Title>Step 23: And Finally...</Title>
+                            <MetaData>
+                                <LabelID>1</LabelID>
+                                <StatusID>4</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem ID="223" UUID="849FF9F3-6B7F-4B73-861A-D930CCD370EB" Created="2015-09-24 07:45:50 +0800" Modified="2015-10-05 14:34:36 +0800" Type="Text">
+                    <Title>Other Stuff You Might Want to Know</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem ID="1" UUID="5C46B267-B622-4E5E-A17A-BB73F467DDD3" Created="2014-05-06 06:46:24 +0800" Modified="2014-05-06 06:46:24 +0800" Type="ResearchFolder">
+            <Title>Research</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem ID="170" UUID="366E5664-7CED-432B-B53A-5277F06BBE2A" Created="2014-05-06 06:47:45 +0800" Modified="2015-10-05 13:38:06 +0800" Type="Folder">
+                    <Title>Sheets</Title>
+                    <MetaData>
+                        <LabelID>0</LabelID>
+                        <StatusID>0</StatusID>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem ID="172" UUID="B48A3A66-3558-4E73-8E46-6CADCD1FE49D" Created="2014-05-06 06:47:45 +0800" Modified="2016-07-19 07:45:05 +0800" Type="Text">
+                            <Title>Character Sheet</Title>
+                            <MetaData>
+                                <LabelID>0</LabelID>
+                                <StatusID>0</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,14</TextSelection>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="171" UUID="C83C4A4D-580F-433D-B168-ED5F94F728AE" Created="2014-05-06 06:47:45 +0800" Modified="2016-07-19 07:45:18 +0800" Type="Text">
+                            <Title>Location Sheet</Title>
+                            <MetaData>
+                                <LabelID>0</LabelID>
+                                <StatusID>0</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,10</TextSelection>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem ID="169" UUID="00E0DD5F-7570-4BE2-8690-F58F3CD36395" Created="2014-05-06 06:47:45 +0800" Modified="2014-05-06 06:47:45 +0800" Type="Image">
+                    <Title>Alhambra</Title>
+                    <MetaData>
+                        <LabelID>0</LabelID>
+                        <StatusID>0</StatusID>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>jpg</FileExtension>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScalesProportionally>Yes</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem ID="168" UUID="66C378B7-8588-4291-912A-E66919F400E0" Created="2014-05-06 06:47:45 +0800" Modified="2014-05-06 06:47:45 +0800" Type="PDF">
+                    <Title>spacewalk_info</Title>
+                    <MetaData>
+                        <LabelID>0</LabelID>
+                        <StatusID>0</StatusID>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>pdf</FileExtension>
+                    </MetaData>
+                    <MediaSettings>
+                        <CurrentPDFPage>0</CurrentPDFPage>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem ID="167" UUID="0D24230B-D644-4FAA-92D3-B82456F5963F" Created="2014-05-06 06:47:45 +0800" Modified="2014-05-06 06:47:45 +0800" Type="Media">
+                    <Title>ThisIsBuzzAldrin</Title>
+                    <MetaData>
+                        <LabelID>0</LabelID>
+                        <StatusID>0</StatusID>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>wav</FileExtension>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem ID="2" UUID="EBDA1B48-95C2-48A3-9C17-1BD032536447" Created="2014-05-06 06:46:24 +0800" Modified="2014-05-06 06:46:24 +0800" Type="TrashFolder">
+            <Title>Trash</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem ID="233" UUID="50D6D8FF-0A29-4C89-A0CC-3695FF36B48C" Created="2019-03-06 23:58:38 +0800" Modified="2019-03-06 23:59:38 +0800" Type="Text">
+                    <Title>hard</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem ID="240" UUID="C8A2BBB1-9677-449F-9DF0-9B6863190F7F" Created="2019-03-07 00:03:12 +0800" Modified="2019-03-07 00:03:24 +0800" Type="Text">
+                    <Title>Todo</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem ID="230" UUID="9EBE9732-98F6-4A95-AD0D-E68A5DDF1AFF" Created="2019-03-06 23:55:23 +0800" Modified="2019-03-07 00:05:54 +0800" Type="Folder">
+            <Title>Leetcode</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+                <IconFileName>Speech Bubble.tiff</IconFileName>
+            </MetaData>
+            <TextSettings>
+                <Target Type="Words">0</Target>
+            </TextSettings>
+            <Children>
+                <BinderItem ID="232" UUID="1D310766-1999-4A50-ACAA-B2A884C6EBF5" Created="2019-03-06 23:58:27 +0800" Modified="2019-03-06 23:59:18 +0800" Type="Text">
+                    <Title>Leetcode问题分类</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem ID="231" UUID="CE070A84-DE1F-421D-ABBC-7B7F85EF53D9" Created="2019-03-06 23:57:50 +0800" Modified="2019-03-06 23:58:16 +0800" Type="Folder">
+                    <Title>easy</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem ID="234" UUID="58052B93-17F0-4321-8563-AD7483563EA3" Created="2019-03-06 23:58:47 +0800" Modified="2019-03-06 23:58:56 +0800" Type="Folder">
+                    <Title>medium</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem ID="235" UUID="00852A3A-6C9F-4D7F-BDB3-64CC577017F9" Created="2019-03-06 23:58:48 +0800" Modified="2019-03-06 23:59:03 +0800" Type="Folder">
+                    <Title>hard</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem ID="236" UUID="EE7AC060-72D1-4501-90FF-A33A74F0F3F8" Created="2019-03-07 00:00:11 +0800" Modified="2019-03-07 00:01:24 +0800" Type="Folder">
+                    <Title>Locked Questions</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <IconFileName>Magnifying Glass.tiff</IconFileName>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem ID="237" UUID="B531E370-1B63-49F8-9096-D67FE5126572" Created="2019-03-07 00:00:42 +0800" Modified="2019-03-07 00:01:57 +0800" Type="Folder">
+                    <Title>精选Topics</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <IconFileName>Reviewer Comments.tiff</IconFileName>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem ID="238" UUID="B599FA43-095C-47FD-AC90-B64D3BB1CCF7" Created="2019-03-07 00:02:10 +0800" Modified="2019-03-07 00:02:22 +0800" Type="Folder">
+                            <Title>拓扑排序</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem ID="239" UUID="84CBCCFC-5E32-49CC-A44C-3CD3739452B1" Created="2019-03-07 00:02:27 +0800" Modified="2019-03-07 00:02:37 +0800" Type="Folder">
+                            <Title>DP背包</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem ID="241" UUID="16A3B805-352C-4F6E-A485-1324766D9678" Created="2019-03-07 00:03:29 +0800" Modified="2019-03-07 00:03:53 +0800" Type="Folder">
+                    <Title>TODO</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <IconFileName>To Do.tiff</IconFileName>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem ID="242" UUID="D0C8D281-9B0F-43F1-A1D9-0853658AF673" Created="2019-03-07 00:04:32 +0800" Modified="2019-03-07 00:05:11 +0800" Type="Folder">
+                    <Title>要诀</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <IconFileName>Way-Station (Red Way-Station).tiff</IconFileName>
+                    </MetaData>
+                    <TextSettings>
+                        <Target Type="Words">0</Target>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+    </Binder>
+    <LabelSettings>
+        <Title>Label</Title>
+        <DefaultLabelID>-1</DefaultLabelID>
+        <Labels>
+            <Label ID="-1">No Label</Label>
+            <Label ID="0" Color="0.752941 0.752941 1.000000">Concept</Label>
+            <Label ID="1" Color="1.000000 0.752941 0.752941">Chapter</Label>
+        </Labels>
+    </LabelSettings>
+    <StatusSettings>
+        <Title>Status</Title>
+        <DefaultStatusID>-1</DefaultStatusID>
+        <StatusItems>
+            <Status ID="-1">No Status</Status>
+            <Status ID="0">N/A</Status>
+            <Status ID="1">To Do</Status>
+            <Status ID="2">First Draft</Status>
+            <Status ID="3">Revised Draft</Status>
+            <Status ID="4">Final Draft</Status>
+            <Status ID="5">Done</Status>
+        </StatusItems>
+    </StatusSettings>
+    <ProjectReferences>
+        <Reference Destination="http://www.literatureandlatte.com/forum">Support and Discussion Forum</Reference>
+        <Reference Destination="http://www.literatureandlatte.com/support.php">Technical Support</Reference>
+        <Reference Destination="http://scrivener.tenderapp.com/help/kb">Knowledge Base</Reference>
+    </ProjectReferences>
+    <ProjectTargets>
+        <DraftTarget Type="Words" CountIncludedOnly="No" CurrentCompileGroupOnly="No">0</DraftTarget>
+        <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Never" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="No" WritingDays="">0</SessionTarget>
+        <PreviousSession Words="0" Characters="0" Date="2019-03-06 23:54:04 +0800"/>
+    </ProjectTargets>
+    <Collections>
+        <Collection Type="Binder" ID="59331948-D8DD-4B56-9A20-E62BFEF820B5" Color="0.901961 0.917647 0.933333">
+            <Title>Binder</Title>
+        </Collection>
+        <Collection Type="Arbitrary" ID="CFA2B9D3-5D1A-49A7-8765-0B1F8D5B5D9F" Color="0.839216 0.807843 0.780392">
+            <Title>Quick Start</Title>
+            <BinderIDs>
+                <BinderID>142</BinderID>
+                <BinderID>138</BinderID>
+                <BinderID>150</BinderID>
+                <BinderID>137</BinderID>
+                <BinderID>135</BinderID>
+                <BinderID>157</BinderID>
+                <BinderID>156</BinderID>
+                <BinderID>155</BinderID>
+                <BinderID>154</BinderID>
+                <BinderID>153</BinderID>
+                <BinderID>158</BinderID>
+                <BinderID>163</BinderID>
+            </BinderIDs>
+        </Collection>
+        <Collection Type="RecentSearch" ID="63AA1064-0590-4DC6-8F71-3983A5AB701F" Color="0.901961 0.901961 0.980392">
+            <Title>Search Results</Title>
+            <SearchSettings Operator="Exact" Type="All" Scope="All" CompileSetting="All" CaseSensitive="No">start here</SearchSettings>
+        </Collection>
+    </Collections>
+    <Keywords>
+        <Keyword ID="10">
+            <Title>fixed</Title>
+            <Color>0.784314 0.870588 0.192157</Color>
+        </Keyword>
+        <Keyword ID="2">
+            <Title>Assign this one</Title>
+            <Color>1.000000 0.000000 0.000000</Color>
+        </Keyword>
+        <Keyword ID="3">
+            <Title>Characters</Title>
+            <Color>1.000000 0.666667 0.498039</Color>
+            <Children>
+                <Keyword ID="8">
+                    <Title>Aeryn</Title>
+                    <Color>0.529412 0.807843 0.882353</Color>
+                </Keyword>
+                <Keyword ID="9">
+                    <Title>John</Title>
+                    <Color>0.898039 0.878431 0.047059</Color>
+                </Keyword>
+            </Children>
+        </Keyword>
+        <Keyword ID="4">
+            <Title>Locations</Title>
+            <Color>0.333333 0.666667 0.000000</Color>
+            <Children>
+                <Keyword ID="7">
+                    <Title>Wessex</Title>
+                    <Color>0.666667 0.333333 1.000000</Color>
+                </Keyword>
+            </Children>
+        </Keyword>
+        <Keyword ID="1">
+            <Title>Themes</Title>
+            <Color>0.683253 0.426291 0.525643</Color>
+            <Children>
+                <Keyword ID="5">
+                    <Title>Darkness</Title>
+                    <Color>0.172549 0.000000 0.000000</Color>
+                </Keyword>
+                <Keyword ID="6">
+                    <Title>Water</Title>
+                    <Color>0.666667 1.000000 1.000000</Color>
+                </Keyword>
+            </Children>
+        </Keyword>
+    </Keywords>
+    <PrintSettings PaperType="Letter" LeftMargin="72.0001" RightMargin="72.0001" TopMargin="72.0001" BottomMargin="72.0001" Orientation="Portrait" Collates="No" ReverseOrder="No"/>
+</ScrivenerProject>

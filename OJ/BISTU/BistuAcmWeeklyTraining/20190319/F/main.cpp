@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+//任意一个最小的范围m都能包含某个字母
 int main() {
     char a[111111];
     cin>>a;

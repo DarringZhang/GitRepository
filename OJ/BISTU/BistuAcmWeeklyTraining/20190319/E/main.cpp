@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+//用最少的动作将所有的烤串翻面
 int main(){
     int n,k;
     cin>>n>>k;

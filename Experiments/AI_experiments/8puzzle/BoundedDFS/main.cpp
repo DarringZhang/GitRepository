@@ -71,13 +71,13 @@ int cnt =0;
 int flag = 0;
 void dfs(){
     if(flag == 0){
-        cnt++;
-        if (cnt%5==0) cout<<"curcnt: "<<cnt<<endl;
+        //cnt++;
+        //if (cnt%5==0) cout<<"curcnt: "<<cnt<<endl;
 
 
         while(!sstack.empty()) {
 
-            cout<<"sstack.size(): "<<sstack.size()<<endl;
+         //   cout<<"sstack.size(): "<<sstack.size()<<endl;
             //取出第一个节点
             State s = sstack.top();
             sstack.pop();
@@ -95,9 +95,9 @@ void dfs(){
             }
 
 
-//           if(s.deep > 4){
-//                return;
-//            }
+          if(s.deep > 4){
+                return;
+            }
 
 
 
@@ -160,7 +160,7 @@ void dfs(){
 }
 
 int main() {
-    freopen("local.txt","r",stdin);
+   // freopen("local.txt","r",stdin);
 
     for(int i = 0; i < 9; ++i){
         scanf("%d",&st.a[i]); //起始状态
@@ -184,10 +184,10 @@ int main() {
 
     dfs();
 
-//    if(flag ==0){
-//        cout<<endl;
-//        cout<<"限制搜索深度为4的情况下，未找到目标状态"<<endl;
-//    }
+    if(flag ==0){
+        cout<<endl;
+        cout<<"限制搜索深度为4的情况下，未找到目标状态"<<endl;
+    }
 
     return 0;
 }

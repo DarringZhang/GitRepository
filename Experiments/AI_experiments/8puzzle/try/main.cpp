@@ -1,34 +1,167 @@
 
-//ç¼–ç æ–¹å¼ï¼šGBK
-
 #include <bits/stdc++.h>
+#include <cstdio>
 using namespace std;
 
-typedef int State[9];  //å®šä¹‰9ä¸ªå…ƒç´ çš„"çŠ¶æ€",ä»£è¡¨ä¸€ç§èŠ‚ç‚¹
+typedef struct Station {
+    int a[9];
+    int deep;
+    struct Station *father;
+}State;
+
 
 State goal,st;
-stack<State> sstack;
 
-//queue<State >ssque;
-//ä¸ºä»€ä¹ˆ sstack ä¸èƒ½pushæ“ä½œ
+queue<State> Q;
+vector <State>  box;
+
+
 set<int> vis;
 void init_lookup_table(){
     vis.clear();
 }
 
 
-int main() {
-    for(int i = 0; i < 9; ++i){
-        scanf("%d",&st[i]); //èµ·å§‹çŠ¶æ€
+int get_val(State s){
+    int v = 0;
+    for(int i = 0; i < 9; ++i) {   //°Ñ×´Ì¬×ª»»³É9Î»Ê®½øÖÆÊı
+        v = v * 10 + s.a[i];
+    }
+    return v;
+}
+
+
+int try_to_insert(State s){
+    int v = 0;
+    for(int i = 0; i < 9; ++i) {   //°Ñ×´Ì¬×ª»»³É9Î»Ê®½øÖÆÊı
+        v = v * 10 + s.a[i];
     }
 
-    for(int i = 0; i < 9; ++i){
-        scanf("%d",&goal[i]);  //ç›®æ ‡çŠ¶æ€
+    if(vis.count(v)){
+        return 0;
     }
 
-    sstack.push(st);
+    vis.insert(v);
+    return 1;
+}
 
-   // dfs();
+
+void Print(State t){
+
+    for(int i = 0; i < 9; ++i){
+        printf("%d ",t.a[i]);  //Ä¿±ê×´Ì¬
+        if((i+1)%3 == 0){
+            cout<<endl;
+        }
+    }
+
+    cout<<endl;
+}
+
+
+// ¶ÔÓÚÒ»¸ö½ÚµãµÄdxºÍdy,ÒªÃ´ÉÏ£¬ÒªÃ´ÏÂ£¬ÒªÃ´×ó£¬ÒªÃ´ÓÒ£¨½«dx£¬dy½áºÏÆğÀ´¿´£©
+const int dx[] = {-1,1,0,0};
+const int dy[] = {0,0,-1,1};
+int cost_tree_bfs(){
+    while(!Q.empty()) {
+        State s = Q.front();
+        Q.pop();
+
+
+        if (memcmp(goal.a, s.a, sizeof(s.a))== 0) {
+            cout<<"ÕÒµ½Ä¿±ê×´Ì¬£¬ÒÔÏÂÊÇÊä³ö½á¹û£º"<<endl;
+
+            State *kk = s.father;
+            int cnt = 0;
+            if(kk==NULL){
+                cout<<"sfasuihciausdv "<<endl;
+            }
+            //¸ù¾İfather ´òÓ¡Â·¾¶
+            while(kk!= NULL){
+
+                cout<<"µÚ"<<++cnt<<"×é:"<<endl;
+                Print(*kk);
+                kk = kk->father;
+            }
+
+            return 1; //ÕÒµ½Ä¿±ê×´Ì¬£¬½áÊø
+        }
+
+
+        int z;
+        for (z = 0; z < 9; z++) {
+            if (!s.a[z]) { //ÕÒµ½0Î»ÖÃ
+                break;
+            }
+        }
+
+        int x = z/3, y = z%3;
+
+        for (int d = 0; d < 4; d++) { //Ñ°ÕÒÏÂÒ»²½ÒÆ¶¯µÄ·½°¸  ÉÏÏÂ×óÓÒµÄË³Ğò
+            int newx = x + dx[d];
+            int newy = y + dy[d];
+
+            int newz = newx * 3 + newy;
+            if (newx >= 0 && newx < 3 && newy >= 0 && newy < 3) {  //ÒÆ¶¯ºÏ·¨
+                State t = s;
+                memcpy(&t, &s, sizeof(s));   //s¿½±´µ½t,ÍØÕ¹ĞÂ½Úµã
+
+
+                t.a[newz] = s.a[z]; //ÒÆ¶¯0
+                t.a[z] = s.a[newz];
+
+
+                if (try_to_insert(t)) {      //³É¹¦ÍØÕ¹ĞÂ½Úµã
+
+                    t.deep = s.deep+1;
+                    t.father = &s;
+
+                    Q.push(t);
+                    box.push_back(t);
+
+                }
+
+            }
+        }
+
+    }
+    return 0;
+
+}
+
+
+
+
+
+int main(int argc,char** argv){
+
+    freopen("local.txt","r",stdin);
+
+    for(int i = 0; i < 9; ++i){
+        scanf("%d",&st.a[i]); //ÆğÊ¼×´Ì¬
+
+    }
+
+    Print(st);
+
+    for(int i = 0; i < 9; ++i){
+        scanf("%d",&goal.a[i]); //ÆğÊ¼×´Ì¬
+    }
+
+    Print(goal);
+
+    //³õÊ¼»¯²éÕÒ±í
+    init_lookup_table();
+
+    Q.push(st);
+    box.push_back(st);
+    st.father = NULL;
+
+    int ans = cost_tree_bfs();
+
+    if(ans == 0){
+        cout<<"ÎŞ½â"<<endl;
+    }
 
     return 0;
 }

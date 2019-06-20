@@ -8,8 +8,11 @@ using namespace std;
 typedef struct Station{
     int a[9];
     int deep;
+    int father;
 }State;
 
+const int  maxstate = 1000000;
+State path[maxstate];
 
 State goal,st;
 stack<State> sstack;
@@ -32,10 +35,7 @@ int get_val(State s){
 
 
 int try_to_insert(State s){
-    int v = 0;
-    for(int i = 0; i < 9; ++i) {   //把状态转换成9位十进制数
-        v = v * 10 + s.a[i];
-    }
+    int v = get_val(s);
 
     if(vis.count(v)){
         return 0;
@@ -47,7 +47,7 @@ int try_to_insert(State s){
 
 
 void Print(State t){
-
+    cout<<"深度为"<<t.deep<<endl;
     for(int i = 0; i < 9; ++i){
         printf("%d ",t.a[i]);  //目标状态
         if((i+1)%3 == 0){
@@ -60,20 +60,17 @@ void Print(State t){
 
 
 // 对于一个节点的dx和dy,要么上，要么下，要么左，要么右（将dx，dy结合起来看）
-const int dx[] = {-1,1,0,0};
-const int dy[] = {0,0,-1,1};
+//const int dx[] = {-1,1,0,0};
+//const int dy[] = {0,0,-1,1};  //低效
+const int dx[] = {-1,0,1,0};
+const int dy[] = {0,1,0,-1};
 
 
-//存取路径
-vector<State> v;
 
 int cnt =0;
+int nt = 0;//测试中途输出结果
 int flag = 0;
 void dfs(){
-    if(flag == 0){
-        //cnt++;
-        //if (cnt%5==0) cout<<"curcnt: "<<cnt<<endl;
-
 
         while(!sstack.empty()) {
 
@@ -82,12 +79,25 @@ void dfs(){
             State s = sstack.top();
             sstack.pop();
 
+            path[++cnt] = s;
+
+
+            //测试中途输出结果
+            cout<<"第"<<++nt<<"组"<<endl;
+            Print(s);
+
+
 
             if (memcmp(goal.a, s.a, sizeof(s.a))== 0) {
                 cout<<"找到目标状态，以下是输出结果："<<endl;
 
-                for(int i=(int)v.size()-1; i>=0;i--){
-                    Print(v[i]);
+                int count = 0;
+
+                State Temp = path[s.father];
+                while(Temp.father != -1){
+                    cout<<"第"<<++count<<"组"<<endl;
+                    Print(Temp);
+                    Temp = path[Temp.father];
                 }
 
                 flag = 1;
@@ -95,11 +105,9 @@ void dfs(){
             }
 
 
-          if(s.deep > 4){
-                return;
+          if(s.deep > 6){
+                continue;
             }
-
-
 
 
             int z;
@@ -110,7 +118,6 @@ void dfs(){
             }
 
             int x = z/3, y = z%3;
-
 
 
 
@@ -136,9 +143,11 @@ void dfs(){
 //                    }
 
                         t.deep = s.deep+1;
+                        t.father = cnt;  //t节点的 father 是path 里面第cnt 个节点
                         sstack.push(t);
-                        v.push_back(t);
-                        dfs();
+
+                         //v.push_back(t); //这里其实有问题，深度遍历到子节点都不可拓展的情况，就得回溯，而回溯过程中的节点是无效节点，不能放入路径
+                        // dfs(); 注意用了栈就不要用dfs了
 
                     }
 
@@ -146,47 +155,45 @@ void dfs(){
 
 
             }
-            return;
-
         }
 
-    }
 
-    else{
-
-        return;
-    }
 
 }
 
 int main() {
-   // freopen("local.txt","r",stdin);
+    freopen("local.txt","r",stdin);
 
     for(int i = 0; i < 9; ++i){
         scanf("%d",&st.a[i]); //起始状态
 
     }
 
-    //Print(st);
+    Print(st);
+
 
     for(int i = 0; i < 9; ++i){
         scanf("%d",&goal.a[i]); //起始状态
     }
 
-    //Print(goal);
+    Print(goal);
+
+
 
     //初始化查找表
     init_lookup_table();
 
-    v.push_back(st);
-    vis.insert(get_val(st) );
+    st.deep = 1;
+    st.father = -1;
+    vis.insert(get_val(st));
     sstack.push(st);
+
 
     dfs();
 
-    if(flag ==0){
+    if(flag == 0){
         cout<<endl;
-        cout<<"限制搜索深度为4的情况下，未找到目标状态"<<endl;
+        cout<<"限制搜索深度为5的情况下，未找到目标状态"<<endl;
     }
 
     return 0;

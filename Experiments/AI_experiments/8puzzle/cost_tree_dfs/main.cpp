@@ -1,26 +1,29 @@
 
+//编码方式：GBK
+
 #include <bits/stdc++.h>
 #include <cstdio>
 using namespace std;
 
-typedef struct Station {
+typedef struct Station{
     int a[9];
     int deep;
-    struct Station *father;
+    int father;
 }State;
 
+const int  maxstate = 1000000;
+State path[maxstate];
 
 State goal,st;
+stack<State> sstack;
 
-queue<State> Q;
-vector <State>  box;
+
 
 
 set<int> vis;
 void init_lookup_table(){
     vis.clear();
 }
-
 
 int get_val(State s){
     int v = 0;
@@ -32,10 +35,7 @@ int get_val(State s){
 
 
 int try_to_insert(State s){
-    int v = 0;
-    for(int i = 0; i < 9; ++i) {   //把状态转换成9位十进制数
-        v = v * 10 + s.a[i];
-    }
+    int v = get_val(s);
 
     if(vis.count(v)){
         return 0;
@@ -47,7 +47,7 @@ int try_to_insert(State s){
 
 
 void Print(State t){
-
+    cout<<"深度为"<<t.deep<<endl;
     for(int i = 0; i < 9; ++i){
         printf("%d ",t.a[i]);  //目标状态
         if((i+1)%3 == 0){
@@ -59,33 +59,53 @@ void Print(State t){
 }
 
 
-// 对于一个节点的dx和dy,要么上，要么下，要么左，要么右（将dx，dy结合起来看）
-const int dx[] = {-1,1,0,0};
-const int dy[] = {0,0,-1,1};
-int cost_tree_bfs(){
-    while(!Q.empty()) {
-        State s = Q.front();
-        Q.pop();
+
+const int dx[] = {-1,0,1,0};
+const int dy[] = {0,1,0,-1};
+
+
+
+int cnt =0;
+int nt = 0;//测试中途输出结果
+int flag = 0;
+void dfs(){
+
+    while(!sstack.empty()) {
+
+        //   cout<<"sstack.size(): "<<sstack.size()<<endl;
+        //取出第一个节点
+        State s = sstack.top();
+        sstack.pop();
+
+        path[++cnt] = s;
+
+
+        //测试中途输出结果
+        cout<<"第"<<++nt<<"组"<<endl;
+        Print(s);
+
 
 
         if (memcmp(goal.a, s.a, sizeof(s.a))== 0) {
             cout<<"找到目标状态，以下是输出结果："<<endl;
 
-            State *kk = s.father;
-            int cnt = 0;
-            if(kk==NULL){
-                cout<<"sfasuihciausdv "<<endl;
-            }
-            //根据father 打印路径
-            while(kk!= NULL){
+            int count = 0;
 
-                cout<<"第"<<++cnt<<"组:"<<endl;
-                Print(*kk);
-                kk = kk->father;
+            State Temp = path[s.father];
+            while(Temp.father != -1){
+                cout<<"第"<<++count<<"组"<<endl;
+                Print(Temp);
+                Temp = path[Temp.father];
             }
 
-            return 1; //找到目标状态，结束
+            flag = 1;
+            return; //找到目标状态，结束
         }
+
+
+//        if(s.deep > 6){
+//            continue;
+//        }
 
 
         int z;
@@ -96,6 +116,9 @@ int cost_tree_bfs(){
         }
 
         int x = z/3, y = z%3;
+
+
+
 
         for (int d = 0; d < 4; d++) { //寻找下一步移动的方案  上下左右的顺序
             int newx = x + dx[d];
@@ -113,28 +136,24 @@ int cost_tree_bfs(){
 
                 if (try_to_insert(t)) {      //成功拓展新节点
 
-                    t.deep = s.deep+1;
-                    t.father = &s;
 
-                    Q.push(t);
-                    box.push_back(t);
+                    t.deep = s.deep+1;
+                    t.father = cnt;  //t节点的 father 是path 里面第cnt 个节点
+                    sstack.push(t);
 
                 }
 
             }
-        }
 
+
+        }
     }
-    return 0;
+
+
 
 }
 
-
-
-
-
-int main(int argc,char** argv){
-
+int main() {
     freopen("local.txt","r",stdin);
 
     for(int i = 0; i < 9; ++i){
@@ -144,24 +163,30 @@ int main(int argc,char** argv){
 
     Print(st);
 
+
     for(int i = 0; i < 9; ++i){
         scanf("%d",&goal.a[i]); //起始状态
     }
 
     Print(goal);
 
+
+
     //初始化查找表
     init_lookup_table();
 
-    Q.push(st);
-    box.push_back(st);
-    st.father = NULL;
+    st.deep = 1;
+    st.father = -1;
+    vis.insert(get_val(st));
+    sstack.push(st);
 
-    int ans = cost_tree_bfs();
 
-    if(ans == 0){
-        cout<<"无解"<<endl;
-    }
+    dfs();
+
+//    if(flag == 0){
+//        cout<<endl;
+//        cout<<"限制搜索深度为5的情况下，未找到目标状态"<<endl;
+//    }
 
     return 0;
 }

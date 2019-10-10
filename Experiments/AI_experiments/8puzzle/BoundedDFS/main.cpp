@@ -1,5 +1,5 @@
 
-//编码方式：GBK
+//???????GBK
 
 #include <bits/stdc++.h>
 #include <cstdio>
@@ -27,7 +27,7 @@ void init_lookup_table(){
 
 int get_val(State s){
     int v = 0;
-    for(int i = 0; i < 9; ++i) {   //把状态转换成9位十进制数
+    for(int i = 0; i < 9; ++i) {   //?????????9λ???????
         v = v * 10 + s.a[i];
     }
     return v;
@@ -47,9 +47,9 @@ int try_to_insert(State s){
 
 
 void Print(State t){
-    cout<<"深度为"<<t.deep<<endl;
+    cout<<"????"<<t.deep<<endl;
     for(int i = 0; i < 9; ++i){
-        printf("%d ",t.a[i]);  //目标状态
+        printf("%d ",t.a[i]);  //?????
         if((i+1)%3 == 0){
             cout<<endl;
         }
@@ -59,49 +59,49 @@ void Print(State t){
 }
 
 
-// 对于一个节点的dx和dy,要么上，要么下，要么左，要么右（将dx，dy结合起来看）
+// ???????????dx??dy,?????????????????????dx??dy???????????
 //const int dx[] = {-1,1,0,0};
-//const int dy[] = {0,0,-1,1};  //低效
+//const int dy[] = {0,0,-1,1};  //??Ч
 const int dx[] = {-1,0,1,0};
 const int dy[] = {0,1,0,-1};
 
 
 
 int cnt =0;
-int nt = 0;//测试中途输出结果
+int nt = 0;//?????????????
 int flag = 0;
 void dfs(){
 
         while(!sstack.empty()) {
 
          //   cout<<"sstack.size(): "<<sstack.size()<<endl;
-            //取出第一个节点
+            //???????????
             State s = sstack.top();
             sstack.pop();
 
             path[++cnt] = s;
 
 
-            //测试中途输出结果
-            cout<<"第"<<++nt<<"组"<<endl;
+            //?????????????
+            cout<<"??"<<++nt<<"??"<<endl;
             Print(s);
 
 
 
             if (memcmp(goal.a, s.a, sizeof(s.a))== 0) {
-                cout<<"找到目标状态，以下是输出结果："<<endl;
+                cout<<"????????????????????????"<<endl;
 
                 int count = 0;
 
                 State Temp = path[s.father];
                 while(Temp.father != -1){
-                    cout<<"第"<<++count<<"组"<<endl;
+                    cout<<"??"<<++count<<"??"<<endl;
                     Print(Temp);
                     Temp = path[Temp.father];
                 }
 
                 flag = 1;
-                return; //找到目标状态，结束
+                return; //??????????????
             }
 
 
@@ -112,7 +112,7 @@ void dfs(){
 
             int z;
             for (z = 0; z < 9; z++) {
-                if (!s.a[z]) { //找到0位置
+                if (!s.a[z]) { //???0λ??
                     break;
                 }
             }
@@ -122,32 +122,32 @@ void dfs(){
 
 
 
-            for (int d = 0; d < 4; d++) { //寻找下一步移动的方案  上下左右的顺序
+            for (int d = 0; d < 4; d++) { //????????????????  ????????????
                 int newx = x + dx[d];
                 int newy = y + dy[d];
 
                 int newz = newx * 3 + newy;
-                if (newx >= 0 && newx < 3 && newy >= 0 && newy < 3) {  //移动合法
+                if (newx >= 0 && newx < 3 && newy >= 0 && newy < 3) {  //??????
                     State t = s;
-                    memcpy(&t, &s, sizeof(s));   //s拷贝到t,拓展新节点
+                    memcpy(&t, &s, sizeof(s));   //s??????t,???????
 
 
-                    t.a[newz] = s.a[z]; //移动0
+                    t.a[newz] = s.a[z]; //???0
                     t.a[z] = s.a[newz];
 
 
-                    if (try_to_insert(t)) {      //成功拓展新节点
+                    if (try_to_insert(t)) {      //??????????
 
 //                    for(set<int>:: iterator it = vis.begin(); it!=vis.end(); it++){
 //                        cout<<*it<<"\t";
 //                    }
 
                         t.deep = s.deep+1;
-                        t.father = cnt;  //t节点的 father 是path 里面第cnt 个节点
+                        t.father = cnt;  //t???? father ??path ?????cnt ?????
                         sstack.push(t);
 
-                         //v.push_back(t); //这里其实有问题，深度遍历到子节点都不可拓展的情况，就得回溯，而回溯过程中的节点是无效节点，不能放入路径
-                        // dfs(); 注意用了栈就不要用dfs了
+                         //v.push_back(t); //????????????????????????????????????????????????????????е???????Ч??????????·??
+                        // dfs(); ??????????????dfs??
 
                     }
 
@@ -165,7 +165,7 @@ int main() {
     freopen("local.txt","r",stdin);
 
     for(int i = 0; i < 9; ++i){
-        scanf("%d",&st.a[i]); //起始状态
+        scanf("%d",&st.a[i]); //?????
 
     }
 
@@ -173,14 +173,14 @@ int main() {
 
 
     for(int i = 0; i < 9; ++i){
-        scanf("%d",&goal.a[i]); //起始状态
+        scanf("%d",&goal.a[i]); //?????
     }
 
     Print(goal);
 
 
 
-    //初始化查找表
+    //??????????
     init_lookup_table();
 
     st.deep = 1;
@@ -193,7 +193,7 @@ int main() {
 
     if(flag == 0){
         cout<<endl;
-        cout<<"限制搜索深度为5的情况下，未找到目标状态"<<endl;
+        cout<<"????????????5????????δ????????"<<endl;
     }
 
     return 0;

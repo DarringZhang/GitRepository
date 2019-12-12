@@ -45,7 +45,7 @@ typedef  struct  tag_Frequency{
 Transaction curTransaction;
 STCandidate curCandidates[ITEMMAX];
 STFrequency curFrequencys[ITEMMAX];
-int minup = 2;  //支持度
+int minup = 3;  //支持度30%, 10组，30% * 10
 
 
 //输入数据集

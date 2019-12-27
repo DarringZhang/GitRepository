@@ -50,7 +50,7 @@ int minup = 3;  //支持度30%, 10组，30% * 10
 
 //输入数据集
 void InitTransaction(){
-    freopen("F://input.txt","r",stdin);
+    freopen("../input.txt","r",stdin);
     //freopen("F://output.txt","w",stdout);
 
     printf("输入当前事务的记录条数：");

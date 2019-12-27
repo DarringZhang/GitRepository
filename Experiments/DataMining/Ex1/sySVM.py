@@ -47,7 +47,7 @@ def com(a, b):
 
 x_train, x_test, y_train, y_test = train_test_split(train_x, train_y, test_size=0.3)
 # 调用SVM模型
-model = SVC(decision_function_shape='ovo', class_weight='balanced', kernel='rbf', C=50.0, gamma='auto',
+model = SVC(decision_function_shape='ovo', class_weight='balanced', kernel='rbf', C=20.0, gamma='auto',
           random_state=3)
 # 用训练数据拟合模型
 model.fit(x_train, y_train)

@@ -47,7 +47,7 @@ def com(a, b):
 
 x_train, x_test, y_train, y_test = train_test_split(train_x, train_y, test_size=0.3)
 # 调用多层神经网络模型
-mlp = MLPClassifier(hidden_layer_sizes=(60, 60), activation='logistic', solver='sgd', alpha=0.0001, max_iter=10000)
+mlp = MLPClassifier(hidden_layer_sizes=(60, 60), activation='logistic', solver='adam', alpha=0.0001, max_iter=10000)
 mlp = mlp.fit(x_train, y_train)
 y = mlp.predict(x_test)
 print(len(y))

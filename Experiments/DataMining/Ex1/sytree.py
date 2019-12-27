@@ -49,7 +49,7 @@ def com(a, b):
 x_train, x_test, y_train, y_test = train_test_split(train_x, train_y, test_size=0.3)
 
 # 指明算法，训练模型
-model = tree.DecisionTreeClassifier(criterion="entropy", max_depth=13)
+model = tree.DecisionTreeClassifier(criterion="entropy", max_depth=10)
 
 model.fit(x_train, y_train)
 y = model.predict(x_test)
@@ -58,6 +58,7 @@ print(len(y_test))
 for i in range(0, len(y)):
     yes = com(y[i], np.array(y_test[i]))
 print("正确率为:", yes / 1800)
+
 # 储存
 # 在测试数据集上预测目标
 predict_train = model.predict(test_x)

@@ -15,3 +15,4 @@ GM11:	灰色预测通过鉴别系统因素之间发展趋势的相异程度，即进行关联分析，
 参考文献：代码和思想  https://blog.csdn.net/y1535766478/article/details/77992544
 	绘图：https://blog.csdn.net/sinat_17588957/article/details/90600420
 	灰色预测：https://blog.csdn.net/u012063773/article/details/79324324
+	手肘法:  https://blog.csdn.net/xiaxuesong666/article/details/80359765

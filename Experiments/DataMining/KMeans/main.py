@@ -1,5 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+from scipy.spatial.distance import cdist
 
 # 两点距离
 def distance(e1, e2):
@@ -51,11 +53,30 @@ if __name__=="__main__":
         #print(array.shape)
         arr =  np.concatenate((arr,array),axis=0)
 
-    print(arr.shape)
+
+    #绘图确定K值
+    K = range(1, 20)
+    meanDispersions = []
+    for k in K:
+        kmeans = KMeans(n_clusters=k)
+        kmeans.fit(arr)
+        # 理解为计算某个与其所属类聚中心的欧式距离
+        # 最终是计算所有点与对应中心的距离的平方和的均值
+        meanDispersions.append(sum(np.min(cdist(arr, kmeans.cluster_centers_, 'euclidean'), axis=1)) / arr.shape[0])
+
+    plt.plot(K, meanDispersions, 'bx-')
+    plt.xlabel('k')
+    plt.ylabel('Average Dispersion')
+    plt.title('Selecting k with the Elbow Method')
+    plt.show()
+
+
+
+
 
 
     ## 初始化聚类中心和聚类容器
-    # m = 10
+
     r = np.random.randint(arr.__len__() - 1)#随机找第一个初始点
     print(r)
     k_arr = np.array([arr[r]]) #找到这个点的坐标
